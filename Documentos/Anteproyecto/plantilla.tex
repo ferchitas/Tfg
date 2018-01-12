@@ -1,0 +1,532 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{array}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+%\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
+\usepackage[pdftex]{graphicx}
+% footnotes configuration
+\makeatletter
+\renewcommand\thefootnote{\arabic{footnote}}
+\makeatother
+% Text styles
+\newcommand\textstyleStrongEmphasis[1]{\textbf{#1}}
+% Outline numbering
+\setcounter{secnumdepth}{0}
+\makeatletter
+\newcommand\arraybslash{\let\\\@arraycr}
+\makeatother
+% List styles
+\newcommand\liststyleWWNumxxix{%
+\renewcommand\labelitemi{{}-}
+\renewcommand\labelitemii{o}
+\renewcommand\labelitemiii{[F0A7?]}
+\renewcommand\labelitemiv{[F0B7?]}
+}
+\newcommand\liststyleLi{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{${\circ}$}%
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLii{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{${\circ}$}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLiii{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{${\circ}$}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLiv{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{${\circ}$}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLv{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{${\circ}$}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLvi{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{${\circ}$}
+\renewcommand\labelitemiii{${\blacksquare}$}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLvii{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLviii{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLix{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLx{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{2cm}
+\setlength\oddsidemargin{2cm}
+\setlength\textheight{24.203001cm}
+\setlength\textwidth{17.001cm}
+\setlength\footskip{0.0cm}
+\setlength\headheight{0.998cm}
+\setlength\headsep{0.499cm}
+% Footnote rule
+\setlength{\skip\footins}{0.119cm}
+\renewcommand\footnoterule{\vspace*{-0.018cm}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.25\columnwidth}{0.018cm}}\vspace*{0.101cm}}
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{[Warning: Draw object ignored]}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\newcommand\ps@FirstPage{
+  \renewcommand\@oddhead{}
+  \renewcommand\@evenhead{}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+\title{}
+\author{}
+\date{2013-06-03}
+
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+
+\pagestyle{empty}
+\setcounter{page}{0}
+
+\includegraphics[width=3cm]{logo-uclm.jpg}
+\hfill
+\includegraphics[width=3cm]{logo-esii.png}
+
+{\centering \par}
+\begin{center}
+\includegraphics[width=2.96cm,height=3.522cm]{logo-conciti.png}
+\end{center}
+
+\vskip 3em
+{\centering\bfseries\large
+UNIVERSIDAD DE CASTILLA-LA MANCHA
+\par}
+
+\vskip 3em
+{\centering\bfseries\large
+ESCUELA SUPERIOR DE INFORMÁTICA
+\par}
+
+{\centering\bfseries\large
+Departamento de Sistemas Informáticos\footnote{DEPARTAMENTO DE SISTEMAS INFORMÁTICOS o DEPARTAMENTO DE
+INGENIERÍA ELÉCTRICA, ELECTRÓNICA, AUTOMÁTICA Y COMUNICACIONES o DEPARTAMENTO DE MATEMÁTICAS o cualquier otro
+de la UCLM al que pertenezca el director. \par }
+\par}
+
+\vskip 3em
+{\centering\bfseries\large
+ANTEPROYECTO DEL TRABAJO FIN DE GRADO
+\par}
+
+{\centering\bfseries\large
+GRADO EN INGENIERÍA INFORMÁTICA
+\par}
+
+{\centering\bfseries\large
+TECNOLOGÍA ESPECÍFICA DE / INTENSIFICACIÓN / ITINERARIO DE \footnote{INGENIER\'IA DEL SOFTWARE o INGENIER\'IA DE COMPUTADORES o COMPUTACI\'ON o
+TECNOLOG\'IAS DE LA INFORMACI\'ON (esta \'ultima est\'a tambi\'en asociada a los TFG del \textbf{curso} de
+\textbf{adaptaci\'on})}
+\par}
+
+\vskip 3em
+{\centering\bfseries
+(Título del TFG)
+\par}
+
+\vfill % Rellena espacio automáticamente hasta ajustar al margen inferior 
+
+Autor: Fernando Luján Martínez
+
+Director: Gregorio Díaz Descalzo
+\footnote{Sólo en el caso de que haya un segundo director.} (nombre y apellidos)
+
+\vskip 1em 
+\mbox{\begin{minipage}[b][2.5cm][c]{0.7\linewidth} {\large Mes, 2018}  \end{minipage}}
+\hfill % Rellena espacio automáticamente hasta que la image se ajuste a la derecha
+\mbox{\includegraphics[width=2.5cm]{logo-euroinf.png}}
+\vskip 1em %Un línea en blanco para que el logo de Euroinf no se pegue al footnote
+
+\clearpage\pagestyle{empty}
+\thispagestyle{FirstPage}
+
+\setcounter{tocdepth}{10}
+\renewcommand\contentsname{\'Indice de contenido}
+\tableofcontents
+
+\clearpage
+\pagestyle{empty}
+
+El anteproyecto recoger\'a, en un \textcolor[rgb]{0.5019608,0.0,0.0}{m\'aximo de 10 p\'aginas}, los siguientes
+apartados:
+
+\liststyleWWNumxxix
+\begin{itemize}
+\item Introducci\'on (muy recomendable aunque no obligatorio)
+\item Tecnolog\'ia espec\'ifica cursada por el alumno
+\item Objetivos
+\item M\'etodo y fases de trabajo
+\item Medios que se pretenden utilizar
+\item Bibliograf\'ia b\'asica consultada en la elaboraci\'on del anteproyecto
+\item Contrato de propiedad intelectual (si lo hubiera)
+\end{itemize}
+
+\section{1.\ INTRODUCCI\'ON}
+
+El cap\'itulo de introducci\'on podr\'a abordar los siguientes aspectos:
+
+\liststyleWWNumxxix
+\begin{itemize}
+\item Introducci\'on al tema, entorno en el que el trabajo desempe\~nar\'a su objetivo, \ justificaci\'on de la
+importancia del trabajo abordado.
+\item Motivaci\'on y antecedentes (con algunas referencias bibliogr\'aficas).
+\item Descripci\'on gr\'afica del proyecto (es aconsejable incorporar una figura que describa el trabajo a desarrollar y
+que mejore la comprensi\'on del mismo).
+\end{itemize}
+
+En la actualidad hay una gran cantidad de 
+
+
+\section{2. TECNOLOG\'IA ESPEC\'IFICA / INTENSIFICACIÓN / ITINERARIO CURSADO POR EL ALUMNO}
+El Trabajo Fin de Grado (TFG, de ahora en adelante) siempre deber\'a demostrar la aplicaci\'on de las competencias
+generales de la titulaci\'on. Adem\'as, el TFG deber\'a aplicar \textbf{algunas} de las competencias espec\'ificas
+asociadas a la \textbf{Tecnolog\'ia Espec\'ifica o Intensificaci\'on} que el alumno ha cursado. Por lo tanto, el alumno
+incluir\'a en el anteproyecto \textbf{dos tablas}. Una tabla para seleccionar la tecnolog\'ia cursada y en la que se
+contextualiza el TFG:
+
+
+\bigskip
+
+{\centering\bfseries
+Tabla 1. Tecnolog\'ia Espec\'ifica cursada por el alumno
+\par}
+
+\begin{center}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{6.803cm}}
+ \rowcolor{gray!50}
+{\bfseries Marcar la Tecnolog\'ia Cursada}
+\\\hline
+~
+
+Tecnolog\'ias de la Informaci\'on\\
+\rowcolor{gray!30}
+~
+
+Computaci\'on\\
+~
+
+Ingenier\'ia del Software\\
+\rowcolor{gray!30}
+~
+
+Ingenier\'ia de Computadores\\\hline
+\end{supertabular}
+\end{center}
+
+
+
+\clearpage\pagestyle{plain}
+\thispagestyle{FirstPage}
+
+\ \ En la segunda tabla, el alumno deber\'a justificar c\'omo \textbf{algunas} de las competencias espec\'ificas de la
+intensificaci\'on se aplicar\'an o tomar\'an forma en el TFG, \textbf{La relaci\'on de competencias por
+intensificaci\'on se encuentran en el Anexo I al final de este documento. }
+
+
+\bigskip
+
+{\centering\bfseries
+Tabla 2. Justificaci\'on de las competencias espec\'ificas abordadas en el TFG
+\par}
+
+\begin{center}
+\tablefirsthead{}
+\tablehead{}
+\tabletail{}
+\tablelasttail{}
+\begin{supertabular}{m{8.849cm}m{7.605cm}}
+\rowcolor{gray!50}
+{\color{black} \textbf{Competencias}} &
+{\color{black} \textbf{Justificaci\'on}}\\\hline
+{\color{black} Competencia 1} &
+{\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
+~
+ &
+~
+\\
+\rowcolor{gray!30}
+Competencia 2
+~
+ &
+~
+[Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]
+\\
+~
+ &
+~
+\\\hline
+\end{supertabular}
+\end{center}
+
+\bigskip
+
+\section{3. \ OBJETIVOS}
+De acuerdo a la Introducci\'on, el alumno deber\'a especificar cu\'al o cuáles son las hip\'otesis de trabajo de las
+que se parten, qu\'e se pretende resolver, y en base a eso formular el objetivo principal del TFG.
+
+El objetivo principal deber\'a desglosarse en sub-objetivos parciales. Los sub-objetivos deberán describirse de forma breve y concisa.
+
+Como pre\'ambulo a la formulaci\'on del objetivo parcial, el alumno deber\'a discutir sobre las limitaciones y
+condicionantes a tener en cuenta en el desarrollo del TFG (lenguaje de desarrollo, equipos, madurez de la tecnolog\'ia,
+etc.).
+
+Del mismo modo, ser\'a recomendable incluir una lista preliminar de requisitos del sistema a construir.
+
+\section[4. M\'ETODO Y FASES DE TRABAJO]{4. M\'ETODO Y FASES DE TRABAJO}
+
+\bigskip
+
+Para el desarrollo del proyecto, el alumno deber\'a seguir alg\'un proceso o metodolog\'ia af\'in al problema que
+pretende resolver. Para ello, deber\'a aportar una peque\~na descripci\'on del proceso o metodolog\'ia (no m\'as de una
+p\'agina) y \textbf{justificar su adecuaci\'on al problema a resolver}.
+
+Del mismo modo, el alumno podrá realizar una breve planificaci\'on de la ejecuci\'on del proyecto seg\'un el proceso
+o metodolog\'ia seleccionada.
+
+Como parte de la descripci\'on del m\'etodo y las fases de trabajo, el alumno podr\'a incluir una descripci\'on
+preliminar de las tareas, una planificaci\'on temporal, diagramas de Gantt o recursos similares que pueda considerar
+necesarios.
+
+Si hubiera m\'as de una metodolog\'ia que a juicio del alumno podr\'ia ser af\'in al proyecto, \'estas deber\'an
+mencionarse, y justificar la que considera m\'as adecuada (esto puede considerarse parte de la justificaci\'on a la
+adecuaci\'on al problema a resolver).
+
+\section{5. MEDIOS QUE SE PRETENDEN UTILIZAR}
+\section{5.1. Medios Hardware}
+
+El alumno deber\'a describir los medios hardware que prev\'e ser\'an necesarios para el desarrollo del proyecto.
+
+\section{5.2. Medios Software}
+
+El alumno deber\'a describir los medios software (lenguajes, entornos de desarrollo, herramientas de gesti\'on y
+planificaci\'on, etc.) que prev\'e ser\'an necesarios para el desarrollo del proyecto
+
+%\clearpage\pagestyle{empty}
+%\thispagestyle{FirstPage}
+
+\section[6. REFERENCIAS]{6. REFERENCIAS}
+En esta secci\'on se incluir\'an todas las referencias bibliogr\'aficas, ordenadas alfab\'eticamente por el primer
+apellido del primer autor, de las obras de las cuales se haya realizado alguna cita en los apartados anteriores. Las
+referencias deber\'an contener datos b\'asicos como nombre y apellidos de los autores, t\'itulo de la obra, evento al
+que pertenece, p\'aginas, fecha y lugar de celebraci\'on (si se tratara de art\'iculos de congreso), ISBN, editorial y
+ciudad (si se tratara de libro), nombre de revista, p\'aginas, volumen y n\'umero (si se tratara de revista), etc.
+
+Se emplear\'a un formato de referencia reconocido en el \'ambito acad\'emico como
+ACM\footnote{http://www.acm.org/sigs/publications/proceedings-templates}\footnote{http://www.cs.ucy.ac.cy/\~{}chryssis/specs/ACM-refguide.pdf}.
+Otros formatos aconsejables son, por ejemplo, IEEE, AMA, APA y AMA.
+
+Ejemplos de referencias con formato ACM:
+
+\liststyleLi
+\begin{itemize}
+\item Para un art\'iculo de revista:
+\end{itemize}
+Bowman, M., Debray, S. K., and Peterson, L. L. 1993. Reasoning about naming systems. \textit{ACM Trans. Program. Lang.
+Syst.} 15, 5 (Nov. 1993), 795-825. DOI= \url{http://doi.acm.org/10.1145/161468.16147}.
+
+\liststyleLii
+\begin{itemize}
+\item Para un informe t\'ecnico
+\end{itemize}
+Ding, W. and Marchionini, G. 1997. \textit{A Study on Video Browsing Strategies. Technical Report}. University of
+Maryland at College Park.
+
+\liststyleLiii
+\begin{itemize}
+\item Para un libro
+
+Tavel, P. 2007. \textit{Modeling and Simulation Design.} AK Peters Ltd., Natick, MA, USA.
+\end{itemize}
+\liststyleLiv
+\begin{itemize}
+\item Para un cap\'itulo de libro:
+\end{itemize}
+Greiner, R. 1999. Explanation-based learning. In Wilson and F. Keil, R. eds. \textit{The Encyclopedia of Cognitive
+Science}, MIT Press, Cambridge, MA, USA. 301-303.
+
+\liststyleLv
+\begin{itemize}
+\item Para un art\'iculo en las actas de un congreso:
+\end{itemize}
+Fr\"ohlich, B. and Plate, J. 2000. The cubic mouse: a new device for three-dimensional input. In \textit{Proceedings of
+the SIGCHI Conference on Human Factors in Computing Systems} (The Hague, The Netherlands, April 01 - 06, 2000). CHI
+'00. ACM, New York, NY, 526-531. DOI= \url{http://doi.acm.org/10.1145/332040.332491}.
+
+\liststyleLvi
+\begin{itemize}
+\item Para un p\'agina de Internet (con autores conocidos)
+
+Steele, B. Look, Ma, no wires! Cornell class project tests wireless networking, \textit{Cornell Chronicle, 31 }(35).
+Retrieved February 15, 2004, from Columbia University:
+\url{http://www.news.cornell.edu/Chronicle/00/5.18.00/wireless_class.html}
+\item Para un p\'agina de Internet (con autores desconocidos)
+
+MIT Project Oxygen: Overview, 2004. Retrieved March 15, 2005, from Computer Science and Artificial Intelligence
+Laboratory, Massachusetts Institute of Technology: \url{http://oxygen.lcs.mit.edu/Overview.html}. \
+\end{itemize}
+
+\bigskip
+
+\section{7. CONTRATO DE PROPIEDAD INTELECTUAL (si lo hubiera)}
+
+\bigskip
+
+\clearpage\clearpage\pagestyle{plain}
+\thispagestyle{FirstPage}
+{\centering
+\textstyleStrongEmphasis{ANEXO I: Descripci\'on de Competencias por Intensificaci\'on o Tecnolog\'ia
+Espec\'ifica}\footnote{Este anexo se deber\'a borrar y no deber\'a ser incluido en el documento de anteproyecto final}
+\par}
+
+{\bfseries
+Intensificaci\'on de Computaci\'on:}
+
+\liststyleLvii
+\begin{itemize}
+\item Capacidad para tener un conocimiento profundo de los principios fundamentales y modelos de la computaci\'on y
+saberlos aplicar para interpretar, seleccionar, valorar, modelar, y crear nuevos conceptos, teor\'ias, usos y
+desarrollos tecnol\'ogicos relacionados con la inform\'atica.
+\item Capacidad para conocer los fundamentos te\'oricos de los lenguajes de programaci\'on y las t\'ecnicas de
+procesamiento l\'exico, sint\'actico y sem\'antico asociadas, y saber aplicarlas para la creaci\'on, dise\~no y
+procesamiento de lenguajes.
+\item Capacidad para evaluar la complejidad computacional de un problema, conocer estrategias algor\'itmicas que puedan
+conducir a su resoluci\'on y recomendar, desarrollar e implementar aquella que garantice el mejor rendimiento de
+acuerdo con los requisitos establecidos.
+\item Capacidad para conocer los fundamentos, paradigmas y t\'ecnicas propias de los sistemas inteligentes y analizar,
+dise\~nar y construir sistemas, servicios y aplicaciones inform\'aticas que utilicen dichas t\'ecnicas en cualquier
+\'ambito de aplicaci\'on.
+\item Capacidad para adquirir, obtener, formalizar y representar el conocimiento humano en una forma computable para la
+resoluci\'on de problemas mediante un sistema inform\'atico en cualquier \'ambito de aplicaci\'on, particularmente los
+relacionados con aspectos de computaci\'on, percepci\'on y actuaci\'on en ambientes entornos inteligentes.
+\item Capacidad para desarrollar y evaluar sistemas interactivos y de presentaci\'on de informaci\'on compleja y su
+aplicaci\'on a la resoluci\'on de problemas de dise\~no de interacci\'on persona computadora.
+\item Capacidad para conocer y desarrollar t\'ecnicas de aprendizaje computacional y dise\~nar e implementar
+aplicaciones y sistemas que las utilicen, incluyendo las dedicadas a extracci\'on autom\'atica de informaci\'on y
+conocimiento a partir de grandes vol\'umenes de datos.
+\end{itemize}
+{\bfseries
+Intensificaci\'on de Ingenier\'ia de Computadores:}
+
+\liststyleLviii
+\begin{itemize}
+\item Capacidad de dise\~nar y construir sistemas digitales, incluyendo computadores, sistemas basados en
+microprocesador y sistemas de comunicaciones.
+\item Capacidad de desarrollar procesadores espec\'ificos y sistemas empotrados, as\'i como desarrollar y optimizar el
+software de dichos sistemas.
+\item Capacidad de analizar y evaluar arquitecturas de computadores, incluyendo plataformas paralelas y distribuidas,
+as\'i como desarrollar y optimizar software para las mismas.
+\item Capacidad de dise\~nar e implementar software de sistema y de comunicaciones.
+\item Capacidad de analizar, evaluar y seleccionar las plataformas hardware y software m\'as adecuadas para el soporte
+de aplicaciones empotradas y de tiempo real.
+\item Capacidad para comprender, aplicar y gestionar la garant\'ia y seguridad de los sistemas inform\'aticos.
+\item Capacidad para analizar, evaluar, seleccionar y configurar plataformas hardware para el desarrollo y ejecuci\'on
+de aplicaciones y servicios inform\'aticos.
+\item Capacidad para dise\~nar, desplegar, administrar y gestionar redes de computadores.
+\end{itemize}
+
+\clearpage\pagestyle{plain}
+\thispagestyle{FirstPage}
+{\bfseries
+Intensificaci\'on de Ingenier\'ia del Software:}
+
+\liststyleLix
+\begin{itemize}
+\item Capacidad para desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos
+del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normas de
+calidad, aplicando las teor\'ias, principios, m\'etodos y pr\'acticas de la Ingenier\'ia del Software.
+\item Capacidad para valorar las necesidades del cliente y especificar los requisitos software para satisfacer estas
+necesidades, reconciliando objetivos en conflicto mediante la b\'usqueda de compromisos aceptables dentro de las
+limitaciones derivadas del coste, del tiempo, de la existencia de sistemas ya desarrollados y de las propias
+organizaciones.
+\item Capacidad de dar soluci\'on a problemas de integraci\'on en funci\'on de las estrategias, est\'andares y
+tecnolog\'ias disponibles.
+\item Capacidad de identificar y analizar problemas y dise\~nar, desarrollar, implementar, verificar y documentar
+soluciones software sobre la base de un conocimiento adecuado de las teor\'ias, modelos y t\'ecnicas actuales.
+\item Capacidad de identificar, evaluar y gestionar los riesgos potenciales asociados que pudieran presentarse.
+\item Capacidad para dise\~nar soluciones apropiadas en uno o m\'as dominios de aplicaci\'on utilizando m\'etodos de la
+ingenier\'ia del software que integren aspectos \'eticos, sociales, legales y econ\'omicos.
+\end{itemize}
+{\bfseries
+Intensificaci\'on de Tecnolog\'ias de la Informaci\'on:}
+
+\liststyleLx
+\begin{itemize}
+\item Capacidad para comprender el entorno de una organizaci\'on y sus necesidades en el \'ambito de las tecnolog\'ias
+de la informaci\'on y las comunicaciones.
+\item Capacidad para seleccionar, dise\~nar, desplegar, integrar, evaluar, construir, gestionar, explotar y mantener las
+tecnolog\'ias de hardware, software y redes, dentro de los par\'ametros de coste y calidad adecuados.
+\item Capacidad para emplear metodolog\'ias centradas en el usuario y la organizaci\'on para el desarrollo, evaluaci\'on
+y gesti\'on de aplicaciones y sistemas basados en tecnolog\'ias de la informaci\'on que aseguren la accesibilidad,
+ergonom\'ia y usabilidad de los sistemas.
+\item Capacidad para seleccionar, dise\~nar, desplegar, integrar y gestionar redes e infraestructuras de comunicaciones
+en una organizaci\'on.
+\item Capacidad para seleccionar, desplegar, integrar y gestionar sistemas de informaci\'on que satisfagan las
+necesidades de la organizaci\'on, con los criterios de coste y calidad identificados.
+\item Capacidad de concebir sistemas, aplicaciones y servicios basados en tecnolog\'ias de red, incluyendo Internet,
+web, comercio electr\'onico, multimedia, servicios interactivos y computaci\'on m\'ovil.
+\item Capacidad para comprender, aplicar y gestionar la garant\'ia y seguridad de los sistemas inform\'aticos.
+\end{itemize}
+
+\bigskip
+\end{document}
