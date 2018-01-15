@@ -231,8 +231,24 @@ importancia del trabajo abordado.
 que mejore la comprensi\'on del mismo).
 \end{itemize}
 
-En la actualidad hay una gran cantidad de 
+En la actualidad vivimos inmersos en un mundo de información, cualquier sistema por simple que que sea genera una gran cantidad de datos. Poder analizar todo lo que se genera para obtener información relevante es uno de los objetivos que se persiguen. Esto se puede hacer de diferentes formas, la primera que podemos imaginarnos es guardar y después analizar. De esta premisa nace el concepto de big data. Este procedimiento tiene una serie de ventajas y desventajas, se necesita (mucho) espacio de  almacenamiento, lo que guardemos puede no ser tan valioso como se pensaba o que los resultados del análisis no son inmediatos y hasta que no tengamos suficientes datos no podemos llegar a ninguna conclusión.
 
+Para evitar las desventajas comentadas, principalmente la tercera donde en según que sectores es imprescindible tener conocimiento al instante del estado en el que se encuentran. La siguiente opción entonces es analizar en tiempo real los datos que se van generando, de esta forma no es necesario el almacenamiento de datos y los resultados de los análisis están conforme se generan/reciben los datos, listos para la toma de decisiones.
+
+Este segundo procedimiento también es muy útil en entornos complicados en lo que no es posible tener un extenso almacenamiento, la conexión para la transferencia de datos no tiene un gran ancho de banda, la velocidad o la fiabilidad en la entrega de todos los paquetes no es la mejor.
+
+En el caso en que nos centraremos (poner aquí que sera de placas solares) esta claro que todo lo indicado arriba se cumple:
+
+\begin{itemize}
+\item normalmente las plantas fotovoltaicas están ubicadas lejos de núcleos urbanos grandes, por esto la conexión hacia el exterior no es idónea.
+\item Poner un sistema que almacene y examine los datos tampoco es interesante en términos de mantenimiento y por tanto económicos.
+\item Aunque la extensión de una de estas plantas es variable suelen ser de al menos unas hectáreas. Por tanto si estamos tratando de detectar fallos en alguno de los componentes, ir componente por componente sería inviable.
+\item Por último, incluso obviando lo anterior y siendo capaces de almacenar y analizar los datos si algo esta dañado cuando interesa saberlo es lo antes posible y no una semana después, todo esto sin perder el potencial de detectarlos aunque sean complejos.
+\end{itemize}
+
+Por estas razones el procesamiento complejo de eventos (CEP o de sus siglas en inglés Complex Event Processing) es perfecto para ser aplicado en el entorno indicado porque... (desarrollo de que es cep)
+
+En este Trabajo Fin de Grado lo que trataremos es de la mano de "Ingeteam" desarrollar un sistema capaz de detectar eventos y lo que es más interesante patrones de eventos. Estos nos serán indicados por sus técnicos.
 
 \section{2. TECNOLOG\'IA ESPEC\'IFICA / INTENSIFICACIÓN / ITINERARIO CURSADO POR EL ALUMNO}
 El Trabajo Fin de Grado (TFG, de ahora en adelante) siempre deber\'a demostrar la aplicaci\'on de las competencias
