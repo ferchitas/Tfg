@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventpattern:CEPEventPattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eventpattern="www.uca.es/modeling/cep/eventpattern" patternName="temperaturaInferiorA20" patternDescription="" domainName="dominio_basico" patternCreationDate="2018-01-18T19:58:51.500+0100">
+  <eventPatternElements xsi:type="eventpattern:Event" typeName="eventoTemperatura">
+    <eventProperties name="timeStamp" type="String"/>
+    <eventProperties name="valor" type="Double"/>
+  </eventPatternElements>
+</eventpattern:CEPEventPattern>

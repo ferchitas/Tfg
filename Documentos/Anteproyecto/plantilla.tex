@@ -314,7 +314,8 @@ intensificaci\'on se encuentran en el Anexo I al final de este documento. }
 Tabla 2. Justificaci\'on de las competencias espec\'ificas abordadas en el TFG
 \par}
 \begin{center}
-  \begin{tabular}{m{8.849cm}m{7.605cm}}
+	%\newcolumntype{C}{>{\centering} m{1cm} }
+  \begin{supertabular}{m{5.605cm}m{10.849cm}}
   	\iffalse
     	primera fila, cabecera
     \fi
@@ -323,26 +324,49 @@ Tabla 2. Justificaci\'on de las competencias espec\'ificas abordadas en el TFG
 	{\color{black} \textbf{Justificaci\'on}}\\\hline
     
     {\color{black} Competencia 1} &
-    {\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
+    {\color{black} La justificación de esta competencia la desmigaré en tres partes.
+    {\begin{itemize} 
+    \item primero la metodología de desarrollo que utilizaré será scrum junto con prototipado.
+    \item Segundo, las tecnologías utilizadas serán el lenguaje Esper EPL y su un motor cep. [cuando hagamos la reunión esto lo terminaré para ver como encajo lo del poi del principio y como se mostraran los resultados del final]
+    \item --como hago el mantenimiento, porque no voy a mantenerlo--
+    \item Para evaluar el proyecto desde el principio se aplicaran pruebas unitarias y pruebas de integración
+    \end{itemize}}
+    }\\
     
     \rowcolor{gray!30}
     {\color{black} Competencia 2} &
-    {\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
+    {\color{black} Para la toma de requisitos al cliente y más adelante todo case se harán reuniones periódicas al principio y al final de cada iteración.
+    La elicitación de los requisitos se hará con historias de usuario. Esto es así porque del resto de posibilidades que nos quedan, como pueden ser los casos de uso, no son lo más adecuado a la metodología que vamos a utilizar.\newline
+    Por otro lado para dejar claro que lo realizado en las iteraciones se ajusta a lo definido inicialmente cada historia de usuario tendrá una prueba de aceptación, relativa al prototipo que se entregue.}\\
     
     {\color{black} Competencia 3} &
-    {\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
+    {\color{black} --para hacer esta sección tengo que hacer la reunión con los de ingeteam para saber como vamos a meter lo que desarrolle en su entorno real}\\
     
     \rowcolor{gray!30}
     {\color{black} Competencia 4} &
-    {\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
+    {\color{black} Poner ¿Por qué es bueno cep para este problema?
+    El problema que vamos a tacar es detectar ciertos desgastes y futuros fallos en todo el sistema que hay detrás de una o varias plantas fotovoltaicas. Para ello vamos a analizar todos los datos generados de las placas de estos campos. Al ser una gran cantidad, el monitóreo de las instalaciones debe de ser en tiempo real, los resultados del análisis de los datos deben de estar lo antes posible y por último inferir, a priori, inferir los datos para obtener esos resultados no es una tarea trivial, por tanto podemos decir que la opción que mejor se ajusta a estos requisitos es cep}\\
     
     {\color{black} Competencia 5} &
-    {\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
+    {\color{black} algunos motores cep: 
+      \begin{itemize}
+        \item \href{https://flink.apache.org/index.html}{flint}
+        \item \href{https://docs.jboss.org/drools/release/6.2.0.CR3/drools-docs/html/DroolsComplexEventProcessingChapter.html}{drools}
+        \item \href{https://github.com/wso2/siddhi
+    y https://wso2.com/products/complex-event-processor/}{Siddhi} and \href{https://wso2.com/products/complex-event-processor/}{WSO2}
+        \item \href{https://cloud.google.com/solutions/architecture/complex-event-processing}{Google Cloud Platform}
+        \item \href{http://www.oracle.com/technetwork/middleware/complex-event-processing/documentation/index.html}{Real Time Streaming Analytics Oracle}
+        \item \href{http://www.espertech.com/esper/}{Esper}
+      \end{itemize}
+      Poner otras metodologías mas y porque hemos optado por scrum junto con prototipado
+      -- cuando sepa después de las reunión otras tecnologías que vaya a utilizar las miraré
+   	}\\
     
     \rowcolor{gray!30}
     {\color{black} Competencia 6} &
-    {\color{black} [Exponer y argumentar c\'omo y en qu\'e parte se va a abordar esta competencia en el TFG]}\\
-  \end{tabular}
+    {\color{black} desarrollar que lo vamos a hacer en tes fases/springs y porque es bueno hacerlo así y posibles riesgos potenciales de esta planificación}\\
+
+\end{supertabular}
 \end{center}
 \bigskip
 
@@ -459,99 +483,7 @@ Laboratory, Massachusetts Institute of Technology: \url{http://oxygen.lcs.mit.ed
 
 \clearpage\clearpage\pagestyle{plain}
 \thispagestyle{FirstPage}
-{\centering
-\textstyleStrongEmphasis{ANEXO I: Descripci\'on de Competencias por Intensificaci\'on o Tecnolog\'ia
-Espec\'ifica}\footnote{Este anexo se deber\'a borrar y no deber\'a ser incluido en el documento de anteproyecto final}
-\par}
 
-{\bfseries
-Intensificaci\'on de Computaci\'on:}
-
-\liststyleLvii
-\begin{itemize}
-\item Capacidad para tener un conocimiento profundo de los principios fundamentales y modelos de la computaci\'on y
-saberlos aplicar para interpretar, seleccionar, valorar, modelar, y crear nuevos conceptos, teor\'ias, usos y
-desarrollos tecnol\'ogicos relacionados con la inform\'atica.
-\item Capacidad para conocer los fundamentos te\'oricos de los lenguajes de programaci\'on y las t\'ecnicas de
-procesamiento l\'exico, sint\'actico y sem\'antico asociadas, y saber aplicarlas para la creaci\'on, dise\~no y
-procesamiento de lenguajes.
-\item Capacidad para evaluar la complejidad computacional de un problema, conocer estrategias algor\'itmicas que puedan
-conducir a su resoluci\'on y recomendar, desarrollar e implementar aquella que garantice el mejor rendimiento de
-acuerdo con los requisitos establecidos.
-\item Capacidad para conocer los fundamentos, paradigmas y t\'ecnicas propias de los sistemas inteligentes y analizar,
-dise\~nar y construir sistemas, servicios y aplicaciones inform\'aticas que utilicen dichas t\'ecnicas en cualquier
-\'ambito de aplicaci\'on.
-\item Capacidad para adquirir, obtener, formalizar y representar el conocimiento humano en una forma computable para la
-resoluci\'on de problemas mediante un sistema inform\'atico en cualquier \'ambito de aplicaci\'on, particularmente los
-relacionados con aspectos de computaci\'on, percepci\'on y actuaci\'on en ambientes entornos inteligentes.
-\item Capacidad para desarrollar y evaluar sistemas interactivos y de presentaci\'on de informaci\'on compleja y su
-aplicaci\'on a la resoluci\'on de problemas de dise\~no de interacci\'on persona computadora.
-\item Capacidad para conocer y desarrollar t\'ecnicas de aprendizaje computacional y dise\~nar e implementar
-aplicaciones y sistemas que las utilicen, incluyendo las dedicadas a extracci\'on autom\'atica de informaci\'on y
-conocimiento a partir de grandes vol\'umenes de datos.
-\end{itemize}
-{\bfseries
-Intensificaci\'on de Ingenier\'ia de Computadores:}
-
-\liststyleLviii
-\begin{itemize}
-\item Capacidad de dise\~nar y construir sistemas digitales, incluyendo computadores, sistemas basados en
-microprocesador y sistemas de comunicaciones.
-\item Capacidad de desarrollar procesadores espec\'ificos y sistemas empotrados, as\'i como desarrollar y optimizar el
-software de dichos sistemas.
-\item Capacidad de analizar y evaluar arquitecturas de computadores, incluyendo plataformas paralelas y distribuidas,
-as\'i como desarrollar y optimizar software para las mismas.
-\item Capacidad de dise\~nar e implementar software de sistema y de comunicaciones.
-\item Capacidad de analizar, evaluar y seleccionar las plataformas hardware y software m\'as adecuadas para el soporte
-de aplicaciones empotradas y de tiempo real.
-\item Capacidad para comprender, aplicar y gestionar la garant\'ia y seguridad de los sistemas inform\'aticos.
-\item Capacidad para analizar, evaluar, seleccionar y configurar plataformas hardware para el desarrollo y ejecuci\'on
-de aplicaciones y servicios inform\'aticos.
-\item Capacidad para dise\~nar, desplegar, administrar y gestionar redes de computadores.
-\end{itemize}
-
-\clearpage\pagestyle{plain}
-\thispagestyle{FirstPage}
-{\bfseries
-Intensificaci\'on de Ingenier\'ia del Software:}
-
-\liststyleLix
-\begin{itemize}
-\item Capacidad para desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos
-del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normas de
-calidad, aplicando las teor\'ias, principios, m\'etodos y pr\'acticas de la Ingenier\'ia del Software.
-\item Capacidad para valorar las necesidades del cliente y especificar los requisitos software para satisfacer estas
-necesidades, reconciliando objetivos en conflicto mediante la b\'usqueda de compromisos aceptables dentro de las
-limitaciones derivadas del coste, del tiempo, de la existencia de sistemas ya desarrollados y de las propias
-organizaciones.
-\item Capacidad de dar soluci\'on a problemas de integraci\'on en funci\'on de las estrategias, est\'andares y
-tecnolog\'ias disponibles.
-\item Capacidad de identificar y analizar problemas y dise\~nar, desarrollar, implementar, verificar y documentar
-soluciones software sobre la base de un conocimiento adecuado de las teor\'ias, modelos y t\'ecnicas actuales.
-\item Capacidad de identificar, evaluar y gestionar los riesgos potenciales asociados que pudieran presentarse.
-\item Capacidad para dise\~nar soluciones apropiadas en uno o m\'as dominios de aplicaci\'on utilizando m\'etodos de la
-ingenier\'ia del software que integren aspectos \'eticos, sociales, legales y econ\'omicos.
-\end{itemize}
-{\bfseries
-Intensificaci\'on de Tecnolog\'ias de la Informaci\'on:}
-
-\liststyleLx
-\begin{itemize}
-\item Capacidad para comprender el entorno de una organizaci\'on y sus necesidades en el \'ambito de las tecnolog\'ias
-de la informaci\'on y las comunicaciones.
-\item Capacidad para seleccionar, dise\~nar, desplegar, integrar, evaluar, construir, gestionar, explotar y mantener las
-tecnolog\'ias de hardware, software y redes, dentro de los par\'ametros de coste y calidad adecuados.
-\item Capacidad para emplear metodolog\'ias centradas en el usuario y la organizaci\'on para el desarrollo, evaluaci\'on
-y gesti\'on de aplicaciones y sistemas basados en tecnolog\'ias de la informaci\'on que aseguren la accesibilidad,
-ergonom\'ia y usabilidad de los sistemas.
-\item Capacidad para seleccionar, dise\~nar, desplegar, integrar y gestionar redes e infraestructuras de comunicaciones
-en una organizaci\'on.
-\item Capacidad para seleccionar, desplegar, integrar y gestionar sistemas de informaci\'on que satisfagan las
-necesidades de la organizaci\'on, con los criterios de coste y calidad identificados.
-\item Capacidad de concebir sistemas, aplicaciones y servicios basados en tecnolog\'ias de red, incluyendo Internet,
-web, comercio electr\'onico, multimedia, servicios interactivos y computaci\'on m\'ovil.
-\item Capacidad para comprender, aplicar y gestionar la garant\'ia y seguridad de los sistemas inform\'aticos.
-\end{itemize}
 
 \bigskip
 \end{document}

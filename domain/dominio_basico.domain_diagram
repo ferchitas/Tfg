@@ -39,19 +39,6 @@
     <element xmi:type="domain:Event" href="dominio_basico.domain#//@events.0"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="__NXYpfevEeerRN8sGU9zCQ" x="40" y="40"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_oPEIgPe9EeerRN8sGU9zCQ" type="2001">
-    <children xmi:type="notation:DecorationNode" xmi:id="_oPEvkPe9EeerRN8sGU9zCQ" type="5003"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_oPEvkfe9EeerRN8sGU9zCQ" type="7001">
-      <styles xmi:type="notation:SortingStyle" xmi:id="_oPEvkve9EeerRN8sGU9zCQ"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_oPEvk_e9EeerRN8sGU9zCQ"/>
-    </children>
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_oPEIgfe9EeerRN8sGU9zCQ"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_oPEIgve9EeerRN8sGU9zCQ" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_oPEIg_e9EeerRN8sGU9zCQ"/>
-    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_oPEIhPe9EeerRN8sGU9zCQ"/>
-    <element xmi:type="domain:Event" href="dominio_basico.domain#//@events.1"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oPEIhfe9EeerRN8sGU9zCQ" x="203" y="44"/>
-  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_42O3cfevEeerRN8sGU9zCQ"/>
   <element xmi:type="domain:CEPDomain" href="dominio_basico.domain#/"/>
 </notation:Diagram>

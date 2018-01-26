@@ -4,5 +4,4 @@
     <eventProperties name="timeStamp" type="String"/>
     <eventProperties name="valor" type="Double"/>
   </events>
-  <events typeName="evento"/>
 </domain:CEPDomain>
