@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:eventpattern="www.uca.es/modeling/cep/eventpattern" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_n3Yj8PyBEeezrb9bpw71cw" type="Eventpattern" name="temperaturaInferiorA20.pattern_diagram" measurementUnit="Pixel">
-  <styles xmi:type="notation:DiagramStyle" xmi:id="_n3Yj8fyBEeezrb9bpw71cw"/>
-  <element xmi:type="eventpattern:CEPEventPattern" href="temperaturaInferiorA20.pattern#/"/>
-</notation:Diagram>

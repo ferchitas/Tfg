@@ -323,32 +323,35 @@ Tabla 2. Justificaci\'on de las competencias espec\'ificas abordadas en el TFG
 	{\color{black} \textbf{Competencias}} &
 	{\color{black} \textbf{Justificaci\'on}}\\\hline
     
-    {\color{black} Competencia 1} &
+    {\color{black} Competencia 1: capacidad para desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normas de calidad, aplicando las teor\'ias, principios, m\'etodos y pr\'acticas de la Ingenier\'ia del Software.} &
     {\color{black} La justificación de esta competencia la desmigaré en tres partes.
     {\begin{itemize} 
     \item primero la metodología de desarrollo que utilizaré será scrum junto con prototipado.
-    \item Segundo, las tecnologías utilizadas serán el lenguaje Esper EPL y su un motor cep. [cuando hagamos la reunión esto lo terminaré para ver como encajo lo del poi del principio y como se mostraran los resultados del final]
-    \item --como hago el mantenimiento, porque no voy a mantenerlo--
-    \item Para evaluar el proyecto desde el principio se aplicaran pruebas unitarias y pruebas de integración
+    \item Segundo, las tecnologías utilizadas serán, principalmente, el lenguaje Esper EPL y su un motor cep. Aunque esta tecnología es la piedra angular de este desarrollo, de forma secundaria necesitamos más herramientas que le provean los datos, que manejen las salidas del motor y que a todo esto le den cohesión. Por eso también utilizaremos la plataforma Anypoint de MuleSoft, la cual es un ESB (Enterprise service bus). Este ESB esta formado por flujos los cuales se pueden configurar con diferentes módulos conectables.
+    \item El mantenimiento del software es algo fundamental pero debido a la naturaleza del producto que vamos desarrollar, a priori, no habrá un proceso de mantenimiento como tal. Por esta razón, tanto la documentación como el código y su configuración estarán formados teniendo siempre en mente que este código será leído y modificado por alguien diferente a mi.
+    \item Para evaluar el proyecto desde el principio se aplicaran pruebas unitarias y pruebas de integración además de reuniones periodicas en las que se tendrán pruebas de aceptación por su parte.
     \end{itemize}}
     }\\
     
     \rowcolor{gray!30}
-    {\color{black} Competencia 2} &
-    {\color{black} Para la toma de requisitos al cliente y más adelante todo case se harán reuniones periódicas al principio y al final de cada iteración.
-    La elicitación de los requisitos se hará con historias de usuario. Esto es así porque del resto de posibilidades que nos quedan, como pueden ser los casos de uso, no son lo más adecuado a la metodología que vamos a utilizar.\newline
-    Por otro lado para dejar claro que lo realizado en las iteraciones se ajusta a lo definido inicialmente cada historia de usuario tendrá una prueba de aceptación, relativa al prototipo que se entregue.}\\
+    {\color{black} Competencia 2: Capacidad para valorar las necesidades del cliente y especificar los requisitos software para satisfacer estas necesidades, reconciliando objetivos en conflicto mediante la b\'usqueda de compromisos aceptables dentro de las limitaciones derivadas del coste, del tiempo, de la existencia de sistemas ya desarrollados y de las propias organizaciones.} &
+    {\color{black} Para la toma de requisitos al cliente y más adelante para que todo case se harán reuniones periódicas al principio y al final de cada iteración (y siempre que se precisen).
+    La elicitación de los requisitos se hará con historias de usuario por un lado, para la parte más relacionada con la sección del sistema cercano al usuario final. Esto es así porque del resto de posibilidades que nos quedan, como pueden ser los casos de uso, no son lo más adecuado a la metodología que vamos a utilizar. Por otro lado, para recoger los patrones utilizaremos el lenguaje natural\newline
+    Finalmente, para dejar claro que lo realizado en las iteraciones se ajusta a lo definido inicialmente cada historia de usuario tendrá una prueba de aceptación, relativa al prototipo que se entregue.}\\
     
-    {\color{black} Competencia 3} &
-    {\color{black} --para hacer esta sección tengo que hacer la reunión con los de ingeteam para saber como vamos a meter lo que desarrolle en su entorno real}\\
+    {\color{black} Competencia 3: Capacidad de dar soluci\'on a problemas de integraci\'on en funci\'on de las estrategias, est\'andares y tecnolog\'ias disponibles. } &
+    {\color{black} 
+    La integración del sistema dentro del entorno real será en un servidor de la empresa (propio o contratado) donde se ejecutará el software de creado. Todas las tecnologías que vayan a ser utilizadas, inicialmente, serán analizadas para comprobar que serán compatibles con el entorno final.}\\
     
     \rowcolor{gray!30}
-    {\color{black} Competencia 4} &
-    {\color{black} Poner ¿Por qué es bueno cep para este problema?
-    El problema que vamos a tacar es detectar ciertos desgastes y futuros fallos en todo el sistema que hay detrás de una o varias plantas fotovoltaicas. Para ello vamos a analizar todos los datos generados de las placas de estos campos. Al ser una gran cantidad, el monitóreo de las instalaciones debe de ser en tiempo real, los resultados del análisis de los datos deben de estar lo antes posible y por último inferir, a priori, inferir los datos para obtener esos resultados no es una tarea trivial, por tanto podemos decir que la opción que mejor se ajusta a estos requisitos es cep}\\
+    {\color{black} Competencia 4: Capacidad de identificar y analizar problemas y dise\~nar, desarrollar, implementar, verificar y documentar soluciones software sobre la base de un conocimiento adecuado de las teor\'ias, modelos y t\'ecnicas actuales.} &
+    {\color{black}El problema que vamos a atacar es detectar ciertos desgastes y futuros fallos en todo el sistema que hay detrás de una o varias plantas fotovoltaicas. Para ello vamos a analizar todos los datos generados de las placas de estos campos. Al ser una gran cantidad, el monitóreo de las instalaciones debe de ser en tiempo real, los resultados del análisis de los datos deben de estar lo antes posible y por último inferir, a priori, inferir los datos para obtener esos resultados no es una tarea trivial, por tanto podemos decir que la opción que mejor se ajusta a estos requisitos es cep.
     
-    {\color{black} Competencia 5} &
-    {\color{black} algunos motores cep: 
+    Todo esto es relativo al tema de la tecnología que hemos visto que mejor se podría ajustar al problema que tenemos entre manos pero por muy acertado que sea cep, como sabemos, es necesario llevar a cabo un proceso de desarrollo valido y coherente. Por esto, la elicitación de requisitos (storyboards, historias de usuario y lenguaje natural), la implementación (y entregas de artefactos) y, por último, las pruebas deben de estar bien ajustadas al contexto que rodea a este proyecto.}\\
+    
+    {\color{black} Competencia 5: Capacidad de identificar, evaluar y gestionar los riesgos potenciales asociados que pudieran presentarse.} &
+    {\color{black} A continuación, analizando las posibilidades que nos da el proyecto, el porqué se han tomado algunas decisiones de gran calado como son la implementación de cep, la metodología de desarrollo, como conectamos con los datos que se le suministraran al esb para que mas adelante el motor lo procese. El resto de tecnologías que debemos de integrar nos vienen ya impuestas por el cliente, por ejemplo la salida del flujo serán inserciones en una base de datos MySQL desde la cual una aplicacion web ya existente mostrara lo guardado (alertas/mensajes generados por el motor cep).
+     seguidamente tenemos algunos de los principales moteres cep que hemos tenido en cuenta, algunos motores cep: 
       \begin{itemize}
         \item \href{https://flink.apache.org/index.html}{flint}
         \item \href{https://docs.jboss.org/drools/release/6.2.0.CR3/drools-docs/html/DroolsComplexEventProcessingChapter.html}{drools}
@@ -358,19 +361,66 @@ Tabla 2. Justificaci\'on de las competencias espec\'ificas abordadas en el TFG
         \item \href{http://www.oracle.com/technetwork/middleware/complex-event-processing/documentation/index.html}{Real Time Streaming Analytics Oracle}
         \item \href{http://www.espertech.com/esper/}{Esper}
       \end{itemize}
-      Poner otras metodologías mas y porque hemos optado por scrum junto con prototipado
-      -- cuando sepa después de las reunión otras tecnologías que vaya a utilizar las miraré
+      
+      Después de revisar y analizar las posibles opciones que tenemos con cep, hemos optado por Esper por las siguientes razones:
+      \begin{itemize}
+      \item Esper es open source, bajo la licencia GNU GPL.
+      \item Esta desarrollado en Java por tanto se ajusta gratamente con el esb que comentaremos mas adelante.
+      \item Este motor utiliza como lenguaje de programación de patrones Esper EPL, un lenguaje muy similar a los lenguajes SQL, con ciertas adaptaciones, como pueden ser las ventanas de tiempo, las cuales son extremadamente variadas en conparacion con otros lenguajes de la misma indole.
+      \item este lenguaje es uno de los mas completos dentro de los EPLs.
+      \item 
+      \end{itemize}
+      
+      Como el sistema a desarrollar esta formado por sistemas dispares, debemos de ser capaces de hacerlos coexistir.Esto lo podemos hacer nosotros mismos o mediante el esb, con el cual conseguimos que todo este proceso se simplifique infinitamente. Por eso se ha decidido utilizar uno, ahora veremos algunas opciones que hay en el mercado actualmente de esbs:
+      \begin{itemize}
+      \item \href{https://www.ibm.com/support/knowledgecenter/en/SSQH9M_7.0.0/com.ibm.websphere.wesb.doc/doc/welcome_wps_ovw.html}{WebSphere Enterprise Service Bus (IBM)}
+      \item \href{http://www.oracle.com/technetwork/middleware/service-bus/overview/index.html}{Oracle service bus}
+      \item \href{https://developers.redhat.com/products/fuse/overview/}{Red Hat JBoss Fuse}
+      \item \href{https://www.talend.com/products/application-integration/esb-open-studio/}{Talend ESB}
+      \item \href{https://wso2.com/products/enterprise-service-bus/}{WSO2 ESB}
+      \end{itemize}
+      En el siguiente listado vemos las ventajas de Mule, porque hemos optado por él y no por otros esbs:
+      \begin{itemize}
+      \item A parte de la gran cantidad de componentes que tiene, mediante el componente de Java se le pueden integrar y adaptar infinidad de sistemas, librerias, framworks y todo lo que se nos ocurra. Podríamos decir que se le puede conectar casi todo.
+      \item el paso de mensajes entre componentes puede ser en cualquier formato, no fuerza a utilizar Json o xml, entre otros.
+      \item Su arquitectura lo hace muy escalable.
+      \item El proyecto es open source.
+      \item Tiene dos versiones, la enterprise, de pago y la community, gratuita.
+      \item Una gran documentación con muchos tutoriales y un foro con una importante comunidad detrás.
+      \end{itemize}
    	}\\
     
     \rowcolor{gray!30}
-    {\color{black} Competencia 6} &
-    {\color{black} desarrollar que lo vamos a hacer en tes fases/springs y porque es bueno hacerlo así y posibles riesgos potenciales de esta planificación}\\
+    {\color{black} Competencia 6: Capacidad para dise\~nar soluciones apropiadas en uno o m\'as dominios de aplicaci\'on utilizando m\'etodos de la ingenier\'ia del software que integren aspectos \'eticos, sociales, legales y econ\'omicos.} &
+    {\color{black} Para poder llevar a buen puerto este proyecto y que alcance los objetivos que nos hemos planteado es preciso diseñar una una hoja de ruta,una planificación, que nos asegure este propósito. Para ello teniendo en cuenta todos los condicionantes que nos rodean, la opción que creemos mas viable es definir en tres grandes iteraciones o fases el proyecto. Cada una de ella estará a su vez dividida en varios springs mas cortos, de una semana. La primera fase, relacionada con la toma y elicitación de requisitos y diseño. La segunda ya incluye implementación, testeo y entrega de un primer prototipo capaz de detectar patrones y notificarlos a a partir de datos ya recolectados y almacenados. La tercera fase incluirá una revisión de patrones, pudiendo añadir alguno nuevo; y se desarrollará el adaptador para que los datos finalmente provengan en tiempo real, saliendo de esta última iteración la entrega definitiva.
+    }\\
 
 \end{supertabular}
 \end{center}
 \bigskip
 
 \section{3. \ OBJETIVOS}
+Siendo concisos, el objetivo principal de este trabajo es conseguir analizar una serie de datos, obtenidos de una serie de plantas fotovoltaicas, en tiempo real para obtener una serie de alertas, recomendaciones o acciones. De esta forma subsanar fallos o averías, pero no solo en el presente sino también predecirlas en el futuro.
+
+Esto se puede dividir en 4 sub-objetivos, los cuales son:
+
+\begin{itemize}
+	\item Creación de un adaptador al flujo de datos que nos proporcione Ingeteam. \newline
+    \textbf{Limitaciones y condicionantes:} en este sub-objetivo tenemos una limitación importante y es que por parte de ingeteam, no todas las plantas nos pueden proporcionar los datos en tiempo real ya que algunas de ellas no son ellos los propietarios.\newline 
+    \textbf{Sobre la tecnología:} esta mas que probada y lleva ya bastantes años en funcionamiento con una gran documentación y comunidad detrás.
+    
+    \item Obtención, diseño e implementación de patrones complejos.
+    \textbf{Limitaciones y condicionantes:} los datos que emanan de las plantas en algunos casos no es trivial su análisis, es decir, detectar que datos, de forma conjunta e interrelacionado de una manera especifica, podrían ser un patrón interesante. La solución a esto pasa casi por la prueba y error. (Una de las razones por las que se ha decidido utilizar scrum y prototipado).
+    \textbf{Sobre la tecnología:} para el diseño no será necesaria ninguna tecnología especifica pero para su implementación si que deberemos de hacer uso del ya mencionado Esper EPL, siendo este una de las mejores opciones como ya hemos comentado en el listado de sus ventajas.
+    
+    \item Crear las respuestas a los patrones detectados.
+    \textbf{Limitaciones y condicionantes:} aunque es un objetivo que debemos de alcanzar el como no esta definido completamente, en otras palabras, Ingeteam debe de definirnos que quieres que hagamos con los patrones detectados. Inicialmente nos comentaron de insertar en su base de datos de alertas. Hasta donde sabemos la base de datos es MySQL, cuya configuración por nuestra parte no debe de ser complicada gracias a enorme cantidad de tutoriales y documentación.
+    
+    \item Integración de todos los sistemas necesarios.
+    \textbf{Limitaciones y condicionantes:} en un principio esta es la parte que mas atada esta, las pruebas que se han hecho con el esb parecen bastante satisfactorias. Evidentemente, aunque aun no hemos tenido problemas, es el paso mas crítico ya que debe de aunar una gran cantidad de lenguajes, librerias, el motor cep y conexiones a sistemas externos.
+    \textbf{Sobre la tecnología:} para llevar a cabo esto utilizaremos Anypoint Studio junto con mule, con los que no hemos tenido problema alguno creando flujos de datos.
+
+\end{itemize}
 De acuerdo a la Introducci\'on, el alumno deber\'a especificar cu\'al o cuáles son las hip\'otesis de trabajo de las
 que se parten, qu\'e se pretende resolver, y en base a eso formular el objetivo principal del TFG.
 
@@ -386,12 +436,18 @@ Del mismo modo, ser\'a recomendable incluir una lista preliminar de requisitos d
 
 \bigskip
 
-Para el desarrollo del proyecto, el alumno deber\'a seguir alg\'un proceso o metodolog\'ia af\'in al problema que
-pretende resolver. Para ello, deber\'a aportar una peque\~na descripci\'on del proceso o metodolog\'ia (no m\'as de una
-p\'agina) y \textbf{justificar su adecuaci\'on al problema a resolver}.
+\subsection{Justificación de la metodología}
+Como adelantamos en las competencias la metodología por la que hemos optado es scrum junto con prototipado. La elección de esta no es por capricho sino por necesidad, y esta completamente justificado su uso como ahora veremos. El proceso de elección comenzó preguntándonos por el tipo de metodología, a saber, las tradicionales o ágiles. La principal razón por la que se decidió tomar una metodología ágil es simple, tendremos una gran cantidad de cambios (sobre todo en los patrones) e, incluso, cierta incertidumbre. Como es sabido esta este es el talón de aquiles de las metodología mas convencionales. Aunque es una importante razón también optamos por una metodología ágil porque la productividad se ve aumentada, la producción ira mas rápida, la calidad del producto es mayor y todo esto se traduce en una mayor satisfacción en los stakeholders (poner la referencia al libro de la biblioteca) Decidido esto teníamos que escoger una de las muchas y variadas metodologías ágiles por las que podemos optar. Finalmente nos decantamos por scrum por varias razones, tiene una gran documentación sobre su aplicabilidad, hay gran cantidad de herramientas diseñadas para utilizarla, en comparación con otras metodologías ágiles, scrum es de las que mejor se adaptan al cambio, en proyectos con tecnologías nuevas donde existe una curva de aprendizaje por parte de los componentes del equipo de desarrollo y por último, el producto debe de ser lanzado en partes desde que se comienza el desarrollo.
 
-Del mismo modo, el alumno podrá realizar una breve planificaci\'on de la ejecuci\'on del proyecto seg\'un el proceso
-o metodolog\'ia seleccionada.
+\subsection{Planificación estimada}
+
+Como ya he comentado el proyecto estará divido en tres fases principales. La primera incluye una serie de tareas de elicitación y diseño, por otro lado también se iniciará el desarrollo de este documento. A partir de las reuniones con los responsables de Ingeteam se diseñara la arquitectura de todo el sistema, desde como se cogen los datos hasta que se da una salida. Lo siguiente es crear una demo sobre como funcionará el programa final. Cuando todo esto haya quedado fijado instalaremos todas las herramientas, librerías y componentes necesarios, estos son el repositorio para guardar el código generado, el entorno en VSTS (Visual Studio Team Services) para controlar el tablero de scrum y todo lo relacionado con la documentación, instalaremos también Medit4CEP, herramienta que agiliza el diseño de los patrones, La librería POI para leer de ficheros excel, el motor Esper, el entorno para Mule Anypoint Studio, la librería para conectarnos a bases de datos MySQL.
+
+La segunda fase estará dominada por el desarrollo del producto. A partir de la demo creada en la fase anterior se le añadiran nuevas modificaciones, que lea de los ficheros excel los datos necesarios. El uso del motor Esper con patrones más complejos e interesantes propuestos hasta la fecha. El diseño de los patrones con Medit4CEP. Inserción de los resultados de los patrones en la base de datos indicada por Ingeteam en la forma que nos especifiquen.
+
+En la tercera fase estaremos mas centrados en el mantenimiento de lo desarrollado, modificando los patrones ya creados y añadiendo nuevos. (se hara una pequeña interfaz para añadir nuevos patrones/tipos de datos de entrada?)
+
+Durante todo este proceso de creación se realizaran tareas de testeo de todos los productos generados
 
 Como parte de la descripci\'on del m\'etodo y las fases de trabajo, el alumno podr\'a incluir una descripci\'on
 preliminar de las tareas, una planificaci\'on temporal, diagramas de Gantt o recursos similares que pueda considerar
@@ -404,12 +460,39 @@ adecuaci\'on al problema a resolver).
 \section{5. MEDIOS QUE SE PRETENDEN UTILIZAR}
 \section{5.1. Medios Hardware}
 
-El alumno deber\'a describir los medios hardware que prev\'e ser\'an necesarios para el desarrollo del proyecto.
+El proyecto es meramente software por tanto no sera necesario ningún tipo de hardware, más allá de la maquina que ejecutará el sistema. (poner los requisitos mínimos y donde funcionaría bien?)
 
 \section{5.2. Medios Software}
 
 El alumno deber\'a describir los medios software (lenguajes, entornos de desarrollo, herramientas de gesti\'on y
 planificaci\'on, etc.) que prev\'e ser\'an necesarios para el desarrollo del proyecto
+
+\textbf{lenguajes}
+\begin{itemize}
+\item Esper EPL: es el lenguaje con el que se crearan los patrones de eventos que serán detectados
+\item Java: todas las funcionalidades que no estén ya implementadas estarán codificadas en este lenguaje como puede ser el lector de ficheros excels.
+\item SQL: el subconjunto que implementa el gestor de bases de datos MySQL. Será utilizado para acceder a la bases de datos que tendremos en la parte final de nuestro flujo.
+\end{itemize}
+
+\textbf{Librerías}
+\begin{itemize}
+\item Esper EPL engine: se encargará de poder ejecutar los patrones teniendo en cuenta los datos que le entren.
+\item MySQL connection java: para poder conectar desde Mule a un servidor MySQL.
+\item POI: libreria para java muy útil para poder leer los datos de los ficheros excel.
+\end{itemize}
+
+\textbf{Entornos}
+\begin{itemize}
+\item Mule: fundamental para poder dar cohesión a toda esta gran cantidad de elementos software de una forma sencilla e incluso visual.
+\item Medit4CEP: indispensable para diseñar visualmente y generar los patrones de eventos que utilizaremos mas adelante.
+\item GitHub Desktop: gestor de repositorios gráfico de la página homónima, con realizaré el mantenimiento de todo el código del proyecto.
+\end{itemize}
+
+\textbf{Herramientas de gestión y planificación}
+\begin{itemize}
+\item VSTS(Visual Studio Team Servicies): con ella llevaremos a cabo todo lo relacionado con la genstion de las iteraciones y tableros de la metodología scrum.
+\item repositorio en GitHub: en el guardare todo el código generado en el proyecto.
+\end{itemize}
 
 %\clearpage\pagestyle{empty}
 %\thispagestyle{FirstPage}
@@ -474,10 +557,6 @@ Retrieved February 15, 2004, from Columbia University:
 MIT Project Oxygen: Overview, 2004. Retrieved March 15, 2005, from Computer Science and Artificial Intelligence
 Laboratory, Massachusetts Institute of Technology: \url{http://oxygen.lcs.mit.edu/Overview.html}. \
 \end{itemize}
-
-\bigskip
-
-\section{7. CONTRATO DE PROPIEDAD INTELECTUAL (si lo hubiera)}
 
 \bigskip
 
