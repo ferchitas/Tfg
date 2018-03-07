@@ -9,6 +9,13 @@
 *.war
 *.ear
 
+# Recommended for Maven based projects
+.project
+.classpath
+
+# External tool builders
+.externalToolBuilders/
+
 # ------------------------------------------------------------------------------------------- #
 # Eclipse-specific (https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore) #
 # ------------------------------------------------------------------------------------------- #
@@ -26,12 +33,6 @@ local.properties
 .settings/
 .loadpath
 
-# Recommended for Maven based projects
-.project
-.classpath
-
-# External tool builders
-.externalToolBuilders/
 
 # Locally stored "Eclipse launch configurations"
 *.launch
