@@ -1,6 +1,23 @@
+# ------------------------------------------------------------------------------ #
+# Java defaults (https://github.com/github/gitignore/blob/master/Java.gitignore) #
+# ------------------------------------------------------------------------------ #
+# Reference: https://github.com/github/gitignore/blob/master/Java.gitignore
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# ------------------------------------------------------------------------------------------- #
+# Eclipse-specific (https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore) #
+# ------------------------------------------------------------------------------------------- #
+*.pydevproject
 .metadata
-bin/
-tmp/
+# Version control some bin directories for my own scripts
+#bin/**
+tmp/**
+tmp/**/*
 *.tmp
 *.bak
 *.swp
@@ -8,7 +25,10 @@ tmp/
 local.properties
 .settings/
 .loadpath
-.recommenders
+
+# Recommended for Maven based projects
+.project
+.classpath
 
 # External tool builders
 .externalToolBuilders/
@@ -16,37 +36,38 @@ local.properties
 # Locally stored "Eclipse launch configurations"
 *.launch
 
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
+# CDT-specific
 .cproject
 
-# CDT- autotools
-.autotools
-
-# Java annotation processor (APT)
-.factorypath
-
-# PDT-specific (PHP Development Tools)
+# PDT-specific
 .buildpath
 
-# sbteclipse plugin
-.target
+# ---------------------------------------------------------------------------- #
+#       Mulesoft Studio                                                        #
+# ---------------------------------------------------------------------------- #
+.studio/
+flows/
+target/
+src/main/api/.repository/
 
-# Tern plugin
-.tern-project
+# Mule 3.4 support
+**/*.mflow
 
-# TeXlipse plugin
-.texlipse
+# ---------------------------------------------------------------------------- #
+#       Mulesoft API Gateway                                                   #
+# ---------------------------------------------------------------------------- #
+.mule_ee.pid
+policies
+.mule
+.mule/
 
-# STS (Spring Tool Suite)
-.springBeans
 
-# Code Recommenders
-.recommenders/
+# ---------------------------------------------------------------------------- #
+#       Compiled Source                                                        #
+# ---------------------------------------------------------------------------- #
 
-# Scala IDE specific (Scala & Java development for Eclipse)
-.cache-main
-.scala_dependencies
-.worksheet
+*.com
+*.dll
+*.exe
+*.o
+*.so
