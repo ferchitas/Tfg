@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:quartz="http://www.mulesoft.org/schema/mule/quartz"
+	xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.9.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/quartz http://www.mulesoft.org/schema/mule/quartz/current/mule-quartz.xsd 
+http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smtp/current/mule-smtp.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+<flow name="enviarmailFlow">
+        <quartz:inbound-endpoint jobName="trigger" repeatInterval="30000" responseTimeout="10000" doc:name="Quartz">
+            <quartz:event-generator-job/>
+        </quartz:inbound-endpoint>
+        <set-payload value="holii" doc:name="Set Payload"/>
+        <smtp:outbound-endpoint host="smtp.gmail.com"
+         port="587" 
+         user="${email.username}" 
+         password="${email.password}" 
+         to="${emailto}" 
+         from="${emailfrom}" 
+         subject="hola" 
+         responseTimeout="10000" 
+         doc:name="SMTP">
+            <property key="mail.smtp.starttls.enable" value="true"/>
+            <property key="mail.transport.protocol" value="smtp"/>
+        </smtp:outbound-endpoint>
+    </flow>
+</mule>
