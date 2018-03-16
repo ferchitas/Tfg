@@ -11,11 +11,9 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
 http://www.mulesoft.org/schema/mule/quartz http://www.mulesoft.org/schema/mule/quartz/current/mule-quartz.xsd">
     
-         <file:connector name="File" autoDelete="true" streaming="true" validateConnections="true" doc:name="File"/>
-         <flow name="sample-fileFlow">
-             <file:inbound-endpoint path="C:\Users\ferch\Documents\TFG\Tfg\WorkspaceAnypoint\detectarpatrones\patronesEPL" connector-ref="File" responseTimeout="10000" doc:name="File"/>
-             <logger message="#[groovy:message.getPayloadAsString()]" level="INFO" doc:name="Logger"/>        
-             <vm:outbound-endpoint exchange-pattern="one-way" path="tempQ" doc:name="VM"/>
-             <logger message="sent to VM" level="INFO" doc:name="Logger"/>
-         </flow>
+	<flow name="EventPatternAdditionToEsper">
+		<file:inbound-endpoint path="#[ruta.ficherosEPL]" responseTimeout="10000" doc:name="New EPL EventPattern" moveToDirectory="C:\desecho">
+		</file:inbound-endpoint>
+        <component class="esper.Logger" doc:name="Java"/>
+</flow>
 </mule>
