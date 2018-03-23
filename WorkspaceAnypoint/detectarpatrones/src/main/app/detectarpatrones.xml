@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/quartz http://www.mulesoft.org/schema/mule/quartz/current/mule-quartz.xsd">
     
 	<flow name="EventPatternAdditionToEsper">
-		<file:inbound-endpoint path="#[ruta.ficherosEPL]" responseTimeout="10000" doc:name="New EPL EventPattern" moveToDirectory="C:\desecho">
+		<file:inbound-endpoint path="C:\FicherosEnergiaSolar" responseTimeout="10000" doc:name="New EPL EventPattern" moveToDirectory="C:\desecho">
 		</file:inbound-endpoint>
         <component class="esper.Logger" doc:name="Java"/>
 </flow>

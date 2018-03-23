@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:eventpattern="www.uca.es/modeling/cep/eventpattern" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_vy14MCugEeiZmqwyPCqA8w" type="Eventpattern" name="potenciaMediaDiaAnteriorCt.pattern_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_w5ewICugEeiZmqwyPCqA8w" type="2038">
+    <children xmi:type="notation:DecorationNode" xmi:id="_w5ewJiugEeiZmqwyPCqA8w" type="5097"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_w5ewJyugEeiZmqwyPCqA8w" type="7015">
+      <children xmi:type="notation:Node" xmi:id="_xfeZICugEeiZmqwyPCqA8w" type="3059">
+        <children xmi:type="notation:DecorationNode" xmi:id="_xfeZJSugEeiZmqwyPCqA8w" type="5096"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_xfeZISugEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_xfeZIiugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_xfeZIyugEeiZmqwyPCqA8w"/>
+        <element xmi:type="eventpattern:ComplexEventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@complexEvent/@complexEventProperties.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xfeZJCugEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_0xY10CugEeiZmqwyPCqA8w" type="3059">
+        <children xmi:type="notation:DecorationNode" xmi:id="_0xY11SugEeiZmqwyPCqA8w" type="5096"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_0xY10SugEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_0xY10iugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_0xY10yugEeiZmqwyPCqA8w"/>
+        <element xmi:type="eventpattern:ComplexEventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@complexEvent/@complexEventProperties.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0xY11CugEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_3OvpECugEeiZmqwyPCqA8w" type="3059">
+        <children xmi:type="notation:DecorationNode" xmi:id="_3OvpFSugEeiZmqwyPCqA8w" type="5096"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_3OvpESugEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_3OvpEiugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_3OvpEyugEeiZmqwyPCqA8w"/>
+        <element xmi:type="eventpattern:ComplexEventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@complexEvent/@complexEventProperties.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3OvpFCugEeiZmqwyPCqA8w"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_w5ewKCugEeiZmqwyPCqA8w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_w5ewKSugEeiZmqwyPCqA8w"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_w5ewISugEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_w5ewIiugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_w5ewIyugEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_w5ewJCugEeiZmqwyPCqA8w"/>
+    <element xmi:type="eventpattern:ComplexEvent" href="potenciaMediaDiaAnteriorCt.pattern#//@complexEvent"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w5ewJSugEeiZmqwyPCqA8w" x="395" y="210" width="236" height="161"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_9JlP0CugEeiZmqwyPCqA8w" type="2037">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9JlP1SugEeiZmqwyPCqA8w" type="5095"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_9JlP1iugEeiZmqwyPCqA8w" type="7014">
+      <children xmi:type="notation:Node" xmi:id="_-gFIsCugEeiZmqwyPCqA8w" type="3053">
+        <children xmi:type="notation:DecorationNode" xmi:id="_-gFItiugEeiZmqwyPCqA8w" type="5086"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_-gFItyugEeiZmqwyPCqA8w" type="7009">
+          <children xmi:type="notation:Node" xmi:id="_-gFIuiugEeiZmqwyPCqA8w" type="3001">
+            <children xmi:type="notation:DecorationNode" xmi:id="_-gFIwCugEeiZmqwyPCqA8w" type="5028"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_-gFIwSugEeiZmqwyPCqA8w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_-gFIwiugEeiZmqwyPCqA8w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_-gFIwyugEeiZmqwyPCqA8w"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-gFIuyugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_-gFIvCugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+            <styles xmi:type="notation:FillStyle" xmi:id="_-gFIvSugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-gFIviugEeiZmqwyPCqA8w"/>
+            <element xmi:type="eventpattern:EventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.0"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-gFIvyugEeiZmqwyPCqA8w"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-gFIxCugEeiZmqwyPCqA8w" type="3001">
+            <children xmi:type="notation:DecorationNode" xmi:id="_-gFIyiugEeiZmqwyPCqA8w" type="5028"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_-gFIyyugEeiZmqwyPCqA8w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_-gFIzCugEeiZmqwyPCqA8w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_-gFIzSugEeiZmqwyPCqA8w"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-gFIxSugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_-gFIxiugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+            <styles xmi:type="notation:FillStyle" xmi:id="_-gFIxyugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-gFIyCugEeiZmqwyPCqA8w"/>
+            <element xmi:type="eventpattern:EventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-gFIySugEeiZmqwyPCqA8w"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-gFIziugEeiZmqwyPCqA8w" type="3001">
+            <children xmi:type="notation:DecorationNode" xmi:id="_-gFI1CugEeiZmqwyPCqA8w" type="5028"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_-gFI1SugEeiZmqwyPCqA8w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_-gFI1iugEeiZmqwyPCqA8w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_-gFI1yugEeiZmqwyPCqA8w"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-gFIzyugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_-gFI0CugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+            <styles xmi:type="notation:FillStyle" xmi:id="_-gFI0SugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-gFI0iugEeiZmqwyPCqA8w"/>
+            <element xmi:type="eventpattern:EventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.2"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-gFI0yugEeiZmqwyPCqA8w"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-gFI2CugEeiZmqwyPCqA8w" type="3001">
+            <children xmi:type="notation:DecorationNode" xmi:id="_-gFI3iugEeiZmqwyPCqA8w" type="5028"/>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_-gFI3yugEeiZmqwyPCqA8w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_-gFI4CugEeiZmqwyPCqA8w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_-gFI4SugEeiZmqwyPCqA8w"/>
+            </children>
+            <styles xmi:type="notation:DescriptionStyle" xmi:id="_-gFI2SugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_-gFI2iugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+            <styles xmi:type="notation:FillStyle" xmi:id="_-gFI2yugEeiZmqwyPCqA8w"/>
+            <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-gFI3CugEeiZmqwyPCqA8w"/>
+            <element xmi:type="eventpattern:EventProperty" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-gFI3SugEeiZmqwyPCqA8w"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_-gFIuCugEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_-gFIuSugEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-gFIsSugEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_-gFIsiugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_-gFIsyugEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_-gFItCugEeiZmqwyPCqA8w"/>
+        <element xmi:type="eventpattern:Event" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0/@eventPatternConditions.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-gFItSugEeiZmqwyPCqA8w" x="7" y="3"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_NtmbwCuhEeiZmqwyPCqA8w" type="3050" fontName="Segoe UI">
+        <element xmi:type="eventpattern:Avg" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0/@eventPatternConditions.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NtmbwSuhEeiZmqwyPCqA8w" x="197" y="108"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_9JlP0SugEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9JlP0iugEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_9JlP0yugEeiZmqwyPCqA8w"/>
+    <element xmi:type="eventpattern:BatchingTimeInterval" href="potenciaMediaDiaAnteriorCt.pattern#//@eventPatternElements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9JlP1CugEeiZmqwyPCqA8w" x="53" y="136" width="273"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_vy14MSugEeiZmqwyPCqA8w"/>
+  <element xmi:type="eventpattern:CEPEventPattern" href="potenciaMediaDiaAnteriorCt.pattern#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_OzynwCuhEeiZmqwyPCqA8w" type="4001" source="_-gFIziugEeiZmqwyPCqA8w" target="_NtmbwCuhEeiZmqwyPCqA8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OzynxCuhEeiZmqwyPCqA8w" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_OzynxSuhEeiZmqwyPCqA8w" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_OzynwSuhEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_OzynwiuhEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <element xmi:type="eventpattern:Link" href="potenciaMediaDiaAnteriorCt.pattern#//@links.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OzynwyuhEeiZmqwyPCqA8w" points="[55, -8, -51, 0]$[101, -10, -5, -2]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OzynxiuhEeiZmqwyPCqA8w" id="(0.16666666666666666,0.36666666666666664)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_QzWEsCuhEeiZmqwyPCqA8w" type="4001" source="_NtmbwCuhEeiZmqwyPCqA8w" target="_0xY10CugEeiZmqwyPCqA8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_QzWEtCuhEeiZmqwyPCqA8w" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_QzWEtSuhEeiZmqwyPCqA8w" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_QzWEsSuhEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_QzWEsiuhEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <element xmi:type="eventpattern:Link" href="potenciaMediaDiaAnteriorCt.pattern#//@links.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QzWEsyuhEeiZmqwyPCqA8w" points="[15, -8, -150, 70]$[130, -83, -35, -5]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QzWEtiuhEeiZmqwyPCqA8w" id="(0.16203703703703703,0.25)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_SRFOACuhEeiZmqwyPCqA8w" type="4001" source="_-gFI2CugEeiZmqwyPCqA8w" target="_3OvpECugEeiZmqwyPCqA8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_SRFOBCuhEeiZmqwyPCqA8w" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SRFOBSuhEeiZmqwyPCqA8w" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_SRFOASuhEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SRFOAiuhEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <element xmi:type="eventpattern:Link" href="potenciaMediaDiaAnteriorCt.pattern#//@links.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SRFOAyuhEeiZmqwyPCqA8w" points="[21, -7, -255, 72]$[237, -82, -39, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SRFOBiuhEeiZmqwyPCqA8w" id="(0.8073394495412844,0.46511627906976744)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SRFOByuhEeiZmqwyPCqA8w" id="(0.18055555555555555,0.375)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_T2NYwCuhEeiZmqwyPCqA8w" type="4001" source="_-gFIxCugEeiZmqwyPCqA8w" target="_xfeZICugEeiZmqwyPCqA8w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2NYxCuhEeiZmqwyPCqA8w" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_T2NYxSuhEeiZmqwyPCqA8w" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_T2NYwSuhEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_T2NYwiuhEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <element xmi:type="eventpattern:Link" href="potenciaMediaDiaAnteriorCt.pattern#//@links.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_T2NYwyuhEeiZmqwyPCqA8w" points="[12, -5, -261, 0]$[228, -5, -45, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T2NYxiuhEeiZmqwyPCqA8w" id="(0.8899082568807339,0.3953488372093023)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_T2NYxyuhEeiZmqwyPCqA8w" id="(0.20833333333333334,0.5)"/>
+  </edges>
+</notation:Diagram>

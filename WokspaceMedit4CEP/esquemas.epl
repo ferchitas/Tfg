@@ -1,0 +1,3 @@
+create schema potenciaCt (timestamp string, identificadorCt int, potencia double, planta int);
+create schema energiaCT(timestamp string, identificadorCt int, energia double, planta int);
+create schema climatologiaPlanta (timestamp string, temperaturaExterior double, temperaturaModulo double, irradiacion double, planta int, estacion int);

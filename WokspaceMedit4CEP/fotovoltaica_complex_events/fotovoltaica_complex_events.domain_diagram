@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:domain="www.uca.es/modeling/cep/domain" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_cWNq8CuhEeiZmqwyPCqA8w" type="Domain" name="fotovoltaica_complex_events.domain_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_cWNq8SuhEeiZmqwyPCqA8w"/>
+  <element xmi:type="domain:CEPDomain" href="fotovoltaica_complex_events.domain#/"/>
+</notation:Diagram>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<domain:CEPDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:domain="www.uca.es/modeling/cep/domain" domainName="dominio_basico" domainDescription="dominio para probar el entorno y ver como funciona" domainCreationDate="2018-01-12T16:47:26.684+0100">
+  <events typeName="eventoTemperatura">
+    <eventProperties name="timeStamp" type="String"/>
+    <eventProperties name="valor" type="Double"/>
+  </events>
+</domain:CEPDomain>

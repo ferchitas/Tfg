@@ -1,0 +1,3 @@
+potenciaCt ={timestamp = 'f', identificadorCt = 1, potencia = 12.0, planta = 1}
+t=t.plus(4 seconds)
+potenciaCt ={timestamp = 'f', identificadorCt = 1, potencia = 10.0, planta = 1}

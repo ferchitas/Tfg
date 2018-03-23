@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:domain="www.uca.es/modeling/cep/domain" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_OSYpcCsVEeiZmqwyPCqA8w" type="Domain" name="fotovoltaica.domain_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_0cD5wCsWEeiZmqwyPCqA8w" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_0cD5xisWEeiZmqwyPCqA8w" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_0cD5xysWEeiZmqwyPCqA8w" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_07jnoCtiEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_07jnpitiEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_07jnpytiEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_07jnqCtiEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_07jnqStiEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_07jnoStiEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_07jnoitiEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_07jnoytiEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_07jnpCtiEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.0/@eventProperties.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_07jnpStiEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_4WUeUCtiEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_4WUeVitiEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_4WUeVytiEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_4WUeWCtiEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_4WUeWStiEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_4WUeUStiEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_4WUeUitiEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_4WUeUytiEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_4WUeVCtiEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.0/@eventProperties.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4WUeVStiEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_7wTwkCtwEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_7wTwlitwEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_7wTwlytwEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_7wTwmCtwEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_7wTwmStwEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_7wTwkStwEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_7wTwkitwEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_7wTwkytwEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_7wTwlCtwEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.0/@eventProperties.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7wTwlStwEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Z7rjACtxEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Z7rjBitxEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_Z7rjBytxEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_Z7rjCCtxEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_Z7rjCStxEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Z7rjAStxEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Z7rjAitxEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Z7rjAytxEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_Z7rjBCtxEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.0/@eventProperties.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z7rjBStxEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_lKho8CuQEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lKho9iuQEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_lKho9yuQEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_lKho-CuQEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_lKho-SuQEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_lKho8SuQEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_lKho8iuQEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_lKho8yuQEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_lKho9CuQEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.0/@eventProperties.4"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lKho9SuQEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_aRCgcCucEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_aRDHgCucEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_aRDHgSucEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_aRDHgiucEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_aRDHgyucEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_aRCgcSucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_aRCgciucEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_aRCgcyucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_aRCgdCucEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.0/@eventProperties.5"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aRCgdSucEeiZmqwyPCqA8w"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_0cD5yCsWEeiZmqwyPCqA8w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_0cD5ySsWEeiZmqwyPCqA8w"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_0cD5wSsWEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0cD5wisWEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_0cD5wysWEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_0cD5xCsWEeiZmqwyPCqA8w"/>
+    <element xmi:type="domain:Event" href="fotovoltaica.domain#//@events.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cD5xSsWEeiZmqwyPCqA8w" x="310" y="15"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_oBmLQCtlEeiZmqwyPCqA8w" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_oBmLRitlEeiZmqwyPCqA8w" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_oBmLRytlEeiZmqwyPCqA8w" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_OgItwCtmEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_OgItxitmEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_OgItxytmEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_OgItyCtmEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_OgItyStmEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_OgItwStmEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_OgItwitmEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_OgItwytmEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_OgItxCtmEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.1/@eventProperties.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OgItxStmEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_RDh3kCtmEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_RDh3litmEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_RDh3lytmEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_RDh3mCtmEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_RDh3mStmEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_RDh3kStmEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_RDh3kitmEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_RDh3kytmEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_RDh3lCtmEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.1/@eventProperties.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RDh3lStmEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_SzSlACtmEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_SzSlBitmEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_SzSlBytmEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_SzSlCCtmEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_SzSlCStmEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_SzSlAStmEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_SzSlAitmEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_SzSlAytmEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_SzSlBCtmEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.1/@eventProperties.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SzSlBStmEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_UIuU0CuQEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_UIu74CuQEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_UIu74SuQEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_UIu74iuQEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_UIu74yuQEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_UIuU0SuQEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_UIuU0iuQEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_UIuU0yuQEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_UIuU1CuQEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.1/@eventProperties.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UIuU1SuQEeiZmqwyPCqA8w"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_oBmLSCtlEeiZmqwyPCqA8w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_oBmLSStlEeiZmqwyPCqA8w"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_oBmLQStlEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_oBmLQitlEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_oBmLQytlEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_oBmLRCtlEeiZmqwyPCqA8w"/>
+    <element xmi:type="domain:Event" href="fotovoltaica.domain#//@events.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oBmLRStlEeiZmqwyPCqA8w" x="15" y="15"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_LoTHgCtyEeiZmqwyPCqA8w" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_LoTHhityEeiZmqwyPCqA8w" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_LoTHhytyEeiZmqwyPCqA8w" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_UOorMCtyEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_UOorNityEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_UOorNytyEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_UOorOCtyEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_UOorOStyEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_UOorMStyEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_UOorMityEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_UOorMytyEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_UOorNCtyEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.2/@eventProperties.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UOorNStyEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_JBZkoCucEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_JBaLsCucEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_JBaLsSucEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_JBaLsiucEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_JBaLsyucEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_JBZkoSucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_JBZkoiucEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_JBZkoyucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_JBZkpCucEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.2/@eventProperties.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JBZkpSucEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_K07XwCucEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_K07-0CucEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_K07-0SucEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_K07-0iucEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_K07-0yucEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_K07XwSucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_K07XwiucEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_K07XwyucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_K07XxCucEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.2/@eventProperties.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K07XxSucEeiZmqwyPCqA8w"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_M8PCgCucEeiZmqwyPCqA8w" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_M8PChiucEeiZmqwyPCqA8w" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_M8PChyucEeiZmqwyPCqA8w" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_M8PCiCucEeiZmqwyPCqA8w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_M8PCiSucEeiZmqwyPCqA8w"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_M8PCgSucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_M8PCgiucEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_M8PCgyucEeiZmqwyPCqA8w"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_M8PChCucEeiZmqwyPCqA8w"/>
+        <element xmi:type="domain:EventProperty" href="fotovoltaica.domain#//@events.2/@eventProperties.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M8PChSucEeiZmqwyPCqA8w"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_LoTHiCtyEeiZmqwyPCqA8w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_LoTHiStyEeiZmqwyPCqA8w"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_LoTHgStyEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_LoTHgityEeiZmqwyPCqA8w" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_LoTHgytyEeiZmqwyPCqA8w"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_LoTHhCtyEeiZmqwyPCqA8w"/>
+    <element xmi:type="domain:Event" href="fotovoltaica.domain#//@events.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LoTHhStyEeiZmqwyPCqA8w" x="163" y="13"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_OSYpcSsVEeiZmqwyPCqA8w"/>
+  <element xmi:type="domain:CEPDomain" href="fotovoltaica.domain#/"/>
+</notation:Diagram>

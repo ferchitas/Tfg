@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<domain:CEPDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:domain="www.uca.es/modeling/cep/domain" domainName="fotovoltaica" domainDescription="" domainCreationDate="2018-03-19T02:31:19.057+0100">
+  <events typeName="tiempoPlanta">
+    <eventProperties name="timeStamp" type="String"/>
+    <eventProperties name="temperaturaExterior" type="Double"/>
+    <eventProperties name="temperaturaModulo" type="Float"/>
+    <eventProperties name="irradiacion" type="Float"/>
+    <eventProperties name="planta" type="Integer"/>
+    <eventProperties name="estacion" type="Integer"/>
+  </events>
+  <events typeName="potenciaCt">
+    <eventProperties name="timeStamp" type="String"/>
+    <eventProperties name="identificadorCt" type="Integer"/>
+    <eventProperties name="potencia" type="Double"/>
+    <eventProperties name="planta" type="Integer"/>
+  </events>
+  <events typeName="energiaCt">
+    <eventProperties name="timeStamp" type="String"/>
+    <eventProperties name="identificadotCt" type="Integer"/>
+    <eventProperties name="Energia" type="Double"/>
+    <eventProperties name="planta" type="Integer"/>
+  </events>
+</domain:CEPDomain>

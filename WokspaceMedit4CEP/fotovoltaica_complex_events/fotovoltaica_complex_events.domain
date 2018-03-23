@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<domain:CEPDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:domain="www.uca.es/modeling/cep/domain" domainName="fotovoltaica">
+  <events typeName="potenciaMediaDiaAnteriorCt">
+    <eventProperties name="identificadorCt" type="Integer"/>
+    <eventProperties name="medaPotencia" type="Double"/>
+    <eventProperties name="planta" type="Integer"/>
+  </events>
+</domain:CEPDomain>

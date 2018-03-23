@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<eventpattern:CEPEventPattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eventpattern="www.uca.es/modeling/cep/eventpattern" patternName="potenciaMediaDiaAnteriorCt" patternDescription="potencia media del dia anterior de solo un CT" domainName="fotovoltaica" patternCreationDate="2018-03-19T19:10:03.762+0100">
+  <links order="1" operand="//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.2" operator="//@eventPatternElements.0/@eventPatternConditions.1"/>
+  <links order="2" operand="//@eventPatternElements.0/@eventPatternConditions.1" operator="//@complexEvent/@complexEventProperties.1"/>
+  <links order="1" operand="//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.3" operator="//@complexEvent/@complexEventProperties.2"/>
+  <links order="1" operand="//@eventPatternElements.0/@eventPatternConditions.0/@eventProperties.1" operator="//@complexEvent/@complexEventProperties.0"/>
+  <eventPatternElements xsi:type="eventpattern:BatchingTimeInterval" days="1">
+    <eventPatternConditions xsi:type="eventpattern:Event" typeName="potenciaCt">
+      <eventProperties name="timeStamp" type="String"/>
+      <eventProperties outboundLink="//@links.3" name="identificadorCt" type="Integer"/>
+      <eventProperties outboundLink="//@links.0" name="potencia" type="Double"/>
+      <eventProperties outboundLink="//@links.2" name="planta" type="Integer"/>
+    </eventPatternConditions>
+    <eventPatternConditions xsi:type="eventpattern:Avg" inboundLink="//@links.0" outboundLink="//@links.1"/>
+  </eventPatternElements>
+  <complexEvent typeName="potenciaMediaDiaAnteriorCt">
+    <complexEventProperties inboundLink="//@links.3" name="identificadorCt"/>
+    <complexEventProperties inboundLink="//@links.1" name="medaPotencia"/>
+    <complexEventProperties inboundLink="//@links.2" name="planta"/>
+  </complexEvent>
+</eventpattern:CEPEventPattern>

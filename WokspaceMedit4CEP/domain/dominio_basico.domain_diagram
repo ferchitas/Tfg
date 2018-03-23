@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:domain="www.uca.es/modeling/cep/domain" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_42O3cPevEeerRN8sGU9zCQ" type="Domain" name="dominio_basico.domain_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="__NXYoPevEeerRN8sGU9zCQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="__NZ04PevEeerRN8sGU9zCQ" type="5003"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__NbqEPevEeerRN8sGU9zCQ" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_HP-kMPewEeerRN8sGU9zCQ" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_HP_LQPewEeerRN8sGU9zCQ" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_HP_LQfewEeerRN8sGU9zCQ" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_HP_LQvewEeerRN8sGU9zCQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_HP_LQ_ewEeerRN8sGU9zCQ"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_HP-kMfewEeerRN8sGU9zCQ"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_HP-kMvewEeerRN8sGU9zCQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_HP-kM_ewEeerRN8sGU9zCQ"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_HP-kNPewEeerRN8sGU9zCQ"/>
+        <element xmi:type="domain:EventProperty" href="dominio_basico.domain#//@events.0/@eventProperties.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HP-kNfewEeerRN8sGU9zCQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_OngycPewEeerRN8sGU9zCQ" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_OnhZgPewEeerRN8sGU9zCQ" type="5002"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_OnhZgfewEeerRN8sGU9zCQ" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_OnhZgvewEeerRN8sGU9zCQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_OnhZg_ewEeerRN8sGU9zCQ"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_OngycfewEeerRN8sGU9zCQ"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_OngycvewEeerRN8sGU9zCQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:FillStyle" xmi:id="_Ongyc_ewEeerRN8sGU9zCQ"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_OngydPewEeerRN8sGU9zCQ"/>
+        <element xmi:type="domain:EventProperty" href="dominio_basico.domain#//@events.0/@eventProperties.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OngydfewEeerRN8sGU9zCQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__NbqEfevEeerRN8sGU9zCQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__NbqEvevEeerRN8sGU9zCQ"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="__NXYofevEeerRN8sGU9zCQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__NXYovevEeerRN8sGU9zCQ" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="__NXYo_evEeerRN8sGU9zCQ"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="__NXYpPevEeerRN8sGU9zCQ"/>
+    <element xmi:type="domain:Event" href="dominio_basico.domain#//@events.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__NXYpfevEeerRN8sGU9zCQ" x="40" y="40"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_42O3cfevEeerRN8sGU9zCQ"/>
+  <element xmi:type="domain:CEPDomain" href="dominio_basico.domain#/"/>
+</notation:Diagram>

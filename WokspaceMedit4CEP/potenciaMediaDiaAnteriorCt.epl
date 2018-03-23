@@ -1,0 +1,9 @@
+@Name("potenciaMediaDiaAnteriorCt")
+@Description("potencia media del dia anterior de solo un CT")
+@Tag(name="domainName", value="fotovoltaica")
+insert into potenciaMediaDiaAnteriorCt
+select avg(a1.potencia) as medaPotencia, 
+   a1.identificadorCt as identificadorCt, 
+   a1.planta as planta
+from potenciaCt.win:time_batch(10 seconds) a1
+group by a1.identificadorCt, a1.planta
