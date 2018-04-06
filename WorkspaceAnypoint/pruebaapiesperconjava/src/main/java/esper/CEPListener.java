@@ -7,6 +7,12 @@ public class CEPListener implements UpdateListener {
 	
 @Override
 	public void update(EventBean[] arg0, EventBean[] arg1) {
-		System.out.println("Evento recibido: " + arg0[0].getUnderlying());
+		for(int i = 0; i < arg0.length; i++){
+			
+			EventBean evento = arg0[i];
+			System.out.println("Nombre del evento recibido: " + evento.getEventType().getName() +"\n");
+			System.out.println("Informacion: " + evento.getUnderlying() +"\n");
+		}
+		System.out.println("\n");
 	}
 }

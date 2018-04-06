@@ -25,7 +25,8 @@ public class AccesoMotorEsper implements Callable {
 		EPRuntime cepRT = epService.getEPRuntime();
 		
 		EPAdministrator cepAdm = epService.getEPAdministrator();
-		EPStatement patronEpl = cepAdm.createEPL("select avg(a1.potencia) as medaPotencia, a1.identificadorCt as identificadorCt, a1.planta as planta from " +
+		EPStatement patronEpl = cepAdm.createEPL("insert into potenciaMediaDiaAnteriorCt "
+				+ "select avg(a1.potencia) as medaPotencia, a1.identificadorCt as identificadorCt, a1.planta as planta from " +
 		                                "potenciaCt.win:time_batch(10 seconds) a1 " +
 		                                "group by a1.identificadorCt, a1.planta");
 		patronEpl.addListener(new CEPListener());

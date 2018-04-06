@@ -2,7 +2,9 @@ package usoExcels;
 
 import java.util.ArrayList;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.mule.api.MuleEventContext;
@@ -73,8 +75,7 @@ public class ExtractorExcel implements Callable{
 				if(fila.getCell(0) != null && fila.getCell(1) != null & fila.getCell(2) != null){
 					
 					tupla.setTimestamp(fila.getCell(0).toString());
-					tupla.setIdentificadorCt(fila.getCell(1).getNumericCellValue());
-					//tupla.setEnergia(fila.getCell(2).getNumericCellValue());
+					tupla.setIdentificadorCt(fila.getCell(2).getNumericCellValue());
 					tuplas.add(tupla);
 				}
 			}

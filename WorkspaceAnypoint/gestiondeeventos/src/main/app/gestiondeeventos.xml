@@ -7,9 +7,10 @@
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <file:connector name="File" writeToDirectory="${fichero.archivados}" readFromDirectory="${fichero.entrada}" autoDelete="true" streaming="true" recursive="true" validateConnections="true" doc:name="File"/>
 
 <flow name="lecturaexcelsFlow">
-        <file:inbound-endpoint path="${fichero.entrada}" moveToDirectory="${fichero.archivados}" responseTimeout="10000" doc:name="File"/>
+        <file:inbound-endpoint responseTimeout="10000" doc:name="File" connector-ref="File" path="${fichero.entrada}"/>
         <component class="usoExcels.ExtractorExcel" doc:name="Java"/>
         <logger message="#[message.payload]" level="INFO" doc:name="Logger"/>
     </flow>
