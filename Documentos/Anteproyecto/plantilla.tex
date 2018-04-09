@@ -184,7 +184,7 @@ TECNOLOG\'IAS DE LA INFORMACI\'ON (esta \'ultima est\'a tambi\'en asociada a los
 
 \vskip 3em
 {\centering\bfseries
-(Título del TFG)
+Uso de tecnología CEP para la monitorización de plantas fotovoltaicas.
 \par}
 
 \vfill % Rellena espacio automáticamente hasta ajustar al margen inferior 
@@ -192,10 +192,10 @@ TECNOLOG\'IAS DE LA INFORMACI\'ON (esta \'ultima est\'a tambi\'en asociada a los
 Autor: Fernando Luján Martínez
 
 Director: Gregorio Díaz Descalzo
-\footnote{Sólo en el caso de que haya un segundo director.} (nombre y apellidos)
+\footnote{Sólo en el caso de que haya un segundo director.}
 
 \vskip 1em 
-\mbox{\begin{minipage}[b][2.5cm][c]{0.7\linewidth} {\large Mes, 2018}  \end{minipage}}
+\mbox{\begin{minipage}[b][2.5cm][c]{0.7\linewidth} {\large Marzo, 2018}  \end{minipage}}
 \hfill % Rellena espacio automáticamente hasta que la image se ajuste a la derecha
 \mbox{\includegraphics[width=2.5cm]{logo-euroinf.png}}
 \vskip 1em %Un línea en blanco para que el logo de Euroinf no se pegue al footnote
@@ -254,6 +254,10 @@ En esta sección adjunto dos tablas. La primera hace referencia a la tecnología
 %\thispagestyle{FirstPage}
 
 \begin{longtable}{m{6.803cm} m{2.605cm}}
+    \caption{tecnolog\'ia Espec\'ifica cursada por el alumno}
+    \label{tab:tablaTecnologia}
+    \endfirsthead
+	\endhead
     \iffalse
     	primera fila, cabecera
     \fi
@@ -273,12 +277,15 @@ En esta sección adjunto dos tablas. La primera hace referencia a la tecnología
 
 	{\color{black} \textbf{Ingenier\'ia de Computadores}}&
     {\color{black} \textbf{}}\\\hline
-\caption{tecnolog\'ia Espec\'ifica cursada por el alumno}\label{tab:tablaTecnologia}
 \end{longtable}
 
 \bigskip
 \begin{longtable}{m{5.605cm}m{10.849cm}}
-  	\iffalse
+  	\caption{tecnolog\'ia Espec\'ifica cursada por el alumno}
+  	\label{tab:tablaCompetencias}
+  	\endfirsthead
+  	\endhead
+    \iffalse
     	primera fila, cabecera
     \fi
     \rowcolor{gray!50}
@@ -321,7 +328,6 @@ En esta sección adjunto dos tablas. La primera hace referencia a la tecnología
     {\color{black} Competencia 6: Capacidad para dise\~nar soluciones apropiadas en uno o m\'as dominios de aplicaci\'on utilizando m\'etodos de la ingenier\'ia del software que integren aspectos \'eticos, sociales, legales y econ\'omicos.} &
     {\color{black} Para poder llevar a buen puerto este proyecto y que alcance los objetivos que nos hemos planteado es preciso diseñar una una hoja de ruta, una planificación, que nos asegure este propósito. Para ello teniendo en cuenta todos los condicionantes que nos rodean, la opción que creemos mas viable es definir en tres grandes iteraciones o fases el proyecto. Cada una de ella estará a su vez dividida en varios springs mas cortos, de una semana. La primera fase, relacionada con la toma y elicitación de requisitos y diseño. La segunda ya incluye implementación, testeo y entrega de un primer prototipo capaz de detectar patrones y notificarlos a a partir de datos ya recolectados y almacenados. La tercera fase incluirá una revisión de patrones, pudiendo añadir alguno nuevo; y se desarrollará el adaptador para que los datos finalmente provengan en tiempo real, saliendo de esta última iteración la entrega definitiva.
     }\\
-\caption{tecnolog\'ia Espec\'ifica cursada por el alumno}\label{tab:tablaCompetencias}
 \end{longtable}
 \bigskip
 
@@ -369,7 +375,7 @@ Durante todo este proceso de creación se realizarán tareas de testeo de todos 
 \section{5. MEDIOS QUE SE PRETENDEN UTILIZAR}
 \section{5.1. Medios Hardware}
 
-El proyecto es meramente software por tanto no será necesario ningún tipo de hardware, más allá de la máquina que ejecutará el sistema. (poner los requisitos mínimos y donde funcionaría bien?)
+El proyecto es meramente software por tanto no será necesario ningún tipo de hardware, más allá de la máquina que ejecutará el sistema.
 
 \section{5.2. Medios Software}
 
@@ -411,7 +417,7 @@ A continuación, analizando las posibilidades que nos da el proyecto, el porqué
       \item Tiene dos versiones, la enterprise, de pago y la community, gratuita.
       \item Una gran documentación con muchos tutoriales y un foro con una importante comunidad detrás.
       \end{itemize}
-\item Medit4CEP\cite{BOUBETAPUIG201597}: indispensable para diseñar visualmente y generar los patrones de eventos que utilizaremos mas adelante.
+\item Medit4CEP\cite{articuloBoubeta}: indispensable para diseñar visualmente y generar los patrones de eventos que utilizaremos mas adelante.
 \item GitHub Desktop: gestor de repositorios gráfico de la página homónima, con realizaré el mantenimiento de todo el código del proyecto.
 \end{itemize}
 
@@ -426,19 +432,22 @@ A continuación, analizando las posibilidades que nos da el proyecto, el porqué
 
 %\section[6. REFERENCIAS]{6. REFERENCIAS}
 
-\bibliographystyle{plain}
-\bibliography{bibliografia}
-
 \begin{thebibliography}{9}
 
-\bibitem{libroBigData}
-Amir Gandomi and Murtaza Haider. 2015. Beyond the hype: Big data concepts, methods, and analytics. International Journal of Information Management 35, 2 (2015), 137–144. DOI:http://dx.doi.org/10.1016/j.ijinfomgt.2014.10.007 
+\bibitem{articuloBoubeta}
+J. Boubeta-Puig, G. Ortiz, and I. Medina-Bulo. 2015. “MEdit4CEP: A model-driven solution for real-time decision making in SOA 2.0,” Knowledge-Based Systems, vol. 89, pp. 97–112.
 
 \bibitem{libro scrum} 
 Mike Cohn. 2012. \textit{Succeeding with agile: software development using Scrum}, Upper Saddle River, NJ: Addison-Wesley.
 
+\bibitem{libroBigData}
+Amir Gandomi and Murtaza Haider. 2015. Beyond the hype: Big data concepts, methods, and analytics. International Journal of Information Management 35, 2 (2015), 137–144. DOI:http://dx.doi.org/10.1016/j.ijinfomgt.2014.10.007 
+
 \bibitem{libro introduccion cep}
 avid C. Luckham. 2010. \textit{The power of events: an introduction to complex event processing in distributed enterprise systems}, Boston: Addison-Wesley.
+
+\bibitem{webSiddhi}
+wso2. 2018. wso2/siddhi. (February 2018). Retrieved March 1, 2018 from https://github.com/wso2/siddhi
 
 \bibitem{webIngeteam}
 Anon. Ingeteam. Retrieved March 1, 2018 from https://www.ingeteam.com/ 
@@ -448,9 +457,6 @@ Anon. Scalable Stream and Batch Data Processing. Retrieved March 1, 2018 from ht
 
 \bibitem{webDrools}
 Anon. 1981.(January 1981). Retrieved March 1, 2018 from https://docs.jboss.org/drools/release/6.2.0.CR3/drools-docs/html/DroolsComplexEventProcessingChapter.html 
-
-\bibitem{webSiddhi}
-wso2. 2018. wso2/siddhi. (February 2018). Retrieved March 1, 2018 from https://github.com/wso2/siddhi
 
 \bibitem{webSiddhi1}
 Anon.Retrieved March 1, 2018 from https://wso2.com/products/complex-event-processor/ 
