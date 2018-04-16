@@ -1,0 +1,243 @@
+%\documentclass[spanish,twoside,12pt]{tfg-esiiab}
+\documentclass[spanish,twoside,openright,12pt,a4paper]{book}
+\usepackage{tfg-esiiab}
+
+% \title{Manual del paquete \texttt{tfg-esiiab.sty}
+%   para la realización en \LaTeXe{} de Trabajos Fin de Grado, según
+%   los requisitos de plantilla de la Escuela Superior de
+%   Ingeniería Informática de Albacete}
+\title{Uso de tecnología CEP para la monitorización de plantas fotovoltaicas. \\ Use of CEP technology for the monitoring of photovoltaic plants.}
+\author{Fernando Luján Martínez}
+
+\begin{document}
+
+%De esta forma sale nombre de Tabla en vez de Cuadro
+\renewcommand\tablename{Tabla}
+\renewcommand\listtablename{ÍNDICE DE TABLAS}
+
+\renewcommand\listfigurename{ÍNDICE DE FIGURAS}
+
+\supervisor{Gregorio Díaz Descalzo}
+\cosupervisor{}
+
+\maketitle
+
+\frontmatter %Activa la numeración romana
+
+\begin{dedicatoria} %Inclusión de la dedicatoria
+La dedicatoria que quiera hacer.
+\end{dedicatoria}
+
+
+\begin{autoria}
+
+Yo, Fernando Luján Martínez con DNI 14278228N, declaro que soy el único autor del trabajo fin de grado titulado uso de tecnología CEP para la monitorización de plantas fotovoltaicas y que el citado trabajo no infringe las leyes en vigor sobre propiedad intelectual y que todo el material no original contenido en dicho trabajo está apropiadamente atribuido a sus legítimos autores.
+
+\vspace*{2cm}
+
+Albacete, a ...
+
+\vspace*{2cm}
+
+Fdo.: Fernando Luján Martínez
+
+\end{autoria}
+
+
+
+\begin{resumen} %%Resumen del documento
+Este sería el resumen del TFG.
+\end{resumen}
+
+\begin{agradece} %%Agradecimientos
+Agradecer a todas aquellas personas que según el criterio del alumno han contribuido al TFG o a la realización de los estudios.
+\end{agradece}
+
+
+\tableofcontents
+
+\clearpage
+\listoffigures
+\addcontentsline{toc}{section}{Lista de Figuras} 
+\clearpage
+\listoftables
+\addcontentsline{toc}{section}{Lista de Tablas} 
+\thispagestyle{empty}\cleardoublepage
+
+
+\mainmatter %Activa la numeración arábica.
+
+\chapter{INTRODUCCIÓN}
+
+Este capítulo incluye la motivación que me ha llevado a escoger este trabajo de fin de grado y los objetivos que trato de obtener con el mismo. Finalmente, las contribuciones que espero este proyecto tenga y la estructura del mismo.
+
+\seccion{Motivación}
+Existen varias causas que me empujaron a realizar el siguiente trabajo. Estas son, mi deseo de trabajar en con temas relacionados con el internet de las cosas (¿poner referencia?), el cual me parece muy interesante, más concretamente, todo lo relacionado con el análisis de los datos que genera y de que manera se tratan para que otras tecnologías puedan hacer uso de ellos. DESARROLLAR MAS
+
+Por otro lado, un tema que también capta mi atención es el de aprender el uso de tecnologías nuevas y desafiantes como es CEP (Complex event processing). Desde el primer momento que vi de que trataba CEP y el potencial que tenía quise trabajar con ello. 
+
+El procesamiento de eventos complejos es ir un paso por delante del Big Data, el cual esta definido por las tres Vs (del inglés volume, varety y Velocity). El volumen hace referencia a la gran cantidad de datos que se manejan. La variedad a la heterogeneidad estructural del conjunto de datos. Para finalizar la velocidad se asocia con la tasa con la que se crean los datos aunque también incluye la velocidad con la que se deben de analizar los datos \cite{GANDOMI2015137}. Con todo esto el objetivo que se trata de alcanzar con el big data es analizar todos esos datos, los cuales sin ese análisis tiene un valor muy bajo pero que al ser exprimidos obtenemos un jugo con alto valor. Pero por muy atractivo que nos parezca este concepto no deja de tener una serie de inconvenientes. El primero de ellos es que implica almacenar los datos, en ciertos casos ocupando cantidades de datos del orden de terabytes, o incluso petabytes. El segundo problema, esta relacionado con la incertidumbre que genera el no saber hasta haber terminado el proceso de análisis el valor real que hemos obtenido, todo esto, teniendo presente el gasto de recursos que implica. Como tercer problema tenemos el tiempo necesario desde que se decide comenzar a almacenar los datos hasta que se tiene una cantidad valida con la que empezar a hacer pruebas. Por último, está el gran problema del tiempo de respuesta, desde que se tiene una serie de datos hasta que se genera el análisis de ellos.
+Un Enfoque que evita estos problemas y complementa el del big data es fast data. Ahora lo que tratamos es que el análisis de los datos se lleve a cabo en el momento en que se genera la información. Haciendo no solo hincapié en el volumen de datos (big data) sino también teniendo en cuenta la velocidad \cite{Mishne:2013:FDE:2463676.2465290}. Gracias a este enfoque más dinámico evitamos las desventajas mencionadas. Por otro lado, el problema del espacio en disco se soluciona, al analizar antes de almacenar pudiendo evitar salvar datos poco valiosos. Por otro lado, eludimos la incertidumbre de si lo que guardamos es útil, ya que guardamos solo lo que nos interesa. Y finalmente, los dos últimos inconvenientes relacionados con el tiempo y la respuesta son superados ya que el momento en el que se analizan los datos es al principio, al contrario que con big data, con el cual esto sucede al final.
+Como valor añadido este proyecto esta aplicado en un entorno real gracias a la empresa Ingeteam. Está especializada en conversión de energía, la cual desarrolla equipos electrónicos de potencia y de control, generadores, motores bombas y proyectos de ingeniería eléctrica y de automatización \cite{webIngeteam}. Esta compañía, con oficinas en Albacete, tiene acceso a plantas fotovoltaicas donde tienen instalados algunos de los equipos comentados. Como resultado de esta colaboración obtenemos el conocimiento y la información necesaria sobre el dominio en el que aplicaremos CEP, las plantas fotovoltaicas que gestionan ellos.
+\\(INCLUIR TAMBIEN EL CARACTER ECOLOGISTA?)
+\section{Objetivos}
+
+Siendo concisos, el objetivo principal de este trabajo es conseguir analizar una serie de datos, obtenidos de una serie de plantas fotovoltaicas, en tiempo real para obtener una serie de alertas, recomendaciones o acciones. De esta forma subsanar fallos o averías, pero no solo en el presente sino también predecirlas en el futuro.
+
+Esto se puede dividir en 5 sub-objetivos, los cuales son:
+
+\begin{itemize}
+	\item Creación de un adaptador al flujo de datos que nos proporcione Ingeteam (librería de java poi). \newline
+    \textbf{Limitaciones y condicionantes:} en este sub-objetivo tenemos una limitación importante y es que por parte de ingeteam, no todas las plantas nos pueden proporcionar los datos en tiempo real ya que algunas de ellas no son ellos los propietarios.\newline 
+    \textbf{Sobre la tecnología:} esta mas que probada y lleva ya bastantes años en funcionamiento con una gran documentación y comunidad detrás.
+    
+    \item Obtención, diseño e implementación de patrones complejos. \newline
+    \textbf{Limitaciones y condicionantes:} los datos que emanan de las plantas en algunos casos no es trivial su análisis, es decir, detectar que datos, de forma conjunta e interrelacionado de una manera especifica, podrían ser un patrón interesante. La solución a esto pasa casi por la prueba y error. (Una de las razones por las que se ha decidido utilizar scrum y prototipado). \newline
+    \textbf{Sobre la tecnología:} para el diseño no será necesaria ninguna tecnología especifica pero para su implementación si que deberemos de hacer uso del ya mencionado Esper EPL, siendo este una de las mejores opciones como comentamos mas adelante en el listado de sus ventajas. \newline
+    
+    \item Crear las respuestas a los patrones detectados. \newline
+    \textbf{Limitaciones y condicionantes:} aunque es un objetivo que debemos de alcanzar, el como no esta definido completamente, en otras palabras, Ingeteam debe de definirnos las acciones y objetivos que desean alcanzar con los patrones detectados. Inicialmente nos comentaron de insertar en su base de datos de alertas. Hasta donde sabemos la base de datos es MySQL, cuya configuración por nuestra parte no debe de ser complicada gracias a enorme cantidad de tutoriales y documentación.\newline
+    
+    \item Integración de todos los sistemas necesarios.\newline
+    \textbf{Limitaciones y condicionantes:} en un principio esta es la parte que esta mejor definida está, las pruebas que se han hecho con el ESB parecen bastante satisfactorias. Evidentemente, aunque aun no hemos tenido problemas, es el paso mas crítico ya que debe de aunar una gran cantidad de lenguajes, librerías, el motor CEP y conexiones a sistemas externos.\newline
+    \textbf{Sobre la tecnología:} para llevar a cabo esto utilizaremos Anypoint Studio junto con mule, con los que no hemos tenido problema alguno creando flujos de datos.
+    \item Creación de una serie de plantillas de configuración para poder agregar, modificar y eliminar nuevas plantas fotovoltaicas, nuevos patrones y eventos complejos
+    \textbf{Limitaciones y condicionantes:} la estructura de un patrón puede ser muy compleja, por tanto crear una plantilla general para cualquiera puede ser complejo, ya que, a la vez también hay que crear un código capaz de analizar y extraer el patrón.
+    \textbf{Sobre la tecnología:} los ficheros de configuración que almacenan las plantillas son ficheros de tipo JSON y su análisis se realiza mediante el lenguaje Java.
+\end{itemize}
+
+\section{Contribuciones(¿la incluyo?)}
+Sobre que mi trabajo estará en un entorno real...
+
+\section{Estructura de la memoria}
+La memoria estará estructurada en x capítulos. El primero de ellos los antecedentes y el estado de la cuestión \ref{capituloAnteEstado} donde indicaremos no solo las tecnologías optadas sino también algunos conceptos sobre energía fotovoltaica necesarios para poder entender los eventos y patrones definidos.
+
+El siguiente capítulo estará compuesto por todo lo relacionado con la \href{CapituloMetodologia}{metodología de desarrollo} \ref{CapituloMetodologia} (¿pongo asi las refencias?) por la que hemos optado, como la vamos a aplicar, las pruebas que vamos a llevar a cabo, que herramientas vamos utilizar para gestionar la configuración (... poner más cosas).
+
+Después continuamos con el capítulo de como se ha desarrollado el \href{producto}{CapituloDesarrollo}, incluyendo los tres springs de trabajo realizado, comentando el trabajo realizado en cada uno de ellos, los diversos problemas que han surgieron y como se solventaron.
+
+El capítulo quinto hablará sobre los \href{experimentos y resultados}{capituloExperimentosResultados} que hemos alcanzado con el producto (pruebas en el entorno real por ejemplo, ¿incluyo este capitulo?)
+
+Finalmente, llegaremos a los últimos capítulos, los cuales son, las conclusiones, un glosario de términos, la bibliografía, un ejemplo de uso y por último el manual de usuario que contendrá una explicación de su instalación y algunos detalles para que cualquier interesado pueda utilizarlo si lo desea. 
+
+
+  
+\chapter{ANTECEDENTES Y ESTADO DE LA CUESTIÓN}
+\label{capituloAnteEstado}
+En este capítulo trataremos donde se encuentra el análisis de datos de plantas fotovoltaicas, atendiendo a diferentes informes sobre este tema. basándonos en este conocimiento y con la ayuda del personal de Ingeteam desarrollaremos los diferentes patrones que la aplicación tendrá. Por otro lado, también esta incluido todo lo relacionado con la tecnología CEP, desde su creación hasta nuestros días, pasando por toda la evolución que ha soportado.
+
+\section{Análisis en plantas fotovoltaicas}
+La base teórica que permite que se pueda transforma energía solar en eléctrica es el efecto fotoeléctrico \cite{young_freedman_ford_sears_undefined_2012}. Siendo más concisos, del choque de un fotón contra una célula fotoeléctrica somos capaces de generar a difenrecia de potencial que produce un flujo eléctrico.
+Esta claro que tomar una gran cantidad de datos y en un largo periodo de tiempo parece la mejor opción para obtener buenos análisis del rendimiento de una planta entre otros. Pero no es tan simple como pueda parecer, escoger y medir los datos puede ser bastante problemático debido al gran número de sutilezas y variaciones en el tiempo atmosférico o imperfecciones en las colecciones de datos. Por estas razones, aunque tengamos gran cantidad de datos será necesario incluir en los patrones algunos filtros para datos que consideremos erróneos o que faltan, como por ejemplo pueden ser periodos de parada de los centros de transformación, inversores u otras partes estructurales de la planta que estén siendo reparadas o revisadas por los técnico \cite{osti_1111193}.
+
+Como el rendimiento de una planta esta relacionado directamente con el lugar donde esta instalada, para poder hacer comparativas y ver realmente la efectividad de una planta fotovoltaica tenemos el coeficiente de rendimiento. Este esta representado en porcentaje y expresa la relación entre el rendimiento real y el nominal. De esta forma cuanto más cercano sea el porcentaje al 100\% de forma mas efectiva trabajará la planta. A priori, podríamos decir que alcanzar el 100\% es imposible debido a las perdidas inevitables, pero esto no es del todo cierto. Hay una serie de factores que afectan directamente al coeficiente de rendimiento \cite{coeficienteDeRendimiento} y en general a la producción de la energía mediante células, los cuales pueden hacer que se se sobre pase el valor máximo. A continuación los mostramos:
+\begin{itemize}
+\item Factores medioambientales:
+	\begin{itemize}
+    \item Ubicación de la planta: 
+    \item Orientación de las células: 
+	\item Temperatura de los módulos fotovoltaicos: la potencia y la efectividad de una célula fotovoltaica dependen, directamente de la temperatura del módulo fotovoltaico \cite{webEnergyGovSolarPerformace}. A bajas temperaturas conseguimos un trabajo eficiente. En las primeras horas del día la placa esta fría de la noche anterior y por tanto conforme los primeros rayos solares inciden de lleno tendremos un pico en el valor del coeficiente de rendimiento pero tan pronto como la temperatura de la placa vaya aumentando se irá perdiendo esa eficiencia y el coeficiente se vera reducido.
+    \item irradiación solar y energía disipada: la intensidad de corriente que genera un panel aumenta con la irradiación
+	\end{itemize}
+\end{itemize}
+
+
+
+\chapter{METODOLOGÍA Y DESARROLLO}
+\label{CapituloMetodologia}
+
+limitaciones de esper
+Esper exceeds over 500 000 event/s on a dual CPU 2GHz Intel based hardware,
+with engine latency below 3 microseconds average (below 10us with more than 
+99% predictability) on a VWAP benchmark with 1000 statements registered in the system 
+- this tops at 70 Mbit/s at 85% CPU usage.
+
+Esper also demonstrates linear scalability from 100 000 to 500 000 event/s on this 
+hardware, with consistent results accross different statements.
+
+Other tests demonstrate equivalent performance results
+(straight through processing, match all, match none, no statement registered,
+VWAP with time based window or length based windows).
+                
+Tests on a laptop demonstrated about 5x time less performance - that is 
+between 70 000 event/s and 200 000 event/s - which still gives room for easy 
+testing on small configuration.
+
+El redimiento del motor depende completamente de la maquina donde esta instalado
+Esper puede sobrepasar de los 50.000 eventos/segundo y una latencia de 3 microsegundos (CPU intel de doble nucleo, 2GHz)
+De 100.000 a 500.000 eventos/segundo el sistema escala sin problemas y de forma conistente
+Con otros tipos de pruebas el resultado es similar
+Con pruebas en ordenadores portatiles el rendimiento baja unas 5 veces, es decir entre 70.000 y 200.000 eventos/segundo.
+
+
+%http://esper.espertech.com/release-5.4.0/esper-reference/html/performance.html#performance-results
+
+\chapter{DESARROLLO DEL PRODUCTO}
+\label{CapituloDesarrollo}
+\section{Primer spring}
+
+\section{Segundo spring}
+
+\section{Tercer spring}
+
+\chapter{EXPERIMENTOS Y RESULTADOS}
+\label{capituloExperimentosResultados}
+
+
+\chapter{CONCLUSIONES Y PROPUESTAS}
+\label{CapituloConclusiones}
+
+\section{Conclusiones}
+
+
+\section{Trabajo futuro}
+
+\chapter{GLOSARIO(¿lo incluyo?)}
+\label{capituloGlosario}
+
+\begin{itemize}
+\item Evento simple
+\item Evento complejo
+\item Patrón
+
+
+\item centro de transformación
+\end{itemize}
+
+\renewcommand{\refname}{BIBLIOGRAFÍA}
+\bibliographystyle{jmb}
+\bibliography{mibibliografia}
+
+\addcontentsline{toc}{chapter}{BIBLIOGRAFIA}
+\chapter{capituloBIbliografia}
+
+\chapter*{CONTENIDO DEL CD}
+En el contenido del CD que acompaña a la memoria podemos encontrar los
+siguientes recursos:
+\begin{itemize}
+ \item Memoria del trabajo en los formatos PDF, DOCX y DOC dentro del directorio
+Memoria.
+ \item Código fuente del trabajo dentro del directorio Código fuente.
+ \item Libros y artículos a los que se ha hecho referencia durante la memoria y que se han
+utilizado como bibliografía. Los cuales podemos encontrar en el directorio
+Bibliografía.
+ \item Páginas Web que han servido de bibliografía. Las podemos encontrar dentro del
+directorio Bibliografia/Enlaces Web.
+ \item Manual de usuario de la aplicación junto con ejemplos, que podemos encontrar en
+el directorio Manual y ejemplos.
+\end{itemize}
+
+\addcontentsline{toc}{chapter}{CONTENIDO DEL CD}
+
+\appendix
+\chapter{EJEMPLO DE USO DE LA HERRAMIENTA X}
+\label{capituloUso}
+
+\chapter{MANUAL DE USUARIO}
+\label{capituloManual}
+
+\section{Introducción}
+
+\section{Pantalla de bienvenida}
+
+\end{document}
