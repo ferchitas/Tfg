@@ -2,7 +2,7 @@ package lectorJson;
 
 import org.json.JSONObject;
 
-import EsquemaEvento.Esquema;
+import esquemas.Esquema;
 
 public abstract class Constructor {
 

@@ -1,4 +1,4 @@
-package EsquemaEvento;
+package esquemasEventos;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.Set;
 
 import com.espertech.esper.client.ConfigurationEventTypeMap;
 
-import propiedades.Propiedad;
+import esquemas.Esquema;
 
 public class EsquemaEvento extends Esquema {
 	
@@ -16,7 +16,7 @@ public class EsquemaEvento extends Esquema {
 
     private ArrayList<String> eventosHeredados;
 
-    private ArrayList<Propiedad> propiedades;
+    private ArrayList<EEPropiedad> propiedades;
 
     private String finalTimeStamp;
 
@@ -44,12 +44,12 @@ public class EsquemaEvento extends Esquema {
         this.eventosHeredados = eventosHeredados;
     }
 
-    public ArrayList<Propiedad> getPropiedades ()
+    public ArrayList<EEPropiedad> getPropiedades ()
     {
         return propiedades;
     }
 
-    public void setPropiedades (ArrayList<Propiedad> propiedades)
+    public void setPropiedades (ArrayList<EEPropiedad> propiedades)
     {
         this.propiedades = propiedades;
     }
@@ -119,10 +119,11 @@ public class EsquemaEvento extends Esquema {
     	return sPropiedades;
     }
 
+    @Override
     public Map<String,Object> toMap(){
     	
     	Map<String,Object> eventoMapeado = new HashMap<>();
-    	for(Propiedad propiedad: this.propiedades){
+    	for(EEPropiedad propiedad: this.propiedades){
     		eventoMapeado.put(propiedad.getNombre(), propiedad.getValor());
     	}
     	return eventoMapeado;

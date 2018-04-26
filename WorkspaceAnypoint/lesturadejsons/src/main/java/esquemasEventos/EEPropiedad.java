@@ -1,6 +1,6 @@
-package propiedades;
+package esquemasEventos;
 
-public class Propiedad {
+public class EEPropiedad {
 
 	private String nombre;
 	private Object valor;

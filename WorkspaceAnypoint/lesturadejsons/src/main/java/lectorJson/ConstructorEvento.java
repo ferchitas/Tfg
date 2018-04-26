@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 import org.json.JSONObject;
 
-import EsquemaEvento.EsquemaEvento;
-import propiedades.Propiedad;
+import esquemasEventos.EsquemaEvento;
+import esquemasEventos.EEPropiedad;
 
 public class ConstructorEvento extends Constructor {
 
@@ -23,12 +23,12 @@ public class ConstructorEvento extends Constructor {
 		this.setEsquema(evento);
 	}
 	
-	private ArrayList<Propiedad> crearPropiedades(JSONObject json){
+	private ArrayList<EEPropiedad> crearPropiedades(JSONObject json){
 		
-		ArrayList<Propiedad> propiedades = new ArrayList<Propiedad>();
+		ArrayList<EEPropiedad> propiedades = new ArrayList<EEPropiedad>();
 		
 		for (int i = 0; i < json.getJSONArray("propiedades").length(); ++i) {
-		    Propiedad propiedad = new Propiedad();
+		    EEPropiedad propiedad = new EEPropiedad();
 			JSONObject jPropiedad = json.getJSONArray("propiedades").getJSONObject(i);
 		    propiedad.setNombre(jPropiedad.getString("nombre"));
 		    propiedad.setValor(this.stringAObjeto(jPropiedad.getString("valor")));

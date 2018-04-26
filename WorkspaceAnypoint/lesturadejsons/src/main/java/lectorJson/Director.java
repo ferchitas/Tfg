@@ -5,7 +5,7 @@ import java.io.FileReader;
 
 import org.json.JSONObject;
 
-import EsquemaEvento.Esquema;
+import esquemas.Esquema;
 
 public class Director {
 

@@ -1,21 +1,18 @@
 import org.mule.api.MuleEventContext;
 import org.mule.api.lifecycle.Callable;
 
-import EsquemaEvento.EsquemaEvento;
 import esper.AccesoMotorEsper;
 import esper.GeneradorDeDatosEventos;
+import esquemasEventos.EsquemaEvento;
 import lectorJson.Director;
 
 public class Main implements Callable{
 
 	@Override
 	public Object onCall(MuleEventContext eventContext) throws Exception {
-
-		
-		String ruta = eventContext.getMessage().getInboundProperty("directory").toString() + "\\" +
-				eventContext.getMessage().getInboundProperty("originalFilename").toString();
+ 
 		Director director = new Director();
-		director.procesar(ruta);
+		director.procesar(this.obtenerRuta(eventContext));
 		
 		System.out.println("Json leido\n");
 		AccesoMotorEsper ame = new AccesoMotorEsper();
@@ -33,6 +30,12 @@ public class Main implements Callable{
 		GeneradorDeDatosEventos.generarDatosEventoPotenciaCt(ame);
 		System.out.println("datos enviados al motor\n");
 		return null;
+	}
+	
+	private String obtenerRuta(MuleEventContext eventContext){
+		
+		return eventContext.getMessage().getInboundProperty("directory").toString() + "\\" +
+				eventContext.getMessage().getInboundProperty("originalFilename").toString();
 	}
 
 }

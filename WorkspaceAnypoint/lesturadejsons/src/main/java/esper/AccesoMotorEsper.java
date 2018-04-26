@@ -9,7 +9,8 @@ import com.espertech.esper.client.EPServiceProvider;
 import com.espertech.esper.client.EPServiceProviderManager;
 import com.espertech.esper.client.EPStatement;
 
-import EsquemaEvento.*;
+import esquemas.*;
+import esquemasEventos.EsquemaEvento;
 
 
 public class AccesoMotorEsper {
