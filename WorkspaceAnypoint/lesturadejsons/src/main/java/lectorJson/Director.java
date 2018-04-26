@@ -5,6 +5,8 @@ import java.io.FileReader;
 
 import org.json.JSONObject;
 
+import EsquemaEvento.Esquema;
+
 public class Director {
 
 	private Constructor constructor;
@@ -31,7 +33,6 @@ public class Director {
 		this.leerFichero(archivo);
 		this.inicializarConstructor();
 		this.construirEsquema();
-		System.out.println(this.constructor.getEsquema().toString());
 	}
 	
 	private void leerFichero(String archivo){
@@ -55,6 +56,11 @@ public class Director {
 		this.getConstructor().crearEsquema(json);
 	}
 	
+	public Esquema devolverEsquema(){
+		
+		return this.getConstructor().getEsquema();
+	}
+	
 	public String ficheroAString(String filename) {
 	    String result = "";
 	    try {
@@ -66,6 +72,7 @@ public class Director {
 	            line = br.readLine();
 	        }
 	        result = sb.toString();
+	        br.close();
 	    } catch(Exception e) {
 	        e.printStackTrace();
 	    }

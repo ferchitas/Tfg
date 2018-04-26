@@ -1,5 +1,6 @@
 package lectorJson;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 import org.json.JSONObject;
@@ -30,11 +31,27 @@ public class ConstructorEvento extends Constructor {
 		    Propiedad propiedad = new Propiedad();
 			JSONObject jPropiedad = json.getJSONArray("propiedades").getJSONObject(i);
 		    propiedad.setNombre(jPropiedad.getString("nombre"));
-		    propiedad.setValor(jPropiedad.getString("valor"));
+		    propiedad.setValor(this.stringAObjeto(jPropiedad.getString("valor")));
 		    propiedades.add(propiedad);
 		}
 		return propiedades;
 	}
+	
+	private Object stringAObjeto(String str){
+    	switch(str){
+    	
+    	case "int":
+    		return int.class;
+    	case "String":
+    		return String.class;
+    	case "double":
+    		return double.class;
+    	case "date":
+    		return Date.class;
+    	default: 
+    		return null;
+    	}
+    }
 	
 	private ArrayList<String> crearEventosHeredados(JSONObject json){
 		
