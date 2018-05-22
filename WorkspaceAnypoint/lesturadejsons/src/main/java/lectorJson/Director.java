@@ -48,6 +48,9 @@ public class Director {
 			
 			this.setConstructor(new ConstructorEvento());
 		}
+		else{
+			this.setConstructor(new ConstructorPatron());
+		}
 	}
 	
 	private void construirEsquema(){

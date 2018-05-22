@@ -8,6 +8,7 @@ import java.util.Set;
 
 import com.espertech.esper.client.ConfigurationEventTypeMap;
 
+import esper.AccesoMotorEsper;
 import esquemas.Esquema;
 
 public class EsquemaEvento extends Esquema {
@@ -139,4 +140,11 @@ public class EsquemaEvento extends Esquema {
     	
     	return config;
     }
+
+	@Override
+	public void agregarEsquema(AccesoMotorEsper ame, Esquema esquema) {
+
+		ame.agregarEvento((EsquemaEvento) esquema);	
+		ame.SetUpAcceso();
+	}
 }

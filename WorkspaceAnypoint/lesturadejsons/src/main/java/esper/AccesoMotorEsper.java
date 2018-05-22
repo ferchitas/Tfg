@@ -11,40 +11,65 @@ import com.espertech.esper.client.EPStatement;
 
 import esquemas.*;
 import esquemasEventos.EsquemaEvento;
+import esquemasPatrones.EsquemaPatron;
 
 
 public class AccesoMotorEsper {
 
-	private Configuration cepConfig;
+	private static AccesoMotorEsper acceso;
+	private static Configuration cepConfig;
 	private EPServiceProvider epService;
 	private EPRuntime cepRT;
 	private EPAdministrator cepAdm;
 	private EPStatement patronEpl;
 	
-	public AccesoMotorEsper(){
+	private AccesoMotorEsper(){
 		
-		this.cepConfig = new Configuration();
+		obtenerConfiguracion();
+	}
+	
+	public static AccesoMotorEsper obtenerAccesoMotorEsper(){
+		
+		if(acceso == null) acceso = new AccesoMotorEsper();
+		return acceso;
+		}
+	
+	private static Configuration obtenerConfiguracion(){
+		
+	if(cepConfig == null) cepConfig = new Configuration();
+	return cepConfig;
 	}
 	
 	public void SetUpAcceso(){
 		
-		this.epService = EPServiceProviderManager.getDefaultProvider(this.cepConfig);
+		this.epService = EPServiceProviderManager.getProvider("Motor1", cepConfig);
 		setCepRT(this.epService.getEPRuntime());
 		this.cepAdm = this.epService.getEPAdministrator();
 	}
 	
 	public void mostrarEventosAgregados(){
 		
-		System.out.println(this.cepConfig.getEventTypes().toString());
+		System.out.println(cepConfig.getEventTypes().toString());
 	}
 	
-	public void agregarEsquema(EsquemaEvento ev){
+	public void agregarEsquema(Esquema ev){
 		
-		cepConfig.addEventType(ev.getNombreEvento(), ev.toMap(), ev.eventoConfiguracion());
-		
+		ev.agregarEsquema(this, ev);
 	}
 	
-	public void agregarEvento(Map <String, Object> ev, String nombreEv){
+	public void agregarEvento(EsquemaEvento esquema){
+		
+		cepConfig.addEventType(esquema.getNombreEvento(), esquema.toMap(), esquema.eventoConfiguracion());
+
+	}
+	
+	public void agregarPatron(EsquemaPatron esquema){
+		
+		patronEpl = cepAdm.createEPL(esquema.toString());
+		patronEpl.addListener(new CEPListener());
+	}
+	
+	public void enviarEvento(Map <String, Object> ev, String nombreEv){
 		
 		cepRT.sendEvent(ev, nombreEv);
 	}

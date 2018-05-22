@@ -1,8 +1,10 @@
 package esquemasPatrones;
 
-public class EPExpresion {
+import java.util.ArrayList;
 
-	private String pseudonombre;
+public abstract class EPExpresion {
+
+	private String pseudonombre; //nombre que se le puede dar a una expresion, añadiendole el "as".
 
 	public String getPseudonombre() {
 		return pseudonombre;
@@ -11,4 +13,9 @@ public class EPExpresion {
 	public void setPseudonombre(String pseudonombre) {
 		this.pseudonombre = pseudonombre;
 	}
+	
+	@Override
+	public abstract String toString();
+	public abstract String toStringExpresiones(ArrayList<EPExpresion> expresiones);
+	public abstract ArrayList<EPExpresion> getExpresiones();
 }

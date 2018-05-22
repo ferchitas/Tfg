@@ -16,7 +16,7 @@ public class GeneradorDeDatosEventos {
 		   ev.put("potencia", i + 0.1);
 		   ev.put("planta", i);
 		   
-		   am.agregarEvento(ev, "potenciaCt");
+		   am.enviarEvento(ev, "potenciaCt");
 	   }	   
    }
 }
