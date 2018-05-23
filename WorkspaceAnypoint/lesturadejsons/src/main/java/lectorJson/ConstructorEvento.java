@@ -23,7 +23,7 @@ public class ConstructorEvento extends Constructor {
 		this.setEsquema(evento);
 	}
 	
-	private ArrayList<EEPropiedad> crearPropiedades(JSONObject json){
+	public ArrayList<EEPropiedad> crearPropiedades(JSONObject json){
 		
 		ArrayList<EEPropiedad> propiedades = new ArrayList<EEPropiedad>();
 		
@@ -37,7 +37,7 @@ public class ConstructorEvento extends Constructor {
 		return propiedades;
 	}
 	
-	private Object stringAObjeto(String str){
+	public Object stringAObjeto(String str){
     	switch(str){
     	
     	case "int":
@@ -53,7 +53,7 @@ public class ConstructorEvento extends Constructor {
     	}
     }
 	
-	private ArrayList<String> crearEventosHeredados(JSONObject json){
+	public ArrayList<String> crearEventosHeredados(JSONObject json){
 		
 		ArrayList<String> eh = new ArrayList<String>();
 		for (int i = 0; i < json.getJSONArray("eventosHeredados").length(); ++i) {
@@ -63,7 +63,7 @@ public class ConstructorEvento extends Constructor {
 		return eh;
 	}
 	
-	private ArrayList<String> crearEventosCopiados(JSONObject json){
+	public ArrayList<String> crearEventosCopiados(JSONObject json){
 		
 		ArrayList<String> ec = new ArrayList<String>();
 		for (int i = 0; i < json.getJSONArray("eventosCopiados").length(); ++i) {

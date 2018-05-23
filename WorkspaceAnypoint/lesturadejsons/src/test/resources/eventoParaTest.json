@@ -1,0 +1,21 @@
+{
+    "tipo":"evento",
+	"nombreEvento": "evento",
+	"inicioTimeStamp": "",
+	"finalTimeStamp": "",
+	"propiedades": [{
+		"nombre": "n0",
+		"valor": "double"
+	},{
+		"nombre": "n1",
+		"valor": "int"
+	},{
+		"nombre": "n2",
+		"valor": "date"
+	},{
+		"nombre": "n3",
+		"valor": "String"
+	}],
+	"eventosHeredados": [],
+	"eventosCopiados": []
+}

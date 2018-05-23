@@ -1,0 +1,3 @@
+pruebas de crear un evento
+
+prueba que el evento tiene las mismas propriedades, nombre, el campo tipo esta rellenado como evento y el metodo toString devuelve lo mismo de ambos.

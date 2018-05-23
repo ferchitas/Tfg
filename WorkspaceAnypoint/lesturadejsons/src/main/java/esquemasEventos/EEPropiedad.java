@@ -21,6 +21,6 @@ public class EEPropiedad {
 	@Override
     public String toString()
     {
-        return "Propiedad [nombre = "+nombre+", valor = "+valor+"]";
+        return "Propiedad [nombre = " + nombre + ", valor = " + valor + "]";
     }
 }

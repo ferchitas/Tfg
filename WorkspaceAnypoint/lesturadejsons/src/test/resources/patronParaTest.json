@@ -1,0 +1,20 @@
+{
+  "tipo":"patron",
+	"nombrePatron":"nombre",
+	"select":[
+    {"tipo":"funcion", "nombre":"f1", "pseudonombre":"fun1","expresiones":[
+      {"tipo":"propiedad", "pseudonombre":"", "nombre":"p1", "procedencia":"a1", "ventana":{"tipo":""}}
+    ]},
+    {"tipo":"propiedad", "pseudonombre":"pro2", "nombre":"p2", "procedencia":"a1", "ventana":{"tipo":""}},
+    {"tipo":"propiedad", "pseudonombre":"pro3", "nombre":"p3", "procedencia":"a1", "ventana":{"tipo":""}}
+  ],
+"from":[
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"p4", "procedencia":"", "ventana":
+    {"tipo":"ventanaTemporal", "nombre":"time_batch","pseudonombre":"a1", "valor":"10", "unidad":"seconds"}}
+],
+"groupBy":[
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"p2", "procedencia":"a1", "ventana":{"tipo":""}},
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"p3", "procedencia":"a1", "ventana":{"tipo":""}}
+]
+}
+
