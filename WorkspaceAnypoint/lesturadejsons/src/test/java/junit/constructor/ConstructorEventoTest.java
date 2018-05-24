@@ -50,9 +50,8 @@ public class ConstructorEventoTest {
 		ce = new ConstructorEvento();
 		
 		//preparamos el json que vamos a leer
-		json = new JSONObject();
-		String jsonData = HelperTestConstructores.ficheroAString("src/test/resources/eventoParaTest.json");
-		json = new JSONObject(jsonData);
+		String ruta = "src/test/resources/eventoParaTest.json";
+		json = HelperTestConstructores.leerFichero(ruta);
 	}
 
 	@Test

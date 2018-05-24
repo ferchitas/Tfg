@@ -1,3 +1,6 @@
 pruebas de crear un evento
 
-prueba que el evento tiene las mismas propriedades, nombre, el campo tipo esta rellenado como evento y el metodo toString devuelve lo mismo de ambos.
+-> Prueba que el evento tiene las mismas propriedades, nombre, el campo tipo esta rellenado como evento y el metodo toString devuelve lo mismo de ambos.
+-> Prueba que el patron tiene todo lo que debe y que la lectura es igual a la del fichero.
+-> Pruebas para el director del builder para crear los esquemas.
+-> Pruebas de la clase factoria para los esquemas que tenemos.

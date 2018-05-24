@@ -1,0 +1,9 @@
+{
+    "propiedad":{"tipo":"propiedad", "pseudonombre":"ps1", "nombre":"p1", "procedencia":"a1", "ventana":{"tipo":""}},
+    "funcion":{"tipo":"funcion", "nombre":"f1", "pseudonombre":"fun1","expresiones":[]},
+    "operacion":{"tipo":"operacion", "operador":"and", "pseudonombre":"potencia", "expresiones":[]},
+    "everyFuncion":{"tipo":"everyFuncion", "nombre":"every", "pseudonombre":"ps","expresiones":[]},
+    "everyPropiedad":{"tipo":"everyPropiedad", "nombre":"b", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"},
+    "ventanaTemporal":{"tipo":"ventanaTemporal", "nombre":"time_batch", "pseudonombre":"", "valor":"3", "unidad":"seconds"},
+    "ventana":{"tipo":"ventana", "nombre":"lenght_batch", "pseudonombre":"", "valor":"3"}
+}

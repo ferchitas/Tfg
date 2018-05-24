@@ -38,9 +38,8 @@ public class ConstructorPatronTest {
 		esquemaEsperado.setExpresionesGroupBy(expresionesGroupBy);
 		
 		//preparamos el json que vamos a leer
-		json = new JSONObject();
-		String jsonData = HelperTestConstructores.ficheroAString("src/test/resources/patronParaTest.json");
-		json = new JSONObject(jsonData);
+		String ruta = "src/test/resources/patronParaTest.json";
+		json = HelperTestConstructores.leerFichero(ruta);
 		ce.crearEsquema(json);
 		esquemaReal = (EsquemaPatron)ce.getEsquema();
 	}

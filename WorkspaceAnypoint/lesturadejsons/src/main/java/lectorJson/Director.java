@@ -35,14 +35,14 @@ public class Director {
 		this.construirEsquema();
 	}
 	
-	private void leerFichero(String archivo){
+	public void leerFichero(String archivo){
 		
 		String jsonData = this.ficheroAString(archivo);
 		JSONObject jobj = new JSONObject(jsonData);
 		this.setJson((JSONObject) jobj);
 	}
 	
-	private void inicializarConstructor(){
+	public void inicializarConstructor(){
 		
 		if(this.getJson().getString("tipo").equals("evento")){
 			

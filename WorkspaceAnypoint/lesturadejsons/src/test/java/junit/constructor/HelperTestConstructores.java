@@ -3,6 +3,8 @@ package junit.constructor;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+import org.json.JSONObject;
+
 public class HelperTestConstructores {
 
 	public static String ficheroAString(String filename) {
@@ -21,5 +23,11 @@ public class HelperTestConstructores {
 	        e.printStackTrace();
 	    }
 	    return result;
+	}
+	
+	public static JSONObject leerFichero(String ruta) {
+		
+		String jsonData = HelperTestConstructores.ficheroAString(ruta);
+		return new JSONObject(jsonData);
 	}
 }
