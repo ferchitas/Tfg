@@ -11,6 +11,7 @@ import org.junit.Test;
 
 import esquemasEventos.EEPropiedad;
 import esquemasEventos.EsquemaEvento;
+import helpers.HelperJsons;
 import lectorJson.ConstructorEvento;
 
 public class ConstructorEventoTest {
@@ -51,7 +52,7 @@ public class ConstructorEventoTest {
 		
 		//preparamos el json que vamos a leer
 		String ruta = "src/test/resources/eventoParaTest.json";
-		json = HelperTestConstructores.leerFichero(ruta);
+		json = HelperJsons.leerFichero(ruta);
 	}
 
 	@Test

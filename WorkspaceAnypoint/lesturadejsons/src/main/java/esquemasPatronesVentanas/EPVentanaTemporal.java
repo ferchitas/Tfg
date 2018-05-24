@@ -16,14 +16,15 @@ public class EPVentanaTemporal extends EPVentana {
 
 	@Override
 	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		// TODO Auto-generated method stub
-		return null;
+
+		return this.toString();
 	}
 
 	@Override
 	public ArrayList<EPExpresion> getExpresiones() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		ArrayList<EPExpresion> a = new ArrayList<>();
+		return a;
 	}
 
 	public String getUnidadTemporal() {

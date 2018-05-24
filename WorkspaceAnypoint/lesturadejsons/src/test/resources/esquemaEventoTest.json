@@ -1,0 +1,21 @@
+{
+    "tipo":"evento",
+	"nombreEvento": "potenciaCt",
+	"inicioTimeStamp": "timestamp",
+	"finalTimeStamp": "timestamp",
+	"propiedades": [{
+		"nombre": "timestamp",
+		"valor": "date"
+	},{
+		"nombre": "identificadorCt",
+		"valor": "int"
+	},{
+		"nombre": "potencia",
+		"valor": "double"
+	},{
+		"nombre": "planta",
+		"valor": "int"
+	}],
+	"eventosHeredados": [],
+	"eventosCopiados": []
+}

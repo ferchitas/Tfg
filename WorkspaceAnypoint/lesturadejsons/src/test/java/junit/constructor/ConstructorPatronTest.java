@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import esquemasPatrones.*;
 import esquemasPatronesVentanas.EPVentanaTemporal;
+import helpers.HelperJsons;
 import lectorJson.ConstructorPatron;
 
 public class ConstructorPatronTest {
@@ -39,7 +40,7 @@ public class ConstructorPatronTest {
 		
 		//preparamos el json que vamos a leer
 		String ruta = "src/test/resources/patronParaTest.json";
-		json = HelperTestConstructores.leerFichero(ruta);
+		json = HelperJsons.leerFichero(ruta);
 		ce.crearEsquema(json);
 		esquemaReal = (EsquemaPatron)ce.getEsquema();
 	}

@@ -145,6 +145,6 @@ public class EsquemaEvento extends Esquema {
 	public void agregarEsquema(AccesoMotorEsper ame, Esquema esquema) {
 
 		ame.agregarEvento((EsquemaEvento) esquema);	
-		ame.SetUpAcceso();
+		ame.setUpAcceso();
 	}
 }

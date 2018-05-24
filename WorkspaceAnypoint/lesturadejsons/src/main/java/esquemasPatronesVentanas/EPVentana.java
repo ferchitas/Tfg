@@ -30,14 +30,14 @@ public class EPVentana extends EPExpresion {
 
 	@Override
 	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		// TODO Auto-generated method stub
+		
 		return this.toString();
 	}
 
 	@Override
 	public ArrayList<EPExpresion> getExpresiones() {
 
-		ArrayList<EPExpresion> a = new ArrayList<EPExpresion>();
+		ArrayList<EPExpresion> a = new ArrayList<>();
 		return a;
 	}
 }

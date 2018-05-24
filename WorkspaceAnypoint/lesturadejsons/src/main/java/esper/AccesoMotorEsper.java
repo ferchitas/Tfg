@@ -40,7 +40,7 @@ public class AccesoMotorEsper {
 	return cepConfig;
 	}
 	
-	public void SetUpAcceso(){
+	public void setUpAcceso(){
 		
 		this.epService = EPServiceProviderManager.getProvider("Motor1", cepConfig);
 		setCepRT(this.epService.getEPRuntime());

@@ -78,4 +78,22 @@ public class FactoriaEsquemas {
 		ventana.setPseudonombre(jExpresion.getString("pseudonombre"));
 		return ventana;
 	}
+	
+	public EPCase fabricarCase(JSONObject jExpresion){
+		
+		EPCase expresion = new EPCase();
+		
+		expresion.setValor(jExpresion.getString("valor"));
+		expresion.setResultadoPorDefecto(jExpresion.getString("else"));
+		return expresion;
+	}
+	
+	public EPWhen fabricarWhen(JSONObject jExpresion){
+		
+		EPWhen when = new EPWhen();
+		
+		when.setCondicion(jExpresion.getString("condicion"));
+		when.setResultado(jExpresion.getString("resultado"));
+		return when;
+	}
 }

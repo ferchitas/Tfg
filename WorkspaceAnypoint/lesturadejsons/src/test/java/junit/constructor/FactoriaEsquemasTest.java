@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import esquemasPatrones.*;
 import esquemasPatronesVentanas.*;
+import helpers.HelperJsons;
 import lectorJson.FactoriaEsquemas;
 
 public class FactoriaEsquemasTest {
@@ -18,7 +19,7 @@ public class FactoriaEsquemasTest {
 	@Before
 	public void setUp() throws Exception {
 		String ruta = "src/test/resources/ficheroFactoriaTest.json";
-		json = HelperTestConstructores.leerFichero(ruta);
+		json = HelperJsons.leerFichero(ruta);
 		fe = new FactoriaEsquemas();
 	}
 

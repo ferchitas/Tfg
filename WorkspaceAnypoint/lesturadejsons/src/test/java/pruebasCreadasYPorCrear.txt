@@ -4,3 +4,14 @@ pruebas de crear un evento
 -> Prueba que el patron tiene todo lo que debe y que la lectura es igual a la del fichero.
 -> Pruebas para el director del builder para crear los esquemas.
 -> Pruebas de la clase factoria para los esquemas que tenemos.
+-> Pruebas de todas las clases del paquete esquemas.patrones hechas para ver si los métodos toString devuelven lo que deben.
+-> Pruebas hechas y pasadas de todas las clases del paquete esquemas.eventos.
+
+
+Nota: de las clases de los esquemas lo principal que hay que probar es que los métodos toString funcionan como deben. Eso ya se hace en los test de la factoria.
+
+
+Excepciones que hay que controlar y guardar en el logger:
+
+	-> org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	

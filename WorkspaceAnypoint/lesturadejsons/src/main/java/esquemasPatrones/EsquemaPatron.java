@@ -142,7 +142,7 @@ public class EsquemaPatron extends Esquema{
 	@Override
 	public void agregarEsquema(AccesoMotorEsper ame, Esquema esquema) {
 
-		ame.SetUpAcceso();
+		ame.setUpAcceso();
 		ame.agregarPatron((EsquemaPatron) esquema); 
 	}
 

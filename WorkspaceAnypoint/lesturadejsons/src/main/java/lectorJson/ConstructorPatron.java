@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import esquemasPatrones.EPCase;
 import esquemasPatrones.EPExpresion;
 import esquemasPatrones.EPFuncion;
 import esquemasPatrones.EPFuncionEvery;
@@ -67,7 +68,6 @@ public class ConstructorPatron extends Constructor {
 		}
 		else if(jExpresion.getString("tipo").equals("everyPropiedad")){
 			
-			
 			expresionResultante = factoria.fabricarEPPropiedadEvery(jExpresion);
 		}
 		else if(jExpresion.getString("tipo").equals("ventanaTemporal")){
@@ -77,6 +77,15 @@ public class ConstructorPatron extends Constructor {
 		else if(jExpresion.getString("tipo").equals("ventana")){
 			
 			expresionResultante = factoria.fabricarVentana(jExpresion);
+		}
+		else if(jExpresion.getString("tipo").equals("case")){
+			
+			EPCase expresion = factoria.fabricarCase(jExpresion);
+			expresion.setCondiciones(this.leerExpresiones(jExpresion.getJSONArray("expresiones")));
+			expresionResultante = expresion;
+		}
+		else if(jExpresion.getString("tipo").equals("when")){
+			expresionResultante = factoria.fabricarWhen(jExpresion);
 		}
 		else {
 			

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class EPCase extends EPExpresion{
 	
 	private String valor;
-	private ArrayList<When> condiciones;
+	private ArrayList<EPExpresion> condiciones;
 	private String resultadoPorDefecto;
 	
 	public String getValor() {
@@ -14,10 +14,10 @@ public class EPCase extends EPExpresion{
 	public void setValor(String valor) {
 		this.valor = valor;
 	}
-	public ArrayList<When> getCondiciones() {
+	public ArrayList<EPExpresion> getCondiciones() {
 		return condiciones;
 	}
-	public void setCondiciones(ArrayList<When> condiciones) {
+	public void setCondiciones(ArrayList<EPExpresion> condiciones) {
 		this.condiciones = condiciones;
 	}
 	public String getResultadoPorDefecto() {
@@ -28,13 +28,24 @@ public class EPCase extends EPExpresion{
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		String resultado = "case ";
+		if(this.getValor() != null) resultado = resultado + this.getValor();
+		resultado = resultado + this.toStringExpresiones(this.getCondiciones());
+		if(this.getResultadoPorDefecto() != null) resultado = "" + resultado + "\nelse " + this.getResultadoPorDefecto();
+		resultado = resultado + "\nend";
+		return resultado;
 	}
+	
 	@Override
 	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		String resultado = "";
+		for(int i = 0; i < expresiones.size(); i++){
+			
+			resultado = resultado + "\n" + this.getCondiciones().get(i).toString();
+		}
+		return resultado;
 	}
 	@Override
 	public ArrayList<EPExpresion> getExpresiones() {

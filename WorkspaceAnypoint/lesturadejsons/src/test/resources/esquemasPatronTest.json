@@ -1,0 +1,22 @@
+{
+    "propiedad":{"tipo":"propiedad", "pseudonombre":"ps1", "nombre":"p1", "procedencia":"a1", "ventana":{"tipo":""}},
+    "funcion":{"tipo":"funcion", "nombre":"f1", "pseudonombre":"fun1","expresiones":[
+      {"tipo":"propiedad", "pseudonombre":"ps1", "nombre":"p1", "procedencia":"a1", "ventana":{"tipo":""}}
+    ]},
+    "operacion":{"tipo":"operacion", "operador":"and", "pseudonombre":"potencia", "expresiones":[
+      {"tipo":"propiedad", "pseudonombre":"", "nombre":"p1", "procedencia":"a1", "ventana":{"tipo":""}},
+      {"tipo":"propiedad", "pseudonombre":"", "nombre":"p1", "procedencia":"a1", "ventana":{"tipo":""}}
+    ]},
+    "everyFuncion":{"tipo":"everyFuncion", "nombre":"every", "pseudonombre":"","expresiones":[
+      {"tipo":"operacion", "operador":"->", "pseudonombre":"ps", "expresiones":[
+        {"tipo":"everyPropiedad", "nombre":"b", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"},
+        {"tipo":"everyPropiedad", "nombre":"c", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"}
+      ]}
+    ]},
+    "everyPropiedadT1":{"tipo":"everyPropiedad", "nombre":"b", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"},
+    "everyPropiedadT2":{"tipo":"everyPropiedad", "nombre":"c", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"},
+    "case":{"tipo":"case", "valor":"r", "else":"0", "expresiones":[
+      {"tipo":"when", "condicion":"a > b", "resultado":"1"},
+      {"tipo":"when", "condicion":"a < b", "resultado":"2"}
+  	]}
+}
