@@ -1,8 +1,6 @@
-package esquemasPatronesVentanas;
+package esquemas.patrones.ventanas;
 
-import java.util.ArrayList;
-
-import esquemasPatrones.EPExpresion;
+import esquemas.patrones.EPExpresion;
 
 public class EPVentana extends EPExpresion {
 
@@ -26,18 +24,5 @@ public class EPVentana extends EPExpresion {
 	public String toString() {
 		
 		return "win:" + this.getNombre() + "(" + this.getValor() + ") " + this.getPseudonombre();
-	}
-
-	@Override
-	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		
-		return this.toString();
-	}
-
-	@Override
-	public ArrayList<EPExpresion> getExpresiones() {
-
-		ArrayList<EPExpresion> a = new ArrayList<>();
-		return a;
 	}
 }

@@ -6,8 +6,8 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import lectorJson.ConstructorEvento;
-import lectorJson.Director;
+import lector.json.ConstructorEvento;
+import lector.json.Director;
 
 public class DirectorTest {
 

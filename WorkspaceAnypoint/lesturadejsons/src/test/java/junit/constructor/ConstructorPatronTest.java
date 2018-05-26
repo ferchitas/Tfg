@@ -8,19 +8,19 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.*;
-import esquemasPatronesVentanas.EPVentanaTemporal;
+import esquemas.patrones.*;
+import esquemas.patrones.ventanas.EPVentanaTemporal;
 import helpers.HelperJsons;
-import lectorJson.ConstructorPatron;
+import lector.json.ConstructorPatron;
 
 public class ConstructorPatronTest {
 
 	private EsquemaPatron esquemaEsperado;
 	private EsquemaPatron esquemaReal;
 	
-	private ArrayList<EPExpresion> expresionesSelect = new ArrayList<EPExpresion>();
-	private ArrayList<EPExpresion> expresionesFrom = new ArrayList<EPExpresion>();
-	private ArrayList<EPExpresion> expresionesGroupBy = new ArrayList<EPExpresion>();
+	private ArrayList<EPExpresion> expresionesSelect = new ArrayList<>();
+	private ArrayList<EPExpresion> expresionesFrom = new ArrayList<>();
+	private ArrayList<EPExpresion> expresionesGroupBy = new ArrayList<>();
 
 	private ConstructorPatron ce = new ConstructorPatron();
 	private JSONObject json;
@@ -79,7 +79,7 @@ public class ConstructorPatronTest {
 		//creamos e inicializmos las variables necesarias.
 		EPFuncion fun = new EPFuncion();
 		EPPropiedad pro = new EPPropiedad();
-		ArrayList<EPExpresion> exps = new ArrayList<EPExpresion>();
+		ArrayList<EPExpresion> exps = new ArrayList<>();
 		//seteamos la propiedad de la funcion.
 		pro.setNombre("a1.p1");
 		pro.setPseudonombre("");
@@ -105,40 +105,35 @@ public class ConstructorPatronTest {
 	@Test
 	public void testTipoDeFicheroPatron(){
 		
-		String m = "El campo tipo no es vacio y contiene el valor patron";
 		//probar que el fichero es de tipo evento.
-		assertTrue(m , json.get("tipo").equals("patron"));
+		assertTrue(json.get("tipo").equals("patron"));
 	}
 
 	@Test
 	public void testLecturaNombre() {
-		
-		String m = "El campo nombre no es vacio.";
+	
 		//probar que el nombre no esta vacio
-		assertTrue(m, !esquemaReal.getNombrePatron().equals(""));
+		assertTrue(!esquemaReal.getNombrePatron().equals(""));
 	}
 	
 	@Test
 	public void testLecturaSelect(){
 		
-		String m = "En definitiva ambos son iguales.";
 		//probar que ambos select son similares.
-		assertEquals(m, esquemaEsperado.getExpresionesSelect().toString(), esquemaReal.getExpresionesSelect().toString());
+		assertEquals(esquemaEsperado.getExpresionesSelect().toString(), esquemaReal.getExpresionesSelect().toString());
 	}
 	
 	@Test
 	public void testLecturaFrom(){
 		
-		String m = "En definitiva ambos son iguales.";
 		//probar que ambos from son similares.
-		assertEquals(m, esquemaEsperado.getExpresionesFrom().toString(), esquemaReal.getExpresionesFrom().toString());
+		assertEquals(esquemaEsperado.getExpresionesFrom().toString(), esquemaReal.getExpresionesFrom().toString());
 	}
 	
 	@Test
 	public void testLecturaGroupBy(){
 		
-		String m = "En definitiva ambos son iguales.";
 		//probar que ambos groupBy son similares.
-		assertEquals(m, esquemaEsperado.getExpresionesGroupBy().toString(), esquemaReal.getExpresionesGroupBy().toString());
+		assertEquals(esquemaEsperado.getExpresionesGroupBy().toString(), esquemaReal.getExpresionesGroupBy().toString());
 	}
 }

@@ -1,4 +1,4 @@
-package esquemasEventos;
+package esquemas.eventos;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -98,25 +98,29 @@ public class EsquemaEvento extends Esquema {
     
     private String toStringEventos(ArrayList<String> eventos){
     	
-    	String sEventos = "";
-    	if(eventos.size() >= 1){
-    		sEventos = sEventos + (eventos.get(0));
+    	String sEventos;
+    	StringBuilder bld = new StringBuilder();
+    	if(!eventos.isEmpty()){
+    		bld.append(eventos.get(0));
     	}
     	for(int i = 1; i < eventos.size(); i++){
-    		sEventos = sEventos + (", " + eventos.get(i));
+    		bld.append(", " + eventos.get(i));
     	}
+    	sEventos = bld.toString();
     	return sEventos;
     }
     
     private String toStringPropiedades(){
     	
-    	String sPropiedades = "";
-    	if(this.propiedades.size() >= 1){
-    		sPropiedades = sPropiedades + (this.propiedades.get(0).getNombre() + " " + this.propiedades.get(0).getValor());
+    	String sPropiedades;
+    	StringBuilder bld = new StringBuilder();
+    	if(!this.propiedades.isEmpty()){
+    		bld.append(this.propiedades.get(0).getNombre() + " " + this.propiedades.get(0).getValor());
     	}
     	for(int i = 1; i < this.propiedades.size(); i++){
-    		sPropiedades = sPropiedades + (", " + this.propiedades.get(i).getNombre() + " " + this.propiedades.get(i).getValor());
+    		bld.append((", " + this.propiedades.get(i).getNombre() + " " + this.propiedades.get(i).getValor()));
         }
+    	sPropiedades = bld.toString();
     	return sPropiedades;
     }
 
@@ -132,7 +136,7 @@ public class EsquemaEvento extends Esquema {
     
     public ConfigurationEventTypeMap eventoConfiguracion(){
     	
-    	Set<String> superTipos = new HashSet<String>(this.eventosHeredados);
+    	Set<String> superTipos = new HashSet<>(this.eventosHeredados);
     	ConfigurationEventTypeMap config = new ConfigurationEventTypeMap();
     	config.setStartTimestampPropertyName(this.inicioTimeStamp);
     	config.setEndTimestampPropertyName(this.finalTimeStamp);

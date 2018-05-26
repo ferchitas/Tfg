@@ -1,8 +1,6 @@
-package esquemasPatrones;
+package esquemas.patrones;
 
-import java.util.ArrayList;
-
-import esquemasPatronesVentanas.EPVentana;
+import esquemas.patrones.ventanas.EPVentana;
 
 public class EPPropiedad extends EPExpresion{
 
@@ -30,20 +28,6 @@ public class EPPropiedad extends EPExpresion{
 			resultado = resultado + " as " + this.getPseudonombre();
 		}
 		return resultado;
-	}
-
-	@Override
-	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		
-		return this.toString();
-	}
-
-	@Override
-	public ArrayList<EPExpresion> getExpresiones() {
-		
-		ArrayList<EPExpresion> a = new ArrayList<EPExpresion>();
-		a.add(this.getVentana());
-		return a;
 	}
 
 	public EPVentana getVentana() {

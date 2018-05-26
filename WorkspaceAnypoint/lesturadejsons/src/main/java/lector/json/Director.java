@@ -1,14 +1,17 @@
-package lectorJson;
+package lector.json;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.logging.Level;
 
 import org.json.JSONObject;
 
 import esquemas.Esquema;
+import logger.MiLogger;
 
 public class Director {
-
+	
+	
 	private Constructor constructor;
 	private JSONObject json;
 
@@ -55,8 +58,8 @@ public class Director {
 	
 	private void construirEsquema(){
 		
-		JSONObject json = this.getJson();
-		this.getConstructor().crearEsquema(json);
+		JSONObject jsonLocal = this.getJson();
+		this.getConstructor().crearEsquema(jsonLocal);
 	}
 	
 	public Esquema devolverEsquema(){
@@ -66,8 +69,7 @@ public class Director {
 	
 	public String ficheroAString(String filename) {
 	    String result = "";
-	    try {
-	        BufferedReader br = new BufferedReader(new FileReader(filename));
+	    try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
 	        StringBuilder sb = new StringBuilder();
 	        String line = br.readLine();
 	        while (line != null) {
@@ -75,9 +77,9 @@ public class Director {
 	            line = br.readLine();
 	        }
 	        result = sb.toString();
-	        br.close();
 	    } catch(Exception e) {
-	        e.printStackTrace();
+	    	
+	    	MiLogger.log(Level.SEVERE, "Ha ocurrido una excepción", e);
 	    }
 	    return result;
 	}

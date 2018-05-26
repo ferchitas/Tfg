@@ -6,7 +6,7 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasEventos.EEPropiedad;
+import esquemas.eventos.EEPropiedad;
 import helpers.HelperJsons;
 
 public class EEPropiedadTest {

@@ -3,6 +3,7 @@ package esper;
 import java.util.Map;
 
 import com.espertech.esper.client.Configuration;
+import com.espertech.esper.client.ConfigurationOperations;
 import com.espertech.esper.client.EPAdministrator;
 import com.espertech.esper.client.EPRuntime;
 import com.espertech.esper.client.EPServiceProvider;
@@ -10,15 +11,14 @@ import com.espertech.esper.client.EPServiceProviderManager;
 import com.espertech.esper.client.EPStatement;
 
 import esquemas.*;
-import esquemasEventos.EsquemaEvento;
-import esquemasPatrones.EsquemaPatron;
+import esquemas.eventos.EsquemaEvento;
+import esquemas.patrones.EsquemaPatron;
 
 
 public class AccesoMotorEsper {
 
 	private static AccesoMotorEsper acceso;
 	private static Configuration cepConfig;
-	private EPServiceProvider epService;
 	private EPRuntime cepRT;
 	private EPAdministrator cepAdm;
 	private EPStatement patronEpl;
@@ -42,14 +42,10 @@ public class AccesoMotorEsper {
 	
 	public void setUpAcceso(){
 		
-		this.epService = EPServiceProviderManager.getProvider("Motor1", cepConfig);
-		setCepRT(this.epService.getEPRuntime());
-		this.cepAdm = this.epService.getEPAdministrator();
-	}
-	
-	public void mostrarEventosAgregados(){
-		
-		System.out.println(cepConfig.getEventTypes().toString());
+		EPServiceProvider epService;
+		epService = EPServiceProviderManager.getProvider("Motor1", cepConfig);
+		setCepRT(epService.getEPRuntime());
+		this.cepAdm = epService.getEPAdministrator();
 	}
 	
 	public void agregarEsquema(Esquema ev){
@@ -86,5 +82,13 @@ public class AccesoMotorEsper {
 
 	public void setCepRT(EPRuntime cepRT) {
 		this.cepRT = cepRT;
+	}
+	
+	public EPStatement getEPStatement() {
+		return this.patronEpl;
+	}
+	
+	public ConfigurationOperations getCepConfig() {
+		return EPServiceProviderManager.getDefaultProvider(cepConfig).getEPAdministrator().getConfiguration();
 	}
 }

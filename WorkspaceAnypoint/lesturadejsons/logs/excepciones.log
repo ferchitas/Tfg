@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-05-25T21:33:28</date>
+  <millis>1527276808119</millis>
+  <sequence>0</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Fichero de configuracion leido</message>
+</record>
+<record>
+  <date>2018-05-25T21:33:28</date>
+  <millis>1527276808119</millis>
+  <sequence>1</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Esquema generado: create schema potenciaCt timestamp class java.sql.Date, identificadorCt int, potencia double, planta int inherits  starttimestamp timestamp endtimestamp timestamp copyfrom  </message>
+</record>
+<record>
+  <date>2018-05-25T21:33:28</date>
+  <millis>1527276808695</millis>
+  <sequence>2</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Esquema enviado al motor</message>
+</record>
+<record>
+  <date>2018-05-25T21:33:31</date>
+  <millis>1527276811059</millis>
+  <sequence>3</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Fichero de configuracion leido</message>
+</record>
+<record>
+  <date>2018-05-25T21:33:31</date>
+  <millis>1527276811071</millis>
+  <sequence>4</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Esquema generado: insert into potenciaMediaDiaAnteriorCt select avg(a1.potencia) as mediaPotencia, a1.identificadorCt as identificadorCt, a1.planta as planta from potenciaCt.win:time_batch(10 seconds) a1 group by a1.identificadorCt, a1.planta</message>
+</record>
+<record>
+  <date>2018-05-25T21:33:31</date>
+  <millis>1527276811854</millis>
+  <sequence>5</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Esquema enviado al motor</message>
+</record>
+<record>
+  <date>2018-05-25T21:33:31</date>
+  <millis>1527276811854</millis>
+  <sequence>6</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Datos enviados al motor</message>
+</record>

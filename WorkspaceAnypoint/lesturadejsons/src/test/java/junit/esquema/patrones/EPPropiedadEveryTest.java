@@ -6,16 +6,17 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.*;
+import esquemas.patrones.*;
 import helpers.HelperJsons;
-import lectorJson.FactoriaEsquemas;
+import lector.json.FactoriaEsquemas;
 
 public class EPPropiedadEveryTest {
 
 	EPPropiedadEvery pro;
 	FactoriaEsquemas fe;
 	JSONObject json;
-	String propiedad, ruta;
+	String propiedad;
+	String ruta;
 	
 	@Before
 	public void setUp() throws Exception {

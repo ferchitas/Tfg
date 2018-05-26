@@ -8,9 +8,9 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.*;
+import esquemas.patrones.*;
 import helpers.HelperJsons;
-import lectorJson.FactoriaEsquemas;
+import lector.json.FactoriaEsquemas;
 
 public class EPFuncionEveryTest {
 
@@ -20,6 +20,8 @@ public class EPFuncionEveryTest {
 	String funcion;
 	FactoriaEsquemas fe;
 	JSONObject json;
+	private static final String EXPRESONES = "expresiones";
+	
 	@Before
 	public void setUp() throws Exception {
 		
@@ -29,13 +31,13 @@ public class EPFuncionEveryTest {
 		fun = new EPFuncionEvery();
 		fun = fe.fabricarEPFuncionEvery(json);
 		ArrayList<EPExpresion> pro = new ArrayList<>();
-		op = fe.fabricarEPOperacion((JSONObject)json.getJSONArray("expresiones").get(0));
-		pro1 = fe.fabricarEPPropiedadEvery((JSONObject)((JSONObject)json.getJSONArray("expresiones").get(0)).getJSONArray("expresiones").get(0));
-		pro2 = fe.fabricarEPPropiedadEvery((JSONObject)((JSONObject)json.getJSONArray("expresiones").get(0)).getJSONArray("expresiones").get(1));
+		op = fe.fabricarEPOperacion((JSONObject)json.getJSONArray(EXPRESONES).get(0));
+		pro1 = fe.fabricarEPPropiedadEvery((JSONObject)((JSONObject)json.getJSONArray(EXPRESONES).get(0)).getJSONArray(EXPRESONES).get(0));
+		pro2 = fe.fabricarEPPropiedadEvery((JSONObject)((JSONObject)json.getJSONArray(EXPRESONES).get(0)).getJSONArray(EXPRESONES).get(1));
 		pro.add(pro1);
 		pro.add(pro2);
 		op.setExpresiones(pro);
-		pro = new ArrayList<EPExpresion>();
+		pro = new ArrayList<>();
 		pro.add(op);
 		fun.setExpresiones(pro);
 		funcion = "every (b -> c)";

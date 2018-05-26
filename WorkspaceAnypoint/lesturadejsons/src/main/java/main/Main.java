@@ -1,28 +1,40 @@
 package main;
+import java.util.logging.Level;
+
 import org.mule.api.MuleEventContext;
 import org.mule.api.lifecycle.Callable;
 
 import esper.AccesoMotorEsper;
 import esper.GeneradorDeDatosEventos;
-import esquemasPatrones.EsquemaPatron;
-import lectorJson.Director;
+import esquemas.patrones.EsquemaPatron;
+import lector.json.Director;
+import logger.MiLogger;
 
 public class Main implements Callable{
 
+	
 	@Override
 	public Object onCall(MuleEventContext eventContext) throws Exception {
  
-		Director director = new Director();
-		director.procesar(this.obtenerRuta(eventContext));
-		AccesoMotorEsper ame = AccesoMotorEsper.obtenerAccesoMotorEsper();
-		System.out.println("Fichero de configuracion leido\n");
-		System.out.println(director.devolverEsquema().toString());
-		System.out.println("Esquema enviado al motor\n");
-		ame.agregarEsquema(director.devolverEsquema());
-		if(director.devolverEsquema() instanceof EsquemaPatron){
+		try{
+			
+			Director director = new Director();
+			director.procesar(this.obtenerRuta(eventContext));
+			MiLogger.info("Fichero de configuracion leido");
+			MiLogger.info("Esquema generado: " + director.devolverEsquema().toString());
+			
+			AccesoMotorEsper ame = AccesoMotorEsper.obtenerAccesoMotorEsper();
+			ame.agregarEsquema(director.devolverEsquema());
+			MiLogger.info("Esquema enviado al motor");
+			if(director.devolverEsquema() instanceof EsquemaPatron){
 
-			System.out.println("Datos enviados al motor\n");
-			GeneradorDeDatosEventos.generarDatosEventoPotenciaCt(ame);
+				MiLogger.info("Datos enviados al motor");
+				GeneradorDeDatosEventos.generarDatosEventoPotenciaCt(ame);
+			}
+		}
+		catch(Exception e){
+			
+			MiLogger.log(Level.SEVERE, "Ha ocurrido una excepción", e);
 		}
 		return null;
 	}

@@ -1,4 +1,4 @@
-package lectorJson;
+package lector.json;
 
 import org.json.JSONObject;
 

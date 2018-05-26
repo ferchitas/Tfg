@@ -5,12 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.EsquemaPatron;
-import lectorJson.Director;
+import esquemas.patrones.EsquemaPatron;
+import lector.json.Director;
 
 public class EsquemaPatronTest {
 
-	String ruta, patron;
+	String ruta;
+	String patron;
 	EsquemaPatron ep;
 	
 	@Before

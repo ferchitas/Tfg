@@ -1,21 +1,23 @@
-package lectorJson;
+package lector.json;
 
 import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import esquemasPatrones.EPCase;
-import esquemasPatrones.EPExpresion;
-import esquemasPatrones.EPFuncion;
-import esquemasPatrones.EPFuncionEvery;
-import esquemasPatrones.EPOperacion;
-import esquemasPatrones.EPPropiedad;
-import esquemasPatrones.EsquemaPatron;
-import esquemasPatronesVentanas.EPVentana;
+import esquemas.patrones.EPCase;
+import esquemas.patrones.EPExpresion;
+import esquemas.patrones.EPFuncion;
+import esquemas.patrones.EPFuncionEvery;
+import esquemas.patrones.EPOperacion;
+import esquemas.patrones.EPPropiedad;
+import esquemas.patrones.EsquemaPatron;
+import esquemas.patrones.ventanas.EPVentana;
 
 public class ConstructorPatron extends Constructor {
 
+	private static final String EXPRESONES = "expresiones";
+	private static final String TIPO = "tipo";
 	@Override
 	public void crearEsquema(JSONObject json) {
 		
@@ -31,7 +33,7 @@ public class ConstructorPatron extends Constructor {
 	
 	private ArrayList<EPExpresion> leerExpresiones(JSONArray jExpresiones){
 		
-		ArrayList<EPExpresion> expresiones = new ArrayList<EPExpresion>();
+		ArrayList<EPExpresion> expresiones = new ArrayList<>();
 		for (int i = 0; i < jExpresiones.length(); i++) {
 			expresiones.add(this.leerExpresion(jExpresiones.getJSONObject(i)));
 		}
@@ -42,49 +44,49 @@ public class ConstructorPatron extends Constructor {
 		
 		EPExpresion expresionResultante;
 		FactoriaEsquemas factoria = new FactoriaEsquemas();
-		if(jExpresion.getString("tipo").equals("propiedad")){
+		if(jExpresion.getString(TIPO).equals("propiedad")){
 			
 			EPPropiedad propiedad = factoria.fabricarEPPropiedad(jExpresion);
 			propiedad.setVentana((EPVentana)this.leerExpresion(jExpresion.getJSONObject("ventana")));
 			expresionResultante = propiedad;
 		}
-		else if(jExpresion.getString("tipo").equals("funcion")){
+		else if(jExpresion.getString(TIPO).equals("funcion")){
 			
 			EPFuncion funcion = factoria.fabricarEPFuncion(jExpresion);
-			funcion.setExpresiones(this.leerExpresiones(jExpresion.getJSONArray("expresiones")));
+			funcion.setExpresiones(this.leerExpresiones(jExpresion.getJSONArray(EXPRESONES)));
 			expresionResultante = funcion;
 		}
-		else if(jExpresion.getString("tipo").equals("everyFuncion")){
+		else if(jExpresion.getString(TIPO).equals("everyFuncion")){
 			
 			EPFuncionEvery funcion = factoria.fabricarEPFuncionEvery(jExpresion);
-			funcion.setExpresiones(this.leerExpresiones(jExpresion.getJSONArray("expresiones")));
+			funcion.setExpresiones(this.leerExpresiones(jExpresion.getJSONArray(EXPRESONES)));
 			expresionResultante = funcion;
 		}
-		else if(jExpresion.getString("tipo").equals("operacion")){
+		else if(jExpresion.getString(TIPO).equals("operacion")){
 			
 			EPOperacion operacion = factoria.fabricarEPOperacion(jExpresion);
-			operacion.setExpresiones(this.leerExpresiones(jExpresion.getJSONArray("expresiones")));
+			operacion.setExpresiones(this.leerExpresiones(jExpresion.getJSONArray(EXPRESONES)));
 			expresionResultante = operacion;
 		}
-		else if(jExpresion.getString("tipo").equals("everyPropiedad")){
+		else if(jExpresion.getString(TIPO).equals("everyPropiedad")){
 			
 			expresionResultante = factoria.fabricarEPPropiedadEvery(jExpresion);
 		}
-		else if(jExpresion.getString("tipo").equals("ventanaTemporal")){
+		else if(jExpresion.getString(TIPO).equals("ventanaTemporal")){
 			
 			expresionResultante = factoria.fabricarVentanaTemporal(jExpresion);
 		}
-		else if(jExpresion.getString("tipo").equals("ventana")){
+		else if(jExpresion.getString(TIPO).equals("ventana")){
 			
 			expresionResultante = factoria.fabricarVentana(jExpresion);
 		}
-		else if(jExpresion.getString("tipo").equals("case")){
+		else if(jExpresion.getString(TIPO).equals("case")){
 			
 			EPCase expresion = factoria.fabricarCase(jExpresion);
-			expresion.setCondiciones(this.leerExpresiones(jExpresion.getJSONArray("expresiones")));
+			expresion.setCondiciones(this.leerExpresiones(jExpresion.getJSONArray(EXPRESONES)));
 			expresionResultante = expresion;
 		}
-		else if(jExpresion.getString("tipo").equals("when")){
+		else if(jExpresion.getString(TIPO).equals("when")){
 			expresionResultante = factoria.fabricarWhen(jExpresion);
 		}
 		else {

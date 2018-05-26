@@ -8,17 +8,19 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.*;
+import esquemas.patrones.*;
 import helpers.HelperJsons;
-import lectorJson.FactoriaEsquemas;
+import lector.json.FactoriaEsquemas;
 
 public class EPCaseWhenTest {
 
 	EPCase cas;
-	EPWhen when1, when2;
+	EPWhen when1;
+	EPWhen when2;
 	FactoriaEsquemas fe;
 	JSONObject json;
-	String sCase, sWhen;
+	String sCase;
+	String sWhen;
 	ArrayList<EPExpresion> whens;
 	
 	@Before

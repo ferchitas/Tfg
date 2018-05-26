@@ -1,6 +1,4 @@
-package esquemasPatrones;
-
-import java.util.ArrayList;
+package esquemas.patrones;
 
 public class EPWhen extends EPExpresion{
 
@@ -24,15 +22,5 @@ public class EPWhen extends EPExpresion{
 	public String toString(){
 		
 		return "when " + this.getCondicion() + " then " + this.getResultado();
-	}
-	@Override
-	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		// TODO Auto-generated method stub
-		return this.toString();
-	}
-	@Override
-	public ArrayList<EPExpresion> getExpresiones() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

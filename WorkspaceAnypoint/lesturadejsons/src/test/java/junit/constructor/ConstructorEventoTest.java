@@ -9,10 +9,10 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasEventos.EEPropiedad;
-import esquemasEventos.EsquemaEvento;
+import esquemas.eventos.EEPropiedad;
+import esquemas.eventos.EsquemaEvento;
 import helpers.HelperJsons;
-import lectorJson.ConstructorEvento;
+import lector.json.ConstructorEvento;
 
 public class ConstructorEventoTest {
 
@@ -32,7 +32,7 @@ public class ConstructorEventoTest {
 		esquemaEsperado.setFinalTimeStamp("");
 		esquemaEsperado.setInicioTimeStamp("");
 		
-		propiedadesEventos = new ArrayList<EEPropiedad>();
+		propiedadesEventos = new ArrayList<>();
 		for(int i = 0; i < 4; i++){
 			EEPropiedad pro = new EEPropiedad();
 			pro.setNombre("n" + i);

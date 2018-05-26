@@ -1,4 +1,4 @@
-package esquemasPatrones;
+package esquemas.patrones;
 
 public class EPPropiedadEvery extends EPPropiedad {
 

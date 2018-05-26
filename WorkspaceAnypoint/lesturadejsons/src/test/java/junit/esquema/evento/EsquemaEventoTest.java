@@ -5,12 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasEventos.EsquemaEvento;
-import lectorJson.Director;
+import esquemas.eventos.EsquemaEvento;
+import lector.json.Director;
 
 public class EsquemaEventoTest {
 
-	String ruta, evento;
+	String ruta;
+	String evento;
 	EsquemaEvento ee;
 	
 	@Before

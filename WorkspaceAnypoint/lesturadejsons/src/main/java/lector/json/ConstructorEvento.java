@@ -1,12 +1,12 @@
-package lectorJson;
+package lector.json;
 
 import java.sql.Date;
 import java.util.ArrayList;
 
 import org.json.JSONObject;
 
-import esquemasEventos.EsquemaEvento;
-import esquemasEventos.EEPropiedad;
+import esquemas.eventos.EEPropiedad;
+import esquemas.eventos.EsquemaEvento;
 
 public class ConstructorEvento extends Constructor {
 
@@ -25,7 +25,7 @@ public class ConstructorEvento extends Constructor {
 	
 	public ArrayList<EEPropiedad> crearPropiedades(JSONObject json){
 		
-		ArrayList<EEPropiedad> propiedades = new ArrayList<EEPropiedad>();
+		ArrayList<EEPropiedad> propiedades = new ArrayList<>();
 		
 		for (int i = 0; i < json.getJSONArray("propiedades").length(); ++i) {
 		    EEPropiedad propiedad = new EEPropiedad();
@@ -55,7 +55,7 @@ public class ConstructorEvento extends Constructor {
 	
 	public ArrayList<String> crearEventosHeredados(JSONObject json){
 		
-		ArrayList<String> eh = new ArrayList<String>();
+		ArrayList<String> eh = new ArrayList<>();
 		for (int i = 0; i < json.getJSONArray("eventosHeredados").length(); ++i) {
 			String stringEH = json.getJSONArray("eventosHeredados").getString(i);
 		    eh.add(stringEH);
@@ -65,7 +65,7 @@ public class ConstructorEvento extends Constructor {
 	
 	public ArrayList<String> crearEventosCopiados(JSONObject json){
 		
-		ArrayList<String> ec = new ArrayList<String>();
+		ArrayList<String> ec = new ArrayList<>();
 		for (int i = 0; i < json.getJSONArray("eventosCopiados").length(); ++i) {
 			String stringEC = json.getJSONArray("eventosCopiados").getString(i);
 		    ec.add(stringEC);

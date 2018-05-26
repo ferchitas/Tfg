@@ -6,10 +6,10 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.*;
-import esquemasPatronesVentanas.*;
+import esquemas.patrones.*;
+import esquemas.patrones.ventanas.*;
 import helpers.HelperJsons;
-import lectorJson.FactoriaEsquemas;
+import lector.json.FactoriaEsquemas;
 
 public class FactoriaEsquemasTest {
 

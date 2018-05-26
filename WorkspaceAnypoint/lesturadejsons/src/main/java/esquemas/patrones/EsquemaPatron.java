@@ -1,6 +1,7 @@
-package esquemasPatrones;
+package esquemas.patrones;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import esper.AccesoMotorEsper;
@@ -20,34 +21,33 @@ public class EsquemaPatron extends Esquema{
 	
 	@Override
 	public Map<String, Object> toMap() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return new HashMap<String, Object>();
 	}
 	
 	@Override
 	public String toString(){
 		
-		String resultado = "insert into " + this.getNombrePatron() + " " + 
+		return "insert into " + this.getNombrePatron() + " " + 
 				"select " + this.toStringExpresiones(this.getExpresionesSelect()) + 
 				" from " + this.toStringExpresiones(this.getExpresionesFrom()) +
 				" group by " + this.toStringExpresiones(this.getExpresionesGroupBy());
-		return resultado;
 	}
 	
 	public String toStringExpresiones(ArrayList<EPExpresion> expresiones){
 		
-		String resultado = "";
+		StringBuilder bld = new StringBuilder();
 		for (int i = 0; i < expresiones.size(); ++i) {
-			if(!resultado.equals("")){
+			if(!bld.toString().equals("")){
 				
-				resultado = resultado + ", " + expresiones.get(i).toString();
+				bld.append(", " + expresiones.get(i).toString());
 			}
 			else{
 				
-				resultado = resultado + expresiones.get(i).toString();	
+				bld.append(expresiones.get(i).toString());	
 			}
 		}
-		return resultado;
+		return bld.toString();
 	}
 
 	public String getNombrePatron() {

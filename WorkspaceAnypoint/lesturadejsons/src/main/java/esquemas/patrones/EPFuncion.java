@@ -1,4 +1,4 @@
-package esquemasPatrones;
+package esquemas.patrones;
 
 import java.util.ArrayList;
 
@@ -26,20 +26,14 @@ public class EPFuncion extends EPExpresion{
 	@Override
 	public String toString() {
 		
-		String resultado = "";
-		resultado = resultado + this.getNombreFuncion() + "(";
+		StringBuilder bld = new StringBuilder();
+		bld.append(this.getNombreFuncion() + "(");
 		for (int i = 0; i < expresiones.size() - 1; ++i) {
-			resultado = resultado + expresiones.get(i).toString() + ", ";
+			bld.append(expresiones.get(i).toString() + ", ");
 		}
-		if(expresiones.size() != 0) resultado = resultado + expresiones.get(expresiones.size() - 1).toString();
-		resultado = resultado + ")";
-		if(!this.getPseudonombre().equals("")) resultado = resultado + " as " + this.getPseudonombre();
-		return resultado;
-	}
-
-	@Override
-	public String toStringExpresiones(ArrayList<EPExpresion> expresiones) {
-		// TODO Auto-generated method stub
-		return null;
+		if(!expresiones.isEmpty()) bld.append(expresiones.get(expresiones.size() - 1).toString());
+		bld.append(")");
+		if(!this.getPseudonombre().equals("")) bld.append(" as " + this.getPseudonombre());
+		return bld.toString();
 	}
 }

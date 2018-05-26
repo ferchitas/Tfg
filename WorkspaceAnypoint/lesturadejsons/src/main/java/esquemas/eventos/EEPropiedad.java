@@ -1,4 +1,4 @@
-package esquemasEventos;
+package esquemas.eventos;
 
 public class EEPropiedad {
 

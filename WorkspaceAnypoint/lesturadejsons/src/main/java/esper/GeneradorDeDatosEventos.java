@@ -6,11 +6,15 @@ import java.util.Map;
 
 public class GeneradorDeDatosEventos {
 
+	private GeneradorDeDatosEventos(){
+		 throw new IllegalStateException("Utility class");
+	}
+	
 	public static void generarDatosEventoPotenciaCt(AccesoMotorEsper am){
-		
-	   for(int i=1; i<11; i++){
+	
+		for(int i=1; i<11; i++){
 		   
-		   Map <String, Object> ev = new HashMap <String, Object>();
+		   Map <String, Object> ev = new HashMap <>();
 		   ev.put("timestamp", new Date());
 		   ev.put("identificadorCt", i);
 		   ev.put("potencia", i + 0.1);

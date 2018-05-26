@@ -3,6 +3,8 @@ package esper;
 import com.espertech.esper.client.EventBean;
 import com.espertech.esper.client.UpdateListener;
 
+import logger.MiLogger;
+
 public class CEPListener implements UpdateListener {
 	
 	@Override
@@ -10,9 +12,8 @@ public class CEPListener implements UpdateListener {
 		for(int i = 0; i < arg0.length; i++){
 			
 			EventBean evento = arg0[i];
-			System.out.println("Nombre del evento recibido: " + evento.getEventType().getName() +"\n");
-			System.out.println("Informacion: " + evento.getUnderlying() +"\n");
+			MiLogger.info("Nombre del evento recibido: " + evento.getEventType().getName() +"\n");
+			MiLogger.info("Informacion: " + evento.getUnderlying() +"\n");
 		}
-		System.out.println("\n");
 	}
 }

@@ -8,9 +8,9 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
-import esquemasPatrones.*;
+import esquemas.patrones.*;
 import helpers.HelperJsons;
-import lectorJson.FactoriaEsquemas;
+import lector.json.FactoriaEsquemas;
 
 public class EPFuncionTest {
 

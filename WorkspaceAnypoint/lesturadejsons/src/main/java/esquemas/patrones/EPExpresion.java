@@ -1,6 +1,4 @@
-package esquemasPatrones;
-
-import java.util.ArrayList;
+package esquemas.patrones;
 
 public abstract class EPExpresion {
 
@@ -16,6 +14,4 @@ public abstract class EPExpresion {
 	
 	@Override
 	public abstract String toString();
-	public abstract String toStringExpresiones(ArrayList<EPExpresion> expresiones);
-	public abstract ArrayList<EPExpresion> getExpresiones();
 }
