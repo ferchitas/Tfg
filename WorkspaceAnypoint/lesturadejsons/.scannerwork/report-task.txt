@@ -2,5 +2,5 @@ projectKey=mi:tfg
 serverUrl=http://localhost:9000
 serverVersion=7.1.0.11001
 dashboardUrl=http://localhost:9000/dashboard/index/mi:tfg
-ceTaskId=AWOb-5cpUQN8QDKowGX6
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWOb-5cpUQN8QDKowGX6
+ceTaskId=AWOcO3NBUQN8QDKowGX8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWOcO3NBUQN8QDKowGX8

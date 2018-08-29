@@ -8,6 +8,8 @@ import org.junit.Test;
 import com.espertech.esper.client.ConfigurationOperations;
 
 import esper.AccesoMotorEsper;
+import esper.CEPListener;
+import esper.GeneradorDeDatosEventos;
 import lector.json.Director;
 
 public class AccesoMotorEsperTest {
@@ -41,5 +43,25 @@ public class AccesoMotorEsperTest {
 		ame.agregarEsquema(director.devolverEsquema());
 		assertTrue(ame.getEPStatement().getText().equals(patron));
 	}
+	
+	@Test
+	public void testGeneradorDeDatos() {
 
+		director.procesar("src/test/resources/esquemaEventoTest.json");
+		ame.agregarEsquema(director.devolverEsquema());
+		GeneradorDeDatosEventos.generarDatosEventoPotenciaCt(ame);
+		Long s = ame.getCepRT().getNumEventsEvaluated();
+		assertTrue(s == 10);
+	}
+	
+	@Test
+	public void testListener() {
+
+		director.procesar("src/test/resources/esquemaEventoTest.json");
+		ame.agregarEsquema(director.devolverEsquema());
+		director.procesar("src/test/resources/esquemaPatronListenerTest.json");
+		ame.agregarEsquema(director.devolverEsquema());
+		GeneradorDeDatosEventos.generarDatosEventoPotenciaCt(ame);
+		assertTrue(ame.getEPStatement().getUpdateListeners().next() instanceof CEPListener);
+	}
 }

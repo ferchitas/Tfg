@@ -28,10 +28,15 @@ public class EsquemaPatron extends Esquema{
 	@Override
 	public String toString(){
 		
-		return "insert into " + this.getNombrePatron() + " " + 
+		StringBuilder bld = new StringBuilder();
+		bld.append("insert into " + this.getNombrePatron() + " " + 
 				"select " + this.toStringExpresiones(this.getExpresionesSelect()) + 
-				" from " + this.toStringExpresiones(this.getExpresionesFrom()) +
-				" group by " + this.toStringExpresiones(this.getExpresionesGroupBy());
+				" from " + this.toStringExpresiones(this.getExpresionesFrom()));
+		if(this.getExpresionesGroupBy() != null && !this.expresionesGroupBy.isEmpty()){
+			
+			bld.append(" group by " + this.toStringExpresiones(this.getExpresionesGroupBy()));
+		}
+		return bld.toString();
 	}
 	
 	public String toStringExpresiones(ArrayList<EPExpresion> expresiones){

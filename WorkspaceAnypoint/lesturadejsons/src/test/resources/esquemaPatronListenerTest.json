@@ -1,0 +1,12 @@
+{
+  "tipo":"patron",
+	"nombrePatron":"patronTestListener",
+	"select":[
+    {"tipo":"propiedad", "pseudonombre":"identificadorCt", "nombre":"identificadorCt", "procedencia":"potenciaCt", "ventana":{"tipo":""}},
+    {"tipo":"propiedad", "pseudonombre":"planta", "nombre":"planta", "procedencia":"potenciaCt", "ventana":{"tipo":""}}
+  ],
+"from":[
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"potenciaCt", "procedencia":"", "ventana":{"tipo":""}}
+],
+"groupBy":[]
+}

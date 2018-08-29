@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-05-25T21:33:28</date>
-  <millis>1527276808119</millis>
+  <date>2018-08-29T13:24:07</date>
+  <millis>1535541847845</millis>
   <sequence>0</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Fichero de configuracion leido</message>
 </record>
 <record>
-  <date>2018-05-25T21:33:28</date>
-  <millis>1527276808119</millis>
+  <date>2018-08-29T13:24:07</date>
+  <millis>1535541847849</millis>
   <sequence>1</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>Esquema generado: create schema potenciaCt timestamp class java.sql.Date, identificadorCt int, potencia double, planta int inherits  starttimestamp timestamp endtimestamp timestamp copyfrom  </message>
 </record>
 <record>
-  <date>2018-05-25T21:33:28</date>
-  <millis>1527276808695</millis>
+  <date>2018-08-29T13:24:08</date>
+  <millis>1535541848531</millis>
   <sequence>2</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Esquema enviado al motor</message>
 </record>
 <record>
-  <date>2018-05-25T21:33:31</date>
-  <millis>1527276811059</millis>
+  <date>2018-08-29T13:24:59</date>
+  <millis>1535541899792</millis>
   <sequence>3</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -46,8 +46,8 @@
   <message>Fichero de configuracion leido</message>
 </record>
 <record>
-  <date>2018-05-25T21:33:31</date>
-  <millis>1527276811071</millis>
+  <date>2018-08-29T13:24:59</date>
+  <millis>1535541899800</millis>
   <sequence>4</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -57,8 +57,8 @@
   <message>Esquema generado: insert into potenciaMediaDiaAnteriorCt select avg(a1.potencia) as mediaPotencia, a1.identificadorCt as identificadorCt, a1.planta as planta from potenciaCt.win:time_batch(10 seconds) a1 group by a1.identificadorCt, a1.planta</message>
 </record>
 <record>
-  <date>2018-05-25T21:33:31</date>
-  <millis>1527276811854</millis>
+  <date>2018-08-29T13:25:00</date>
+  <millis>1535541900841</millis>
   <sequence>5</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -68,8 +68,8 @@
   <message>Esquema enviado al motor</message>
 </record>
 <record>
-  <date>2018-05-25T21:33:31</date>
-  <millis>1527276811854</millis>
+  <date>2018-08-29T13:25:00</date>
+  <millis>1535541900852</millis>
   <sequence>6</sequence>
   <logger>logger.MiLogger</logger>
   <level>INFO</level>
@@ -77,4 +77,517 @@
   <method>info</method>
   <thread>34</thread>
   <message>Datos enviados al motor</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910867</millis>
+  <sequence>7</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910884</millis>
+  <sequence>8</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=8, mediaPotencia=8.1, planta=8}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>9</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>10</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=4, mediaPotencia=4.1, planta=4}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>11</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>12</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=2, mediaPotencia=2.1, planta=2}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>13</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>14</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=6, mediaPotencia=6.1, planta=6}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>15</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>16</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=10, mediaPotencia=10.1, planta=10}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>17</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>18</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=1, mediaPotencia=1.1, planta=1}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910885</millis>
+  <sequence>19</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>20</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=3, mediaPotencia=3.1, planta=3}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>21</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>22</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=5, mediaPotencia=5.1, planta=5}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>23</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>24</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=7, mediaPotencia=7.1, planta=7}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>25</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:10</date>
+  <millis>1535541910901</millis>
+  <sequence>26</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=9, mediaPotencia=9.1, planta=9}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:13</date>
+  <millis>1535541913813</millis>
+  <sequence>27</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Fichero de configuracion leido</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:13</date>
+  <millis>1535541913821</millis>
+  <sequence>28</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Esquema generado: create schema potenciaCt timestamp class java.sql.Date, identificadorCt int, potencia double, planta int inherits  starttimestamp timestamp endtimestamp timestamp copyfrom  </message>
+</record>
+<record>
+  <date>2018-08-29T13:25:13</date>
+  <millis>1535541913844</millis>
+  <sequence>29</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>34</thread>
+  <message>Esquema enviado al motor</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920863</millis>
+  <sequence>30</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920864</millis>
+  <sequence>31</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=8, mediaPotencia=null, planta=8}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920865</millis>
+  <sequence>32</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>33</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=4, mediaPotencia=null, planta=4}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>34</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>35</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=2, mediaPotencia=null, planta=2}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>36</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>37</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=6, mediaPotencia=null, planta=6}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>38</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>39</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=10, mediaPotencia=null, planta=10}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>40</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>41</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=1, mediaPotencia=null, planta=1}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>42</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920866</millis>
+  <sequence>43</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=3, mediaPotencia=null, planta=3}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920882</millis>
+  <sequence>44</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920882</millis>
+  <sequence>45</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=5, mediaPotencia=null, planta=5}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920882</millis>
+  <sequence>46</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920882</millis>
+  <sequence>47</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=7, mediaPotencia=null, planta=7}
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920882</millis>
+  <sequence>48</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Nombre del evento recibido: potenciaMediaDiaAnteriorCt
+</message>
+</record>
+<record>
+  <date>2018-08-29T13:25:20</date>
+  <millis>1535541920882</millis>
+  <sequence>49</sequence>
+  <logger>logger.MiLogger</logger>
+  <level>INFO</level>
+  <class>logger.MiLogger</class>
+  <method>info</method>
+  <thread>35</thread>
+  <message>Informacion: {identificadorCt=9, mediaPotencia=null, planta=9}
+</message>
 </record>

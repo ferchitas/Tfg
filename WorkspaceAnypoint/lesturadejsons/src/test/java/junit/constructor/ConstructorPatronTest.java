@@ -136,4 +136,14 @@ public class ConstructorPatronTest {
 		//probar que ambos groupBy son similares.
 		assertEquals(esquemaEsperado.getExpresionesGroupBy().toString(), esquemaReal.getExpresionesGroupBy().toString());
 	}
+	
+	@Test
+	public void testLeerExpresiones(){
+		
+		String ruta = "src/test/resources/constructorPatronCrearEsquemaTest.json";
+		json = HelperJsons.leerFichero(ruta);
+		ce.crearEsquema(json);
+		esquemaReal = (EsquemaPatron)ce.getEsquema();
+		ce.crearEsquema(json);
+	}
 }

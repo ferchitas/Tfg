@@ -1,0 +1,30 @@
+{
+  "tipo":"patron",
+	"nombrePatron":"patronTest",
+	"select":[
+    {"tipo":"funcion", "nombre":"avg", "pseudonombre":"mediaPotencia","expresiones":[
+      {"tipo":"propiedad", "pseudonombre":"", "nombre":"potencia", "procedencia":"a1", "ventana":{"tipo":""}}
+    ]},
+    {"tipo":"case", "valor":"r", "else":"0", "expresiones":[
+      {"tipo":"when", "condicion":"a > b", "resultado":"1"},
+      {"tipo":"when", "condicion":"a < b", "resultado":"2"}
+  	]},
+    {"tipo":"propiedad", "pseudonombre":"identificadorCt", "nombre":"identificadorCt", "procedencia":"a1", "ventana":{"tipo":""}},
+    {"tipo":"propiedad", "pseudonombre":"planta", "nombre":"planta", "procedencia":"a1", "ventana":{"tipo":""}},
+    {"tipo":"operacion", "operador":"->", "pseudonombre":"ps", "expresiones":[
+      {"tipo":"everyPropiedad", "nombre":"a", "pseudonombre":"", "procedencia":"", "siguienteExpresion":""},
+      {"tipo":"everyFuncion", "nombre":"every", "pseudonombre":"","expresiones":[
+        {"tipo":"operacion", "operador":"->", "pseudonombre":"ps", "expresiones":[
+          {"tipo":"everyPropiedad", "nombre":"b", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"},
+          {"tipo":"everyPropiedad", "nombre":"c", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"}
+        ]},
+        {"tipo":"propiedad", "pseudonombre":"ps2", "nombre":"p2", "procedencia":"p1", "ventana":
+          {"tipo":"ventanaTemporal", "pseudonombre":"", "nombre":"time_batch", "valor":"3", "unidad":"seconds"}},
+          {"tipo":"propiedad", "pseudonombre":"ps2", "nombre":"p2", "procedencia":"p1", "ventana":
+            {"tipo":"ventana", "pseudonombre":"", "nombre":"lenght_batch", "valor":"3"}}
+        ]}
+    ]}
+  ],
+"from":[],
+"groupBy":[]
+}

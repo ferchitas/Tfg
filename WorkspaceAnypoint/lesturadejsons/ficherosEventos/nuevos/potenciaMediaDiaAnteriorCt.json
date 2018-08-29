@@ -1,0 +1,19 @@
+{
+  "tipo":"patron",
+	"nombrePatron":"potenciaMediaDiaAnteriorCt",
+	"select":[
+    {"tipo":"funcion", "nombre":"avg", "pseudonombre":"mediaPotencia","expresiones":[
+      {"tipo":"propiedad", "pseudonombre":"", "nombre":"potencia", "procedencia":"a1", "ventana":{"tipo":""}}
+    ]},
+    {"tipo":"propiedad", "pseudonombre":"identificadorCt", "nombre":"identificadorCt", "procedencia":"a1", "ventana":{"tipo":""}},
+    {"tipo":"propiedad", "pseudonombre":"planta", "nombre":"planta", "procedencia":"a1", "ventana":{"tipo":""}}
+  ],
+"from":[
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"potenciaCt", "procedencia":"", "ventana":
+    {"tipo":"ventanaTemporal", "nombre":"time_batch","pseudonombre":"a1", "valor":"10", "unidad":"seconds"}}
+],
+"groupBy":[
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"identificadorCt", "procedencia":"a1", "ventana":{"tipo":""}},
+  {"tipo":"propiedad", "pseudonombre":"", "nombre":"planta", "procedencia":"a1", "ventana":{"tipo":""}}
+]
+}

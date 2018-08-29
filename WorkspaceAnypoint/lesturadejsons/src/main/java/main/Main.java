@@ -12,7 +12,6 @@ import logger.MiLogger;
 
 public class Main implements Callable{
 
-	
 	@Override
 	public Object onCall(MuleEventContext eventContext) throws Exception {
  
