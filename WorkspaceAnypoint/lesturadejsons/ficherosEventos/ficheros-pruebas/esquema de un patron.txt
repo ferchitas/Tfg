@@ -1,0 +1,31 @@
+[annotations]
+[expression_declarations]
+[context context_name]
+[into table table_name]
+[insert into insert_into_def]
+select select_list
+from stream_def [as name] [, stream_def [as name]] [,...]
+[where search_conditions]
+[group by grouping_expression_list]
+[having grouping_search_conditions]
+[output output_specification]
+[order by order_by_expression_list]
+[limit num_rows]
+
+http://esper.espertech.com/release-5.2.0/esper-reference/html/epl_clauses.html
+
+
+el from
+
+from stream_def [as name]
+
+
+posiblidades para poner el flujo/stream:
+- event_stream_name [(filter_criteria)] no es necesario
+- pattern [pattern_expression]
+- event_stream_name.ventana
+
+/*ame.agregarPatronEPL("insert into potenciaMediaDiaAnteriorCt "
+				+ "select avg(a1.potencia) as medaPotencia, a1.identificadorCt as identificadorCt, a1.planta as planta from " +
+		                                "potenciaCt.win:time_batch(10 seconds) a1 " +
+		                                "group by a1.identificadorCt, a1.planta");*/

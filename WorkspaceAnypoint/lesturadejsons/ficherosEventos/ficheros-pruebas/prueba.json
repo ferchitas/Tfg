@@ -1,0 +1,12 @@
+{
+  "tipo":"patron",
+	"nombrePatron":"potenciaMediaDiaAnteriorCt",
+	"select":[
+    {"tipo":"propiedad", "pseudonombre":"ps", "nombre":"n", "procedencia":"p"},
+    {"tipo":"operacion", "operador":"and", "pseudonombre":"m","expresiones":[
+        {"tipo":"propiedad", "pseudonombre":"ps1", "nombre":"p1", "procedencia":"p1"},
+        {"tipo":"propiedad", "pseudonombre":"ps2", "nombre":"p2", "procedencia":"p1"}
+      ]
+    }
+  ]
+}

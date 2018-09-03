@@ -1,0 +1,20 @@
+{
+  "tipo":"patron",
+	"nombrePatron":"potenciaMediaDiaAnteriorCt",
+	"select":[
+    {"tipo":"propiedad", "pseudonombre":"ps", "nombre":"n", "procedencia":"p"}
+  ],
+"from":[
+  {"tipo":"operacion", "operador":"->", "pseudonombre":"ps", "expresiones":[
+    {"tipo":"everyPropiedad", "nombre":"a", "pseudonombre":"", "procedencia":"", "siguienteExpresion":""},
+    {"tipo":"funcion", "nombre":"every", "pseudonombre":"","expresiones":[
+      {"tipo":"everyFuncion", "operador":"->", "pseudonombre":"ps", "expresiones":[
+        {"tipo":"everyPropiedad", "nombre":"b", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"},
+        {"tipo":"everyPropiedad", "nombre":"r", "pseudonombre":"", "procedencia":"", "siguienteExpresion":""},
+        {"tipo":"everyPropiedad", "nombre":"e", "pseudonombre":"", "procedencia":"", "siguienteExpresion":""},
+        {"tipo":"everyPropiedad", "nombre":"c", "pseudonombre":"", "procedencia":"", "siguienteExpresion":"c"}
+      ]}
+    ]}
+  ]}
+]
+}
